@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Estate Atlas — A Vinotheca Reference</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <!-- Typography: editorial serifs in keeping with the Vinotheca register -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ------------------------------------------------------------------
+       The Estate Atlas — viewer prototype
+       Sibling-volume register to the Grand Cru Atlas.
+       Editorial-classical: warm paper, deep wine accent, serif type.
+       ------------------------------------------------------------------ */
+
+    :root {
+      --paper:        #f5efe6;   /* warm cream — page ground */
+      --paper-deep:   #ece4d6;   /* slightly darker, for panel surfaces */
+      --ink:          #2a2520;   /* near-black, with warmth */
+      --ink-soft:     #5a5048;   /* secondary text */
+      --rule:         #c8bca8;   /* hairline rules and dividers */
+      --wine:         #6e1f2a;   /* the editorial accent — deep burgundy */
+      --wine-soft:    #8a3a44;   /* for hover/active states */
+      --pin-shadow:   rgba(110, 31, 42, 0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---- App shell ---- */
+    .app {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      grid-template-rows: auto 1fr;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    /* ---- Masthead (spans full width) ---- */
+    .masthead {
+      grid-column: 1 / -1;
+      padding: 18px 28px 16px;
+      border-bottom: 1px solid var(--rule);
+      background: var(--paper);
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .masthead-title {
+      font-family: 'Cormorant', 'EB Garamond', serif;
+      font-weight: 500;
+      font-size: 28px;
+      letter-spacing: 0.01em;
+      margin: 0;
+    }
+
+    .masthead-title em {
+      font-style: italic;
+      color: var(--wine);
+    }
+
+    .masthead-meta {
+      font-size: 13px;
+      color: var(--ink-soft);
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .masthead-meta a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .masthead-meta a:hover {
+      color: var(--wine);
+      border-color: var(--wine);
+    }
+
+    .masthead-divider {
+      display: inline-block;
+      margin: 0 12px;
+      color: var(--rule);
+    }
+
+    /* ---- Filter rail (left) ---- */
+    .filter-rail {
+      padding: 24px 22px;
+      border-right: 1px solid var(--rule);
+      background: var(--paper);
+      overflow-y: auto;
+    }
+
+    .filter-rail-coverage {
+      font-family: 'Cormorant', serif;
+      font-style: italic;
+      font-size: 15px;
+      color: var(--ink-soft);
+      line-height: 1.5;
+      margin: 0 0 22px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .filter-rail-coverage strong {
+      font-style: normal;
+      font-weight: 600;
+      color: var(--ink);
+    }
+
+    .filter-group {
+      margin-bottom: 22px;
+    }
+
+    .filter-group-label {
+      font-family: 'Cormorant', serif;
+      font-size: 12px;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin: 0 0 8px;
+      font-weight: 600;
+    }
+
+    .filter-group select {
+      width: 100%;
+      padding: 8px 10px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 15px;
+      color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--rule);
+      border-radius: 0;
+      appearance: none;
+      cursor: pointer;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%235a5048' fill='none' stroke-width='1'/></svg>");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      padding-right: 28px;
+    }
+
+    .filter-group select:focus {
+      outline: none;
+      border-color: var(--wine);
+    }
+
+    .filter-reset {
+      font-family: 'Cormorant', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--wine);
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-top: 4px;
+    }
+
+    .filter-reset:hover {
+      color: var(--wine-soft);
+    }
+
+    .filter-rail-count {
+      margin-top: 18px;
+      padding-top: 16px;
+      border-top: 1px solid var(--rule);
+      font-family: 'Cormorant', serif;
+      font-size: 14px;
+      font-style: italic;
+      color: var(--ink-soft);
+    }
+
+    .filter-rail-count strong {
+      font-style: normal;
+      color: var(--ink);
+      font-weight: 600;
+    }
+
+    /* ---- Map (right of rail) ---- */
+    .map-stage {
+      position: relative;
+      overflow: hidden;
+    }
+
+    #map {
+      width: 100%;
+      height: 100%;
+      background: var(--paper-deep);
+    }
+
+    /* Tame the default Leaflet attribution to fit the register */
+    .leaflet-control-attribution {
+      background: rgba(245, 239, 230, 0.85) !important;
+      font-family: 'EB Garamond', Georgia, serif !important;
+      font-size: 11px !important;
+      color: var(--ink-soft) !important;
+    }
+
+    .leaflet-control-attribution a {
+      color: var(--ink-soft) !important;
+    }
+
+    /* Custom estate marker — a wine-coloured pin, no default Leaflet icon */
+    .estate-pin {
+      width: 14px;
+      height: 14px;
+      background: var(--wine);
+      border: 2px solid var(--paper);
+      border-radius: 50%;
+      box-shadow: 0 2px 6px var(--pin-shadow);
+      cursor: pointer;
+      transition: transform 0.18s ease, background 0.18s ease;
+    }
+
+    .estate-pin:hover,
+    .estate-pin.is-active {
+      background: var(--wine-soft);
+      transform: scale(1.35);
+    }
+
+    /* ---- Entry panel (slides from right) ---- */
+    .entry-panel {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 420px;
+      max-width: 90vw;
+      background: var(--paper);
+      border-left: 1px solid var(--rule);
+      box-shadow: -4px 0 24px rgba(42, 37, 32, 0.06);
+      transform: translateX(100%);
+      transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
+      overflow-y: auto;
+      z-index: 1000;
+    }
+
+    .entry-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .entry-close {
+      position: absolute;
+      top: 14px;
+      right: 18px;
+      background: none;
+      border: none;
+      font-family: 'Cormorant', serif;
+      font-size: 20px;
+      color: var(--ink-soft);
+      cursor: pointer;
+      line-height: 1;
+      padding: 4px 8px;
+      transition: color 0.2s;
+    }
+
+    .entry-close:hover {
+      color: var(--wine);
+    }
+
+    .entry-content {
+      padding: 48px 36px 40px;
+    }
+
+    .entry-meta-top {
+      font-family: 'Cormorant', serif;
+      font-size: 12px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin: 0 0 8px;
+    }
+
+    .entry-name {
+      font-family: 'Cormorant', serif;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 1.2;
+      margin: 0 0 4px;
+      color: var(--ink);
+    }
+
+    .entry-place {
+      font-family: 'Cormorant', serif;
+      font-style: italic;
+      font-size: 16px;
+      color: var(--ink-soft);
+      margin: 0 0 24px;
+    }
+
+    .entry-rule {
+      width: 60px;
+      height: 1px;
+      background: var(--wine);
+      border: none;
+      margin: 0 0 24px;
+    }
+
+    .entry-section {
+      margin-bottom: 18px;
+    }
+
+    .entry-label {
+      font-family: 'Cormorant', serif;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      margin: 0 0 4px;
+      font-weight: 600;
+    }
+
+    .entry-value {
+      font-size: 16px;
+      margin: 0;
+      color: var(--ink);
+    }
+
+    .entry-value.is-list {
+      padding-left: 0;
+      list-style: none;
+    }
+
+    .entry-value.is-list li {
+      padding: 2px 0;
+      border-bottom: 1px dotted transparent;
+    }
+
+    .entry-description {
+      margin-top: 24px;
+      padding-top: 24px;
+      border-top: 1px solid var(--rule);
+      font-size: 16.5px;
+      line-height: 1.65;
+      color: var(--ink);
+    }
+
+    .entry-description p {
+      margin: 0;
+    }
+
+    .entry-founded-note {
+      font-family: 'Cormorant', serif;
+      font-style: italic;
+      font-size: 14px;
+      color: var(--ink-soft);
+      margin-top: 4px;
+    }
+
+    /* ---- Mobile ---- */
+    @media (max-width: 720px) {
+      .app {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 1fr;
+      }
+
+      .filter-rail {
+        border-right: none;
+        border-bottom: 1px solid var(--rule);
+        max-height: 35vh;
+        padding: 16px 18px;
+      }
+
+      .filter-rail-coverage { display: none; }
+
+      .entry-panel {
+        width: 100%;
+        max-width: 100%;
+        top: auto;
+        bottom: 0;
+        height: 60vh;
+        border-left: none;
+        border-top: 1px solid var(--rule);
+        transform: translateY(100%);
+      }
+
+      .entry-panel.is-open {
+        transform: translateY(0);
+      }
+
+      .masthead { padding: 14px 18px; }
+      .masthead-title { font-size: 22px; }
+      .masthead-meta { font-size: 11px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="app">
+
+  <header class="masthead">
+    <h1 class="masthead-title">The Estate <em>Atlas</em></h1>
+    <div class="masthead-meta">
+      <a href="https://jskarabot18.github.io/vinotheca/">Vinotheca</a>
+      <span class="masthead-divider">·</span>
+      <span>2026 edition · prototype</span>
+      <span class="masthead-divider">·</span>
+      <a href="#" id="download-pdf">Download PDF</a>
+    </div>
+  </header>
+
+  <aside class="filter-rail">
+    <p class="filter-rail-coverage">
+      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently showing the Mosel pilot — three estates of the planned 158.</em>
+    </p>
+
+    <div class="filter-group">
+      <label class="filter-group-label" for="filter-country">Country</label>
+      <select id="filter-country">
+        <option value="">All countries</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label class="filter-group-label" for="filter-region">Region</label>
+      <select id="filter-region">
+        <option value="">All regions</option>
+      </select>
+    </div>
+
+    <div class="filter-group">
+      <label class="filter-group-label" for="filter-grape">Principal grape</label>
+      <select id="filter-grape">
+        <option value="">All grapes</option>
+      </select>
+    </div>
+
+    <button class="filter-reset" id="filter-reset">✕ Reset filters</button>
+
+    <p class="filter-rail-count">
+      Showing <strong id="visible-count">0</strong> of <strong id="total-count">0</strong> estates
+    </p>
+  </aside>
+
+  <main class="map-stage">
+    <div id="map"></div>
+
+    <aside class="entry-panel" id="entry-panel">
+      <button class="entry-close" id="entry-close" aria-label="Close entry">✕</button>
+      <div class="entry-content" id="entry-content">
+        <!-- Populated by JS -->
+      </div>
+    </aside>
+  </main>
+
+</div>
+
+<script>
+/* ------------------------------------------------------------------
+   Estate data — embedded for the prototype.
+   In production this loads from estates.json via fetch().
+   ------------------------------------------------------------------ */
+const ATLAS_DATA = {
+  "atlas": {
+    "title": "The Estate Atlas",
+    "edition": "2026",
+    "version": "0.1.0-pilot"
+  },
+  "estates": [
+    {
+      "id": "de-mosel-jjpruem",
+      "name": "Weingut Joh. Jos. Prüm",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Mosel",
+      "sub_region": "Mittelmosel",
+      "commune": "Wehlen",
+      "appellation": "Mosel",
+      "founded": "1911",
+      "founded_note": "Estate under the present family name; the estate's holdings descend from earlier Prüm family operations.",
+      "principal_grapes": ["Riesling"],
+      "signature_wines": [
+        "Wehlener Sonnenuhr Riesling (Kabinett, Spätlese, Auslese, and where conditions permit Beerenauslese, Trockenbeerenauslese, Eiswein)",
+        "Graacher Himmelreich Riesling",
+        "Zeltinger Sonnenuhr Riesling",
+        "Bernkasteler Badstube Riesling"
+      ],
+      "description": "A reference estate for classical Mittelmosel Riesling, with prized parcels on the Wehlener Sonnenuhr — the steep, slate-soiled slope that has helped define what fine Mosel wine is taken to mean. The house style favours residual sweetness balanced against sharp Mosel acidity, with a deliberately reductive character that often leaves young wines closed and rewards long bottle age. Production is concentrated in the traditional Prädikat hierarchy rather than in the dry styles that have come to occupy other Mosel estates. The wines are released slowly and are widely held to be among the longest-lived white wines made anywhere.",
+      "coordinates": { "latitude": 49.9095, "longitude": 6.9420 }
+    },
+    {
+      "id": "de-mosel-egonmueller",
+      "name": "Weingut Egon Müller — Scharzhof",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Mosel",
+      "sub_region": "Saar",
+      "commune": "Wiltingen",
+      "appellation": "Mosel",
+      "founded": "1797",
+      "founded_note": "Müller family ownership of the Scharzhof estate.",
+      "principal_grapes": ["Riesling"],
+      "signature_wines": [
+        "Scharzhofberger Riesling (Kabinett through Trockenbeerenauslese and Eiswein)",
+        "Wiltinger Braune Kupp Riesling (under the Le Gallais label)"
+      ],
+      "description": "The reference address of the Saar — the Mosel's coolest tributary, where Riesling ripens later, retains more acid, and produces wines of marked tension and clarity. The estate's holdings on the Scharzhofberg, a south-facing slate slope above Wiltingen, have been continuously associated with the family for over two centuries. The house works almost exclusively in the classical Prädikat hierarchy; the rarest sweet bottlings are produced only in suitable vintages and in tiny quantities. As with the great Mittelmosel houses, the wines are made to age, with the dry-tasting Kabinetts and the apex sweet wines both holding their character for decades in bottle.",
+      "coordinates": { "latitude": 49.6306, "longitude": 6.6122 }
+    },
+    {
+      "id": "de-mosel-schlosslieser",
+      "name": "Weingut Schloss Lieser",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Mosel",
+      "sub_region": "Mittelmosel",
+      "commune": "Lieser",
+      "appellation": "Mosel",
+      "founded": "1992",
+      "founded_note": "Estate of historical origin; revived in its current form from 1992 under Thomas Haag.",
+      "principal_grapes": ["Riesling"],
+      "signature_wines": [
+        "Brauneberger Juffer Riesling (dry / Großes Gewächs and Prädikat)",
+        "Brauneberger Juffer-Sonnenuhr Riesling",
+        "Lieserer Niederberg-Helden Riesling",
+        "Wehlener Sonnenuhr Riesling",
+        "Piesporter Goldtröpfchen Riesling"
+      ],
+      "description": "A historically rooted Mittelmosel estate that has become one of the principal addresses for the modern Mosel — equally at home in the classical Prädikat hierarchy and in the dry-style Großes Gewächs work that has reshaped how German fine wine is read. Holdings span several of the great Mittelmosel sites, with the Brauneberger Juffer slope at the heart of the estate's identity. The wines are made in a precise, vineyard-driven register that lets each parcel speak distinctly across both dry and naturally sweet styles. The estate's rise since the early 1990s tracks the broader trajectory of the Mosel's contemporary revival.",
+      "coordinates": { "latitude": 49.9211, "longitude": 6.8839 }
+    }
+  ]
+};
+
+/* ------------------------------------------------------------------
+   Map setup — Leaflet with a quiet, near-monochrome tile style
+   so the wine-coloured pins read as the editorial figure.
+   ------------------------------------------------------------------ */
+const map = L.map('map', {
+  center: [30, 10],   // a sensible global default
+  zoom: 2,
+  minZoom: 2,
+  maxZoom: 12,
+  worldCopyJump: true,
+  zoomControl: true,
+  attributionControl: true
+});
+
+// CARTO Positron tiles — quiet, near-monochrome, free, OSM-derived.
+// In keeping with the editorial register; the wine pins read clearly against it.
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '© OpenStreetMap contributors · © CARTO',
+  subdomains: 'abcd',
+  maxZoom: 19
+}).addTo(map);
+
+/* ------------------------------------------------------------------
+   Pin rendering with custom DivIcon so we can style with CSS
+   ------------------------------------------------------------------ */
+const estateMarkers = new Map(); // id -> { marker, estate }
+
+function makePinIcon() {
+  return L.divIcon({
+    className: '',  // suppress Leaflet's default classes
+    html: '<div class="estate-pin"></div>',
+    iconSize: [14, 14],
+    iconAnchor: [7, 7]
+  });
+}
+
+function renderPins(estates) {
+  // Clear existing
+  estateMarkers.forEach(({ marker }) => map.removeLayer(marker));
+  estateMarkers.clear();
+
+  estates.forEach(estate => {
+    const { latitude, longitude } = estate.coordinates;
+    const marker = L.marker([latitude, longitude], { icon: makePinIcon() });
+    marker.on('click', () => openEntry(estate.id));
+    marker.addTo(map);
+    estateMarkers.set(estate.id, { marker, estate });
+  });
+
+  document.getElementById('visible-count').textContent = estates.length;
+  document.getElementById('total-count').textContent = ATLAS_DATA.estates.length;
+}
+
+/* ------------------------------------------------------------------
+   Filter UI — populated dynamically from the data
+   ------------------------------------------------------------------ */
+function populateFilters() {
+  const countries = [...new Set(ATLAS_DATA.estates.map(e => e.country))].sort();
+  const regions   = [...new Set(ATLAS_DATA.estates.map(e => e.region))].sort();
+  const grapes    = [...new Set(ATLAS_DATA.estates.flatMap(e => e.principal_grapes))].sort();
+
+  const fill = (id, items) => {
+    const sel = document.getElementById(id);
+    items.forEach(item => {
+      const opt = document.createElement('option');
+      opt.value = item;
+      opt.textContent = item;
+      sel.appendChild(opt);
+    });
+  };
+
+  fill('filter-country', countries);
+  fill('filter-region',  regions);
+  fill('filter-grape',   grapes);
+}
+
+function applyFilters() {
+  const c = document.getElementById('filter-country').value;
+  const r = document.getElementById('filter-region').value;
+  const g = document.getElementById('filter-grape').value;
+
+  const filtered = ATLAS_DATA.estates.filter(e => {
+    if (c && e.country !== c) return false;
+    if (r && e.region  !== r) return false;
+    if (g && !e.principal_grapes.includes(g)) return false;
+    return true;
+  });
+
+  renderPins(filtered);
+}
+
+['filter-country', 'filter-region', 'filter-grape'].forEach(id => {
+  document.getElementById(id).addEventListener('change', applyFilters);
+});
+
+document.getElementById('filter-reset').addEventListener('click', () => {
+  document.getElementById('filter-country').value = '';
+  document.getElementById('filter-region').value  = '';
+  document.getElementById('filter-grape').value   = '';
+  applyFilters();
+  closeEntry();
+});
+
+/* ------------------------------------------------------------------
+   Entry panel — opens on pin click, populates from estate object
+   ------------------------------------------------------------------ */
+function openEntry(estateId) {
+  const entry = ATLAS_DATA.estates.find(e => e.id === estateId);
+  if (!entry) return;
+
+  // Mark the active pin
+  document.querySelectorAll('.estate-pin').forEach(el => el.classList.remove('is-active'));
+  const { marker } = estateMarkers.get(estateId) || {};
+  if (marker && marker._icon) {
+    const pinEl = marker._icon.querySelector('.estate-pin');
+    if (pinEl) pinEl.classList.add('is-active');
+  }
+
+  // Build the entry HTML
+  const wineList = entry.signature_wines
+    .map(w => `<li>· ${escapeHTML(w)}</li>`)
+    .join('');
+
+  const placeBits = [entry.commune, entry.sub_region, entry.region, entry.country]
+    .filter(Boolean)
+    .join(' · ');
+
+  const html = `
+    <p class="entry-meta-top">${escapeHTML(entry.country)} · ${escapeHTML(entry.region)}</p>
+    <h2 class="entry-name">${escapeHTML(entry.name)}</h2>
+    <p class="entry-place">${escapeHTML(placeBits)}</p>
+    <hr class="entry-rule" />
+
+    <div class="entry-section">
+      <p class="entry-label">Established</p>
+      <p class="entry-value">${escapeHTML(entry.founded)}</p>
+      ${entry.founded_note ? `<p class="entry-founded-note">${escapeHTML(entry.founded_note)}</p>` : ''}
+    </div>
+
+    <div class="entry-section">
+      <p class="entry-label">Principal grapes</p>
+      <p class="entry-value">${entry.principal_grapes.map(escapeHTML).join(', ')}</p>
+    </div>
+
+    <div class="entry-section">
+      <p class="entry-label">Signature wines</p>
+      <ul class="entry-value is-list">${wineList}</ul>
+    </div>
+
+    <div class="entry-description">
+      <p>${escapeHTML(entry.description)}</p>
+    </div>
+  `;
+
+  document.getElementById('entry-content').innerHTML = html;
+  document.getElementById('entry-panel').classList.add('is-open');
+}
+
+function closeEntry() {
+  document.getElementById('entry-panel').classList.remove('is-open');
+  document.querySelectorAll('.estate-pin').forEach(el => el.classList.remove('is-active'));
+}
+
+document.getElementById('entry-close').addEventListener('click', closeEntry);
+
+/* Close entry on Escape */
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeEntry();
+});
+
+/* ------------------------------------------------------------------
+   PDF link placeholder — the companion volume is generated in Phase 2
+   ------------------------------------------------------------------ */
+document.getElementById('download-pdf').addEventListener('click', e => {
+  e.preventDefault();
+  alert('The PDF companion volume is generated in a later step. (This link will resolve to the_estate_atlas.pdf once published.)');
+});
+
+/* ------------------------------------------------------------------
+   Init
+   ------------------------------------------------------------------ */
+populateFilters();
+renderPins(ATLAS_DATA.estates);
+
+// Open the first estate on load so the panel is visible by default —
+// helpful for a prototype with only three pins clustered on the Mosel.
+setTimeout(() => {
+  map.setView([49.85, 6.85], 9);
+}, 100);
+
+/* ---- utilities ---- */
+function escapeHTML(s) {
+  if (s == null) return '';
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+</script>
+
+</body>
+</html>

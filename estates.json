@@ -1,0 +1,87 @@
+{
+  "atlas": {
+    "title": "The Estate Atlas",
+    "edition": "2026",
+    "version": "0.1.0-pilot",
+    "license": "CC BY-NC 4.0",
+    "target_count": 160,
+    "current_count": 3,
+    "last_updated": "2026-04-22"
+  },
+  "estates": [
+    {
+      "id": "de-mosel-jjpruem",
+      "name": "Weingut Joh. Jos. Prüm",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Mosel",
+      "sub_region": "Mittelmosel",
+      "commune": "Wehlen",
+      "appellation": "Mosel",
+      "founded": "1911",
+      "founded_note": "Estate under the present family name; the estate's holdings descend from earlier Prüm family operations.",
+      "principal_grapes": ["Riesling"],
+      "signature_wines": [
+        "Wehlener Sonnenuhr Riesling (Kabinett, Spätlese, Auslese, and where conditions permit Beerenauslese, Trockenbeerenauslese, Eiswein)",
+        "Graacher Himmelreich Riesling",
+        "Zeltinger Sonnenuhr Riesling",
+        "Bernkasteler Badstube Riesling"
+      ],
+      "description": "A reference estate for classical Mittelmosel Riesling, with prized parcels on the Wehlener Sonnenuhr — the steep, slate-soiled slope that has helped define what fine Mosel wine is taken to mean. The house style favours residual sweetness balanced against sharp Mosel acidity, with a deliberately reductive character that often leaves young wines closed and rewards long bottle age. Production is concentrated in the traditional Prädikat hierarchy rather than in the dry styles that have come to occupy other Mosel estates. The wines are released slowly and are widely held to be among the longest-lived white wines made anywhere.",
+      "coordinates": {
+        "latitude": 49.9095,
+        "longitude": 6.9420
+      },
+      "coordinates_note": "Wehlen, on the Mosel"
+    },
+    {
+      "id": "de-mosel-egonmueller",
+      "name": "Weingut Egon Müller — Scharzhof",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Mosel",
+      "sub_region": "Saar",
+      "commune": "Wiltingen",
+      "appellation": "Mosel",
+      "founded": "1797",
+      "founded_note": "Müller family ownership of the Scharzhof estate.",
+      "principal_grapes": ["Riesling"],
+      "signature_wines": [
+        "Scharzhofberger Riesling (Kabinett through Trockenbeerenauslese and Eiswein)",
+        "Wiltinger Braune Kupp Riesling (under the Le Gallais label)"
+      ],
+      "description": "The reference address of the Saar — the Mosel's coolest tributary, where Riesling ripens later, retains more acid, and produces wines of marked tension and clarity. The estate's holdings on the Scharzhofberg, a south-facing slate slope above Wiltingen, have been continuously associated with the family for over two centuries. The house works almost exclusively in the classical Prädikat hierarchy; the rarest sweet bottlings are produced only in suitable vintages and in tiny quantities. As with the great Mittelmosel houses, the wines are made to age, with the dry-tasting Kabinetts and the apex sweet wines both holding their character for decades in bottle.",
+      "coordinates": {
+        "latitude": 49.6306,
+        "longitude": 6.6122
+      },
+      "coordinates_note": "Wiltingen, on the Saar"
+    },
+    {
+      "id": "de-mosel-schlosslieser",
+      "name": "Weingut Schloss Lieser",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Mosel",
+      "sub_region": "Mittelmosel",
+      "commune": "Lieser",
+      "appellation": "Mosel",
+      "founded": "1992",
+      "founded_note": "Estate of historical origin; revived in its current form from 1992 under Thomas Haag.",
+      "principal_grapes": ["Riesling"],
+      "signature_wines": [
+        "Brauneberger Juffer Riesling (dry / Großes Gewächs and Prädikat)",
+        "Brauneberger Juffer-Sonnenuhr Riesling",
+        "Lieserer Niederberg-Helden Riesling",
+        "Wehlener Sonnenuhr Riesling",
+        "Piesporter Goldtröpfchen Riesling"
+      ],
+      "description": "A historically rooted Mittelmosel estate that has become one of the principal addresses for the modern Mosel — equally at home in the classical Prädikat hierarchy and in the dry-style Großes Gewächs work that has reshaped how German fine wine is read. Holdings span several of the great Mittelmosel sites, with the Brauneberger Juffer slope at the heart of the estate's identity. The wines are made in a precise, vineyard-driven register that lets each parcel speak distinctly across both dry and naturally sweet styles. The estate's rise since the early 1990s tracks the broader trajectory of the Mosel's contemporary revival.",
+      "coordinates": {
+        "latitude": 49.9211,
+        "longitude": 6.8839
+      },
+      "coordinates_note": "Lieser, on the Mosel"
+    }
+  ]
+}
