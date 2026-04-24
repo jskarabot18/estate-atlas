@@ -423,7 +423,7 @@
 
   <aside class="filter-rail">
     <p class="filter-rail-coverage">
-      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently showing the Mosel pilot — three estates of the planned 158.</em>
+      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently in pilot — seven estates encoded across the Mosel and the Northern Rhône, of the planned approximately one hundred and sixty.</em>
     </p>
 
     <div class="filter-group">
@@ -476,7 +476,7 @@ const ATLAS_DATA = {
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.1.0-pilot"
+    "version": "0.2.0-pilot"
   },
   "estates": [
     {
@@ -540,6 +540,91 @@ const ATLAS_DATA = {
       ],
       "description": "A historically rooted Mittelmosel estate that has become one of the principal addresses for the modern Mosel — equally at home in the classical Prädikat hierarchy and in the dry-style Großes Gewächs work that has reshaped how German fine wine is read. Holdings span several of the great Mittelmosel sites, with the Brauneberger Juffer slope at the heart of the estate's identity. The wines are made in a precise, vineyard-driven register that lets each parcel speak distinctly across both dry and naturally sweet styles. The estate's rise since the early 1990s tracks the broader trajectory of the Mosel's contemporary revival.",
       "coordinates": { "latitude": 49.9211, "longitude": 6.8839 }
+    },
+    {
+      "id": "fr-northernrhone-jamet",
+      "name": "Domaine Jamet",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Northern Rhône",
+      "sub_region": "Côte-Rôtie",
+      "commune": "Le Vallin (Ampuis)",
+      "appellation": "Côte-Rôtie",
+      "founded": "1976",
+      "founded_note": "Estate established under the present name by Joseph Jamet; the family had been growing on the slope for earlier generations.",
+      "principal_grapes": ["Syrah", "Viognier"],
+      "signature_wines": [
+        "Côte-Rôtie (the classical multi-parcel cuvée, sourced across some two dozen lieux-dits on both the Côte Brune and Côte Blonde)",
+        "Côte-Rôtie Côte Brune (single-parcel bottling)",
+        "Côtes-du-Rhône (from younger or off-slope fruit)"
+      ],
+      "description": "A reference single-domaine address for traditional Côte-Rôtie, working a patchwork of small parcels scattered across the appellation's two great slopes. The house style favours whole-cluster fermentation, restrained extraction, and long ageing in older oak — wines built for length rather than weight, and notably austere in their youth. The estate's classical multi-parcel Côte-Rôtie remains its principal expression, with single-parcel bottlings produced only in the most suitable vintages. Since the late 1970s the domaine has been a touchstone for those who hold the appellation's traditional, less-extracted register as definitive.",
+      "coordinates": { "latitude": 45.5023, "longitude": 4.8131 }
+    },
+    {
+      "id": "fr-northernrhone-chave",
+      "name": "Domaine Jean-Louis Chave",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Northern Rhône",
+      "sub_region": "Hermitage",
+      "commune": "Mauves",
+      "appellation": "Hermitage and Saint-Joseph",
+      "founded": "1481",
+      "founded_note": "The Chave family is documented as winegrowers in the region from the late fifteenth century; the estate as it presently operates has continued under direct family succession through the modern era.",
+      "principal_grapes": ["Syrah", "Marsanne", "Roussanne"],
+      "signature_wines": [
+        "Hermitage rouge (a multi-parcel blend assembled across the hill's principal lieux-dits — Le Méal, Les Bessards, Péléat, Beaume, L'Hermite, and others)",
+        "Hermitage blanc (Marsanne-led, with Roussanne)",
+        "Saint-Joseph rouge",
+        "Cuvée Cathelin (produced only in selected vintages)"
+      ],
+      "description": "The historical reference of the hill of Hermitage, with continuous family succession going back to the late fifteenth century — the longest unbroken winegrowing lineage on the slope. The domaine's signature is its multi-parcel assemblage approach: rather than bottling individual lieux-dits, the principal Hermitage rouge is composed each vintage from across the hill's distinct soils to give what the family treats as the truest expression of the appellation as a whole. Both the rouge and the Marsanne-led blanc are made for very long ageing, with the white in particular showing a capacity for several decades in bottle. A separate négociant operation, J.L. Chave Sélections, sources fruit from across the Northern Rhône and trades under its own labelling distinct from the domaine.",
+      "coordinates": { "latitude": 45.0389, "longitude": 4.8478 }
+    },
+    {
+      "id": "fr-northernrhone-clape",
+      "name": "Domaine Auguste Clape",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Northern Rhône",
+      "sub_region": "Cornas",
+      "commune": "Cornas",
+      "appellation": "Cornas",
+      "founded": "1955",
+      "founded_note": "Estate established under Auguste Clape; the family had cultivated vines in the appellation for earlier generations.",
+      "principal_grapes": ["Syrah"],
+      "signature_wines": [
+        "Cornas (the principal cuvée, sourced from old-vine parcels on the appellation's classic granite slopes)",
+        "Renaissance (cuvée from younger vines)",
+        "Côtes-du-Rhône and a vin de pays from off-slope fruit"
+      ],
+      "description": "The canonical traditional address of Cornas, more responsible than any other single estate for the appellation's modern reputation. The house works with old vines on the granite slopes immediately above the village, in a deliberately classical register — whole-cluster fermentation, no destemming, ageing in old foudres rather than new oak, no fining or filtration. The wines are made for very long bottle development and are widely held to be among the most ageworthy Northern Rhône Syrahs produced anywhere. Successive generations of the family have continued the same approach essentially unchanged, making the domaine a stable reference point through the appellation's late-twentieth-century revival.",
+      "coordinates": { "latitude": 44.9606, "longitude": 4.8369 }
+    },
+    {
+      "id": "fr-northernrhone-guigal",
+      "name": "Maison E. Guigal",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Northern Rhône",
+      "sub_region": "Côte-Rôtie",
+      "commune": "Ampuis",
+      "appellation": "Côte-Rôtie (with substantial activity across Condrieu, Hermitage, Saint-Joseph, and the Southern Rhône)",
+      "founded": "1946",
+      "founded_note": "Founded by Étienne Guigal; transitioned to a négociant-grower of major scale under his son Marcel Guigal from 1961 onward.",
+      "principal_grapes": ["Syrah", "Viognier", "Marsanne", "Roussanne", "Grenache"],
+      "signature_wines": [
+        "Côte-Rôtie La Mouline, La Landonne, La Turque (the three single-parcel \"La La\" cuvées)",
+        "Côte-Rôtie Château d'Ampuis",
+        "Côte-Rôtie Brune et Blonde",
+        "Condrieu La Doriane",
+        "Hermitage rouge and blanc",
+        "Ex Voto cuvées (Côte-Rôtie and Hermitage)",
+        "Substantial négociant ranges across the Northern and Southern Rhône"
+      ],
+      "description": "The largest and most influential house of the Northern Rhône, operating as both grower and négociant across the full sweep of Rhône appellations. The house is most identified with its three single-parcel Côte-Rôtie cuvées — La Mouline, La Landonne, and La Turque — released from the early 1970s onward, which played a decisive role in repositioning Côte-Rôtie among the world's most followed red wines. The style across the top range is more extracted and more new-oak-marked than the traditional pole occupied by domaines such as Jamet, and the house is widely treated as the reference for the modernist register within the appellation. Beyond the estate wines, the négociant arm sources broadly across the Rhône and produces a substantial range under the Guigal label.",
+      "coordinates": { "latitude": 45.4894, "longitude": 4.8186 }
     }
   ]
 };
@@ -595,6 +680,18 @@ function renderPins(estates) {
 
   document.getElementById('visible-count').textContent = estates.length;
   document.getElementById('total-count').textContent = ATLAS_DATA.estates.length;
+
+  // Auto-fit the map to the visible pins. With a single pin, fitBounds
+  // would zoom too aggressively; in that case we set a reasonable zoom.
+  if (estates.length === 0) return;
+
+  if (estates.length === 1) {
+    const { latitude, longitude } = estates[0].coordinates;
+    map.setView([latitude, longitude], 9);
+  } else {
+    const bounds = L.latLngBounds(estates.map(e => [e.coordinates.latitude, e.coordinates.longitude]));
+    map.fitBounds(bounds, { padding: [60, 60], maxZoom: 9 });
+  }
 }
 
 /* ------------------------------------------------------------------
@@ -727,12 +824,6 @@ document.getElementById('download-pdf').addEventListener('click', e => {
    ------------------------------------------------------------------ */
 populateFilters();
 renderPins(ATLAS_DATA.estates);
-
-// Open the first estate on load so the panel is visible by default —
-// helpful for a prototype with only three pins clustered on the Mosel.
-setTimeout(() => {
-  map.setView([49.85, 6.85], 9);
-}, 100);
 
 /* ---- utilities ---- */
 function escapeHTML(s) {
