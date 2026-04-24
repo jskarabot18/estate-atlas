@@ -22,13 +22,13 @@
        ------------------------------------------------------------------ */
 
     :root {
-      --paper:        #f5efe6;   /* warm cream — page ground */
-      --paper-deep:   #ece4d6;   /* slightly darker, for panel surfaces */
-      --ink:          #2a2520;   /* near-black, with warmth */
-      --ink-soft:     #5a5048;   /* secondary text */
-      --rule:         #c8bca8;   /* hairline rules and dividers */
-      --wine:         #6e1f2a;   /* the editorial accent — deep burgundy */
-      --wine-soft:    #8a3a44;   /* for hover/active states */
+      --paper:        #f5efe6;
+      --paper-deep:   #ece4d6;
+      --ink:          #2a2520;
+      --ink-soft:     #5a5048;
+      --rule:         #c8bca8;
+      --wine:         #6e1f2a;
+      --wine-soft:    #8a3a44;
       --pin-shadow:   rgba(110, 31, 42, 0.35);
     }
 
@@ -46,7 +46,6 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    /* ---- App shell ---- */
     .app {
       display: grid;
       grid-template-columns: 280px 1fr;
@@ -55,7 +54,6 @@
       overflow: hidden;
     }
 
-    /* ---- Masthead (spans full width) ---- */
     .masthead {
       grid-column: 1 / -1;
       padding: 18px 28px 16px;
@@ -105,7 +103,6 @@
       color: var(--rule);
     }
 
-    /* ---- Filter rail (left) ---- */
     .filter-rail {
       padding: 24px 22px;
       border-right: 1px solid var(--rule);
@@ -198,7 +195,6 @@
       font-weight: 600;
     }
 
-    /* ---- Map (right of rail) ---- */
     .map-stage {
       position: relative;
       overflow: hidden;
@@ -210,7 +206,6 @@
       background: var(--paper-deep);
     }
 
-    /* Tame the default Leaflet attribution to fit the register */
     .leaflet-control-attribution {
       background: rgba(245, 239, 230, 0.85) !important;
       font-family: 'EB Garamond', Georgia, serif !important;
@@ -222,7 +217,6 @@
       color: var(--ink-soft) !important;
     }
 
-    /* Custom estate marker — a wine-coloured pin, no default Leaflet icon */
     .estate-pin {
       width: 14px;
       height: 14px;
@@ -240,7 +234,6 @@
       transform: scale(1.35);
     }
 
-    /* ---- Entry panel (slides from right) ---- */
     .entry-panel {
       position: absolute;
       top: 0;
@@ -369,7 +362,6 @@
       margin-top: 4px;
     }
 
-    /* ---- Mobile ---- */
     @media (max-width: 720px) {
       .app {
         grid-template-columns: 1fr;
@@ -423,7 +415,7 @@
 
   <aside class="filter-rail">
     <p class="filter-rail-coverage">
-      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently in pilot — seven estates encoded across the Mosel and the Northern Rhône, of the planned approximately one hundred and sixty.</em>
+      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently in pilot — fourteen estates encoded across the Mosel, the Northern Rhône, and the Bordeaux Left Bank, of the planned approximately one hundred and sixty.</em>
     </p>
 
     <div class="filter-group">
@@ -476,7 +468,7 @@ const ATLAS_DATA = {
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.2.0-pilot"
+    "version": "0.3.0-pilot"
   },
   "estates": [
     {
@@ -490,7 +482,9 @@ const ATLAS_DATA = {
       "appellation": "Mosel",
       "founded": "1911",
       "founded_note": "Estate under the present family name; the estate's holdings descend from earlier Prüm family operations.",
-      "principal_grapes": ["Riesling"],
+      "principal_grapes": [
+        "Riesling"
+      ],
       "signature_wines": [
         "Wehlener Sonnenuhr Riesling (Kabinett, Spätlese, Auslese, and where conditions permit Beerenauslese, Trockenbeerenauslese, Eiswein)",
         "Graacher Himmelreich Riesling",
@@ -498,7 +492,10 @@ const ATLAS_DATA = {
         "Bernkasteler Badstube Riesling"
       ],
       "description": "A reference estate for classical Mittelmosel Riesling, with prized parcels on the Wehlener Sonnenuhr — the steep, slate-soiled slope that has helped define what fine Mosel wine is taken to mean. The house style favours residual sweetness balanced against sharp Mosel acidity, with a deliberately reductive character that often leaves young wines closed and rewards long bottle age. Production is concentrated in the traditional Prädikat hierarchy rather than in the dry styles that have come to occupy other Mosel estates. The wines are released slowly and are widely held to be among the longest-lived white wines made anywhere.",
-      "coordinates": { "latitude": 49.9095, "longitude": 6.9420 }
+      "coordinates": {
+        "latitude": 49.9095,
+        "longitude": 6.942
+      }
     },
     {
       "id": "de-mosel-egonmueller",
@@ -511,13 +508,18 @@ const ATLAS_DATA = {
       "appellation": "Mosel",
       "founded": "1797",
       "founded_note": "Müller family ownership of the Scharzhof estate.",
-      "principal_grapes": ["Riesling"],
+      "principal_grapes": [
+        "Riesling"
+      ],
       "signature_wines": [
         "Scharzhofberger Riesling (Kabinett through Trockenbeerenauslese and Eiswein)",
         "Wiltinger Braune Kupp Riesling (under the Le Gallais label)"
       ],
       "description": "The reference address of the Saar — the Mosel's coolest tributary, where Riesling ripens later, retains more acid, and produces wines of marked tension and clarity. The estate's holdings on the Scharzhofberg, a south-facing slate slope above Wiltingen, have been continuously associated with the family for over two centuries. The house works almost exclusively in the classical Prädikat hierarchy; the rarest sweet bottlings are produced only in suitable vintages and in tiny quantities. As with the great Mittelmosel houses, the wines are made to age, with the dry-tasting Kabinetts and the apex sweet wines both holding their character for decades in bottle.",
-      "coordinates": { "latitude": 49.6306, "longitude": 6.6122 }
+      "coordinates": {
+        "latitude": 49.6306,
+        "longitude": 6.6122
+      }
     },
     {
       "id": "de-mosel-schlosslieser",
@@ -530,7 +532,9 @@ const ATLAS_DATA = {
       "appellation": "Mosel",
       "founded": "1992",
       "founded_note": "Estate of historical origin; revived in its current form from 1992 under Thomas Haag.",
-      "principal_grapes": ["Riesling"],
+      "principal_grapes": [
+        "Riesling"
+      ],
       "signature_wines": [
         "Brauneberger Juffer Riesling (dry / Großes Gewächs and Prädikat)",
         "Brauneberger Juffer-Sonnenuhr Riesling",
@@ -539,7 +543,10 @@ const ATLAS_DATA = {
         "Piesporter Goldtröpfchen Riesling"
       ],
       "description": "A historically rooted Mittelmosel estate that has become one of the principal addresses for the modern Mosel — equally at home in the classical Prädikat hierarchy and in the dry-style Großes Gewächs work that has reshaped how German fine wine is read. Holdings span several of the great Mittelmosel sites, with the Brauneberger Juffer slope at the heart of the estate's identity. The wines are made in a precise, vineyard-driven register that lets each parcel speak distinctly across both dry and naturally sweet styles. The estate's rise since the early 1990s tracks the broader trajectory of the Mosel's contemporary revival.",
-      "coordinates": { "latitude": 49.9211, "longitude": 6.8839 }
+      "coordinates": {
+        "latitude": 49.9211,
+        "longitude": 6.8839
+      }
     },
     {
       "id": "fr-northernrhone-jamet",
@@ -552,14 +559,20 @@ const ATLAS_DATA = {
       "appellation": "Côte-Rôtie",
       "founded": "1976",
       "founded_note": "Estate established under the present name by Joseph Jamet; the family had been growing on the slope for earlier generations.",
-      "principal_grapes": ["Syrah", "Viognier"],
+      "principal_grapes": [
+        "Syrah",
+        "Viognier"
+      ],
       "signature_wines": [
         "Côte-Rôtie (the classical multi-parcel cuvée, sourced across some two dozen lieux-dits on both the Côte Brune and Côte Blonde)",
         "Côte-Rôtie Côte Brune (single-parcel bottling)",
         "Côtes-du-Rhône (from younger or off-slope fruit)"
       ],
       "description": "A reference single-domaine address for traditional Côte-Rôtie, working a patchwork of small parcels scattered across the appellation's two great slopes. The house style favours whole-cluster fermentation, restrained extraction, and long ageing in older oak — wines built for length rather than weight, and notably austere in their youth. The estate's classical multi-parcel Côte-Rôtie remains its principal expression, with single-parcel bottlings produced only in the most suitable vintages. Since the late 1970s the domaine has been a touchstone for those who hold the appellation's traditional, less-extracted register as definitive.",
-      "coordinates": { "latitude": 45.5023, "longitude": 4.8131 }
+      "coordinates": {
+        "latitude": 45.5023,
+        "longitude": 4.8131
+      }
     },
     {
       "id": "fr-northernrhone-chave",
@@ -572,7 +585,11 @@ const ATLAS_DATA = {
       "appellation": "Hermitage and Saint-Joseph",
       "founded": "1481",
       "founded_note": "The Chave family is documented as winegrowers in the region from the late fifteenth century; the estate as it presently operates has continued under direct family succession through the modern era.",
-      "principal_grapes": ["Syrah", "Marsanne", "Roussanne"],
+      "principal_grapes": [
+        "Syrah",
+        "Marsanne",
+        "Roussanne"
+      ],
       "signature_wines": [
         "Hermitage rouge (a multi-parcel blend assembled across the hill's principal lieux-dits — Le Méal, Les Bessards, Péléat, Beaume, L'Hermite, and others)",
         "Hermitage blanc (Marsanne-led, with Roussanne)",
@@ -580,7 +597,10 @@ const ATLAS_DATA = {
         "Cuvée Cathelin (produced only in selected vintages)"
       ],
       "description": "The historical reference of the hill of Hermitage, with continuous family succession going back to the late fifteenth century — the longest unbroken winegrowing lineage on the slope. The domaine's signature is its multi-parcel assemblage approach: rather than bottling individual lieux-dits, the principal Hermitage rouge is composed each vintage from across the hill's distinct soils to give what the family treats as the truest expression of the appellation as a whole. Both the rouge and the Marsanne-led blanc are made for very long ageing, with the white in particular showing a capacity for several decades in bottle. A separate négociant operation, J.L. Chave Sélections, sources fruit from across the Northern Rhône and trades under its own labelling distinct from the domaine.",
-      "coordinates": { "latitude": 45.0389, "longitude": 4.8478 }
+      "coordinates": {
+        "latitude": 45.0389,
+        "longitude": 4.8478
+      }
     },
     {
       "id": "fr-northernrhone-clape",
@@ -593,14 +613,19 @@ const ATLAS_DATA = {
       "appellation": "Cornas",
       "founded": "1955",
       "founded_note": "Estate established under Auguste Clape; the family had cultivated vines in the appellation for earlier generations.",
-      "principal_grapes": ["Syrah"],
+      "principal_grapes": [
+        "Syrah"
+      ],
       "signature_wines": [
         "Cornas (the principal cuvée, sourced from old-vine parcels on the appellation's classic granite slopes)",
         "Renaissance (cuvée from younger vines)",
         "Côtes-du-Rhône and a vin de pays from off-slope fruit"
       ],
       "description": "The canonical traditional address of Cornas, more responsible than any other single estate for the appellation's modern reputation. The house works with old vines on the granite slopes immediately above the village, in a deliberately classical register — whole-cluster fermentation, no destemming, ageing in old foudres rather than new oak, no fining or filtration. The wines are made for very long bottle development and are widely held to be among the most ageworthy Northern Rhône Syrahs produced anywhere. Successive generations of the family have continued the same approach essentially unchanged, making the domaine a stable reference point through the appellation's late-twentieth-century revival.",
-      "coordinates": { "latitude": 44.9606, "longitude": 4.8369 }
+      "coordinates": {
+        "latitude": 44.9606,
+        "longitude": 4.8369
+      }
     },
     {
       "id": "fr-northernrhone-guigal",
@@ -613,7 +638,13 @@ const ATLAS_DATA = {
       "appellation": "Côte-Rôtie (with substantial activity across Condrieu, Hermitage, Saint-Joseph, and the Southern Rhône)",
       "founded": "1946",
       "founded_note": "Founded by Étienne Guigal; transitioned to a négociant-grower of major scale under his son Marcel Guigal from 1961 onward.",
-      "principal_grapes": ["Syrah", "Viognier", "Marsanne", "Roussanne", "Grenache"],
+      "principal_grapes": [
+        "Syrah",
+        "Viognier",
+        "Marsanne",
+        "Roussanne",
+        "Grenache"
+      ],
       "signature_wines": [
         "Côte-Rôtie La Mouline, La Landonne, La Turque (the three single-parcel \"La La\" cuvées)",
         "Côte-Rôtie Château d'Ampuis",
@@ -624,7 +655,211 @@ const ATLAS_DATA = {
         "Substantial négociant ranges across the Northern and Southern Rhône"
       ],
       "description": "The largest and most influential house of the Northern Rhône, operating as both grower and négociant across the full sweep of Rhône appellations. The house is most identified with its three single-parcel Côte-Rôtie cuvées — La Mouline, La Landonne, and La Turque — released from the early 1970s onward, which played a decisive role in repositioning Côte-Rôtie among the world's most followed red wines. The style across the top range is more extracted and more new-oak-marked than the traditional pole occupied by domaines such as Jamet, and the house is widely treated as the reference for the modernist register within the appellation. Beyond the estate wines, the négociant arm sources broadly across the Rhône and produces a substantial range under the Guigal label.",
-      "coordinates": { "latitude": 45.4894, "longitude": 4.8186 }
+      "coordinates": {
+        "latitude": 45.4894,
+        "longitude": 4.8186
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-latour",
+      "name": "Château Latour",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Médoc (Left Bank)",
+      "commune": "Pauillac",
+      "appellation": "Pauillac",
+      "founded": "1331",
+      "founded_note": "The Tour de Saint-Lambert is documented from the early fourteenth century; the modern estate took shape under the Ségur family from the seventeenth century. Classified First Growth in 1855.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
+      "signature_wines": [
+        "Château Latour (the grand vin)",
+        "Les Forts de Latour (second wine)",
+        "Pauillac de Latour (third wine)"
+      ],
+      "description": "A First Growth of the 1855 Classification and one of the most consistent reference expressions of Pauillac Cabernet, with the Enclos vineyard at its core — the walled parcel directly above the Gironde estuary that gives the grand vin its name. The house works in a deliberately classical register, with long ageing in new oak and a style built for very long bottle development; young vintages are often considered closed for a decade or more after release. The estate withdrew from the Place de Bordeaux primary release system in 2012, releasing wines only when the château considers them ready to drink — a practice that distinguishes it from the rest of the classified growths. Latour's reputation rests on a level of vintage-to-vintage consistency that few estates in any region match.",
+      "coordinates": {
+        "latitude": 45.2056,
+        "longitude": -0.7472
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-mouton",
+      "name": "Château Mouton Rothschild",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Médoc (Left Bank)",
+      "commune": "Pauillac",
+      "appellation": "Pauillac",
+      "founded": "1853",
+      "founded_note": "Acquisition by Baron Nathaniel de Rothschild of the property then called Château Brane-Mouton; classified as a Second Growth in 1855 and elevated to First Growth status in 1973.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
+      "signature_wines": [
+        "Château Mouton Rothschild (the grand vin)",
+        "Le Petit Mouton de Mouton Rothschild (second wine)",
+        "Aile d'Argent (a small white wine production)"
+      ],
+      "description": "The only château ever promoted within the 1855 Classification, elevated from Second to First Growth in 1973 after a decades-long campaign by Baron Philippe de Rothschild. The estate's labels have featured a different commissioned artist each vintage since 1945 — Picasso, Chagall, Bacon, Warhol and others have contributed work — making the wine as recognisable for its art programme as for its content. The house style runs warmer and more flamboyant than the more austere classical pole occupied by Latour, with prominent new oak and a more immediately expressive register. The estate sits on the northern edge of Pauillac, with vineyards adjacent to those of Château Lafite Rothschild and Château d'Armailhac, both also under Rothschild family ownership.",
+      "coordinates": {
+        "latitude": 45.2167,
+        "longitude": -0.7544
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-margaux",
+      "name": "Château Margaux",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Médoc (Left Bank)",
+      "commune": "Margaux",
+      "appellation": "Margaux",
+      "founded": "16th century",
+      "founded_note": "Estate documented from the sixteenth century; classified as a First Growth in 1855; the modern era of the estate dates from the Mentzelopoulos family acquisition in 1977.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Sauvignon Blanc"
+      ],
+      "signature_wines": [
+        "Château Margaux (the grand vin)",
+        "Pavillon Rouge du Château Margaux (second wine)",
+        "Pavillon Blanc du Château Margaux (a white wine of distinguished reputation in its own right)"
+      ],
+      "description": "A First Growth of the 1855 Classification and the apex address of the Margaux commune, with a neoclassical château that is among the most architecturally distinguished in the Médoc. The house style has long been associated with finesse, perfume, and a particular silken texture — the elegant or perfumed pole of First Growth Bordeaux, distinct from Latour's density or Mouton's flamboyance. The estate's revival from a difficult mid-twentieth-century period is generally dated from the 1977 acquisition by the Mentzelopoulos family, under whom the vineyards and winemaking were progressively rebuilt. The Pavillon Blanc, made from old-vine Sauvignon Blanc, is unusual among the First Growths in being a serious white wine production alongside the principal red.",
+      "coordinates": {
+        "latitude": 45.0419,
+        "longitude": -0.6694
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-leovillelascases",
+      "name": "Château Léoville Las Cases",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Médoc (Left Bank)",
+      "commune": "Saint-Julien",
+      "appellation": "Saint-Julien",
+      "founded": "17th century",
+      "founded_note": "Estate origins in the seventeenth century as part of the larger Léoville domain; divided in the early nineteenth century, with the Las Cases portion classified as a Second Growth in 1855.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
+      "signature_wines": [
+        "Château Léoville Las Cases (the grand vin)",
+        "Le Petit Lion du Marquis de Las Cases (second wine)",
+        "Clos du Marquis (a separate wine made from a distinct vineyard, not a second wine)"
+      ],
+      "description": "A Second Growth of the 1855 Classification widely regarded as performing at First Growth quality — frequently grouped with Mouton, Cos, Pichon-Lalande and Léoville Poyferré among the so-called \"super-seconds.\" The estate's principal vineyard sits immediately south of Château Latour, separated only by a stone wall and a stream, and the wines share Latour's classical, structured, long-ageing register. The house works in a deliberately austere register and the grand vin is typically among the most reserved and slowest-developing wines of the commune. Together with the Léoville Poyferré and Léoville Barton estates carved from the same nineteenth-century division, the Las Cases name represents one of the most consistent stretches of classical Médoc.",
+      "coordinates": {
+        "latitude": 45.1644,
+        "longitude": -0.7361
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-montrose",
+      "name": "Château Montrose",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Médoc (Left Bank)",
+      "commune": "Saint-Estèphe",
+      "appellation": "Saint-Estèphe",
+      "founded": "1815",
+      "founded_note": "Estate established by Étienne-Théodore Dumoulin on previously uncultivated land; classified as a Second Growth in 1855; acquired by the Bouygues family in 2006.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
+      "signature_wines": [
+        "Château Montrose (the grand vin)",
+        "La Dame de Montrose (second wine)",
+        "Le Saint-Estèphe de Montrose (third wine)"
+      ],
+      "description": "A Second Growth of the 1855 Classification and the reference address of Saint-Estèphe, with vineyards on a single elevated gravel plateau looking directly onto the Gironde estuary — among the most coherent single sites in the Médoc. The house style is densely structured, classical, and built for very long bottle ageing; Montrose has long been considered the most ageworthy expression of its commune, with great vintages developing over four to five decades. The estate's character — more austere and less immediately approachable than the Pauillac First Growths to the south — defines what the broader canon understands Saint-Estèphe to mean. Substantial investment under Bouygues family ownership since 2006 has not altered the fundamentally classical register of the wines.",
+      "coordinates": {
+        "latitude": 45.2611,
+        "longitude": -0.7567
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-hautbrion",
+      "name": "Château Haut-Brion",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Pessac-Léognan (Left Bank)",
+      "commune": "Pessac",
+      "appellation": "Pessac-Léognan",
+      "founded": "1525",
+      "founded_note": "Estate documented from the early sixteenth century; the only non-Médoc property included as a First Growth in the 1855 Classification; classified Cru Classé de Graves in 1959; under Domaine Clarence Dillon ownership since 1935.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Sémillon",
+        "Sauvignon Blanc"
+      ],
+      "signature_wines": [
+        "Château Haut-Brion rouge (the grand vin)",
+        "Le Clarence de Haut-Brion (second wine)",
+        "Château Haut-Brion blanc (a small but exceptionally regarded white wine production)"
+      ],
+      "description": "The historical reference of the southern Left Bank and the only First Growth of the 1855 Classification located outside the Médoc — a recognition of the estate's exceptional standing dating back to the late seventeenth century, when its wines were already being sold under the château name in London. The vineyards now sit within the suburban sprawl south of Bordeaux city, an unusual geography that has done nothing to diminish the wines. The red is densely structured and built for long ageing; the white, made in tiny quantities from old-vine Sémillon and Sauvignon Blanc, has a long-standing reputation as one of the world's finest dry white wines. The estate has been continuously owned by the Domaine Clarence Dillon group since 1935, which also owns the neighbouring Château La Mission Haut-Brion.",
+      "coordinates": {
+        "latitude": 44.8069,
+        "longitude": -0.6092
+      }
+    },
+    {
+      "id": "fr-bordeauxleftbank-domainedechevalier",
+      "name": "Domaine de Chevalier",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Pessac-Léognan (Left Bank)",
+      "commune": "Léognan",
+      "appellation": "Pessac-Léognan",
+      "founded": "1953",
+      "founded_note": "Estate of long-documented origin in the Léognan forest; classified Cru Classé de Graves in 1953 (and confirmed in 1959) for both red and white; under Bernard family ownership since 1983.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Sauvignon Blanc",
+        "Sémillon"
+      ],
+      "signature_wines": [
+        "Domaine de Chevalier rouge (the grand vin red)",
+        "Domaine de Chevalier blanc (the grand vin white, in many years more highly regarded than the red)",
+        "L'Esprit de Chevalier (red and white second wines)"
+      ],
+      "description": "A Cru Classé de Graves whose unusual setting — a single forty-hectare clearing within a forest south of Léognan — gives the estate distinct microclimatic conditions, with cooler nights and a longer growing season than the more open vineyards of the appellation. The estate is one of the few Bordeaux properties classified for both red and white at the highest level, and the white in particular has a long-standing reputation as among the most ageworthy dry white wines made anywhere. The reds are made in a relatively elegant, less-extracted register than the principal Médoc First Growths, with notable freshness and aromatic precision. The estate has been carefully developed under the Bernard family since 1983, with substantial investment in cellar and vineyard while preserving the classical character of the wines.",
+      "coordinates": {
+        "latitude": 44.7167,
+        "longitude": -0.6097
+      }
     }
   ]
 };
@@ -634,7 +869,7 @@ const ATLAS_DATA = {
    so the wine-coloured pins read as the editorial figure.
    ------------------------------------------------------------------ */
 const map = L.map('map', {
-  center: [30, 10],   // a sensible global default
+  center: [30, 10],
   zoom: 2,
   minZoom: 2,
   maxZoom: 12,
@@ -643,8 +878,6 @@ const map = L.map('map', {
   attributionControl: true
 });
 
-// CARTO Positron tiles — quiet, near-monochrome, free, OSM-derived.
-// In keeping with the editorial register; the wine pins read clearly against it.
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '© OpenStreetMap contributors · © CARTO',
   subdomains: 'abcd',
@@ -652,13 +885,13 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
 }).addTo(map);
 
 /* ------------------------------------------------------------------
-   Pin rendering with custom DivIcon so we can style with CSS
+   Pin rendering with custom DivIcon
    ------------------------------------------------------------------ */
-const estateMarkers = new Map(); // id -> { marker, estate }
+const estateMarkers = new Map();
 
 function makePinIcon() {
   return L.divIcon({
-    className: '',  // suppress Leaflet's default classes
+    className: '',
     html: '<div class="estate-pin"></div>',
     iconSize: [14, 14],
     iconAnchor: [7, 7]
@@ -666,7 +899,6 @@ function makePinIcon() {
 }
 
 function renderPins(estates) {
-  // Clear existing
   estateMarkers.forEach(({ marker }) => map.removeLayer(marker));
   estateMarkers.clear();
 
@@ -681,8 +913,6 @@ function renderPins(estates) {
   document.getElementById('visible-count').textContent = estates.length;
   document.getElementById('total-count').textContent = ATLAS_DATA.estates.length;
 
-  // Auto-fit the map to the visible pins. With a single pin, fitBounds
-  // would zoom too aggressively; in that case we set a reasonable zoom.
   if (estates.length === 0) return;
 
   if (estates.length === 1) {
@@ -695,7 +925,7 @@ function renderPins(estates) {
 }
 
 /* ------------------------------------------------------------------
-   Filter UI — populated dynamically from the data
+   Filter UI
    ------------------------------------------------------------------ */
 function populateFilters() {
   const countries = [...new Set(ATLAS_DATA.estates.map(e => e.country))].sort();
@@ -745,13 +975,12 @@ document.getElementById('filter-reset').addEventListener('click', () => {
 });
 
 /* ------------------------------------------------------------------
-   Entry panel — opens on pin click, populates from estate object
+   Entry panel
    ------------------------------------------------------------------ */
 function openEntry(estateId) {
   const entry = ATLAS_DATA.estates.find(e => e.id === estateId);
   if (!entry) return;
 
-  // Mark the active pin
   document.querySelectorAll('.estate-pin').forEach(el => el.classList.remove('is-active'));
   const { marker } = estateMarkers.get(estateId) || {};
   if (marker && marker._icon) {
@@ -759,7 +988,6 @@ function openEntry(estateId) {
     if (pinEl) pinEl.classList.add('is-active');
   }
 
-  // Build the entry HTML
   const wineList = entry.signature_wines
     .map(w => `<li>· ${escapeHTML(w)}</li>`)
     .join('');
@@ -806,14 +1034,10 @@ function closeEntry() {
 
 document.getElementById('entry-close').addEventListener('click', closeEntry);
 
-/* Close entry on Escape */
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeEntry();
 });
 
-/* ------------------------------------------------------------------
-   PDF link placeholder — the companion volume is generated in Phase 2
-   ------------------------------------------------------------------ */
 document.getElementById('download-pdf').addEventListener('click', e => {
   e.preventDefault();
   alert('The PDF companion volume is generated in a later step. (This link will resolve to the_estate_atlas.pdf once published.)');
@@ -825,7 +1049,6 @@ document.getElementById('download-pdf').addEventListener('click', e => {
 populateFilters();
 renderPins(ATLAS_DATA.estates);
 
-/* ---- utilities ---- */
 function escapeHTML(s) {
   if (s == null) return '';
   return String(s)
