@@ -15,11 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
 
   <style>
-    /* ------------------------------------------------------------------
-       The Estate Atlas — viewer prototype
-       Sibling-volume register to the Grand Cru Atlas.
-       Editorial-classical: warm paper, deep wine accent, serif type.
-       ------------------------------------------------------------------ */
+    /* The Estate Atlas — viewer prototype
+       Sibling-volume register to the Grand Cru Atlas. */
 
     :root {
       --paper:        #f5efe6;
@@ -35,14 +32,10 @@
     * { box-sizing: border-box; }
 
     html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      background: var(--paper);
-      color: var(--ink);
+      margin: 0; padding: 0; height: 100%;
+      background: var(--paper); color: var(--ink);
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 17px;
-      line-height: 1.55;
+      font-size: 17px; line-height: 1.55;
       -webkit-font-smoothing: antialiased;
     }
 
@@ -50,8 +43,7 @@
       display: grid;
       grid-template-columns: 280px 1fr;
       grid-template-rows: auto 1fr;
-      height: 100vh;
-      overflow: hidden;
+      height: 100vh; overflow: hidden;
     }
 
     .masthead {
@@ -59,48 +51,33 @@
       padding: 18px 28px 16px;
       border-bottom: 1px solid var(--rule);
       background: var(--paper);
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
+      display: flex; align-items: baseline; justify-content: space-between;
       gap: 24px;
     }
 
     .masthead-title {
       font-family: 'Cormorant', 'EB Garamond', serif;
-      font-weight: 500;
-      font-size: 28px;
-      letter-spacing: 0.01em;
-      margin: 0;
+      font-weight: 500; font-size: 28px;
+      letter-spacing: 0.01em; margin: 0;
     }
 
-    .masthead-title em {
-      font-style: italic;
-      color: var(--wine);
-    }
+    .masthead-title em { font-style: italic; color: var(--wine); }
 
     .masthead-meta {
-      font-size: 13px;
-      color: var(--ink-soft);
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
+      font-size: 13px; color: var(--ink-soft);
+      letter-spacing: 0.04em; text-transform: uppercase;
     }
 
     .masthead-meta a {
-      color: var(--ink-soft);
-      text-decoration: none;
+      color: var(--ink-soft); text-decoration: none;
       border-bottom: 1px solid transparent;
       transition: border-color 0.2s, color 0.2s;
     }
 
-    .masthead-meta a:hover {
-      color: var(--wine);
-      border-color: var(--wine);
-    }
+    .masthead-meta a:hover { color: var(--wine); border-color: var(--wine); }
 
     .masthead-divider {
-      display: inline-block;
-      margin: 0 12px;
-      color: var(--rule);
+      display: inline-block; margin: 0 12px; color: var(--rule);
     }
 
     .filter-rail {
@@ -111,115 +88,76 @@
     }
 
     .filter-rail-coverage {
-      font-family: 'Cormorant', serif;
-      font-style: italic;
-      font-size: 15px;
-      color: var(--ink-soft);
-      line-height: 1.5;
-      margin: 0 0 22px;
-      padding-bottom: 18px;
+      font-family: 'Cormorant', serif; font-style: italic;
+      font-size: 15px; color: var(--ink-soft); line-height: 1.5;
+      margin: 0 0 22px; padding-bottom: 18px;
       border-bottom: 1px solid var(--rule);
     }
 
     .filter-rail-coverage strong {
-      font-style: normal;
-      font-weight: 600;
-      color: var(--ink);
+      font-style: normal; font-weight: 600; color: var(--ink);
     }
 
-    .filter-group {
-      margin-bottom: 22px;
-    }
+    .filter-group { margin-bottom: 22px; }
 
     .filter-group-label {
       font-family: 'Cormorant', serif;
-      font-size: 12px;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      margin: 0 0 8px;
-      font-weight: 600;
+      font-size: 12px; letter-spacing: 0.16em;
+      text-transform: uppercase; color: var(--ink-soft);
+      margin: 0 0 8px; font-weight: 600;
     }
 
     .filter-group select {
-      width: 100%;
-      padding: 8px 10px;
+      width: 100%; padding: 8px 10px;
       font-family: 'EB Garamond', Georgia, serif;
-      font-size: 15px;
-      color: var(--ink);
+      font-size: 15px; color: var(--ink);
       background: var(--paper);
-      border: 1px solid var(--rule);
-      border-radius: 0;
-      appearance: none;
-      cursor: pointer;
+      border: 1px solid var(--rule); border-radius: 0;
+      appearance: none; cursor: pointer;
       background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'><path d='M1 1l4 4 4-4' stroke='%235a5048' fill='none' stroke-width='1'/></svg>");
-      background-repeat: no-repeat;
-      background-position: right 10px center;
+      background-repeat: no-repeat; background-position: right 10px center;
       padding-right: 28px;
     }
 
-    .filter-group select:focus {
-      outline: none;
-      border-color: var(--wine);
-    }
+    .filter-group select:focus { outline: none; border-color: var(--wine); }
 
     .filter-reset {
-      font-family: 'Cormorant', serif;
-      font-style: italic;
-      font-size: 14px;
-      color: var(--wine);
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      margin-top: 4px;
+      font-family: 'Cormorant', serif; font-style: italic;
+      font-size: 14px; color: var(--wine);
+      background: none; border: none; cursor: pointer;
+      padding: 0; margin-top: 4px;
     }
 
-    .filter-reset:hover {
-      color: var(--wine-soft);
-    }
+    .filter-reset:hover { color: var(--wine-soft); }
 
     .filter-rail-count {
-      margin-top: 18px;
-      padding-top: 16px;
+      margin-top: 18px; padding-top: 16px;
       border-top: 1px solid var(--rule);
       font-family: 'Cormorant', serif;
-      font-size: 14px;
-      font-style: italic;
-      color: var(--ink-soft);
+      font-size: 14px; font-style: italic; color: var(--ink-soft);
     }
 
     .filter-rail-count strong {
-      font-style: normal;
-      color: var(--ink);
-      font-weight: 600;
+      font-style: normal; color: var(--ink); font-weight: 600;
     }
 
-    .map-stage {
-      position: relative;
-      overflow: hidden;
-    }
+    .map-stage { position: relative; overflow: hidden; }
 
     #map {
-      width: 100%;
-      height: 100%;
+      width: 100%; height: 100%;
       background: var(--paper-deep);
     }
 
     .leaflet-control-attribution {
       background: rgba(245, 239, 230, 0.85) !important;
       font-family: 'EB Garamond', Georgia, serif !important;
-      font-size: 11px !important;
-      color: var(--ink-soft) !important;
+      font-size: 11px !important; color: var(--ink-soft) !important;
     }
 
-    .leaflet-control-attribution a {
-      color: var(--ink-soft) !important;
-    }
+    .leaflet-control-attribution a { color: var(--ink-soft) !important; }
 
     .estate-pin {
-      width: 14px;
-      height: 14px;
+      width: 14px; height: 14px;
       background: var(--wine);
       border: 2px solid var(--paper);
       border-radius: 50%;
@@ -228,113 +166,73 @@
       transition: transform 0.18s ease, background 0.18s ease;
     }
 
-    .estate-pin:hover,
-    .estate-pin.is-active {
+    .estate-pin:hover, .estate-pin.is-active {
       background: var(--wine-soft);
       transform: scale(1.35);
     }
 
     .entry-panel {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      width: 420px;
-      max-width: 90vw;
+      position: absolute; top: 0; right: 0; bottom: 0;
+      width: 420px; max-width: 90vw;
       background: var(--paper);
       border-left: 1px solid var(--rule);
       box-shadow: -4px 0 24px rgba(42, 37, 32, 0.06);
       transform: translateX(100%);
       transition: transform 0.32s cubic-bezier(0.4, 0, 0.2, 1);
-      overflow-y: auto;
-      z-index: 1000;
+      overflow-y: auto; z-index: 1000;
     }
 
-    .entry-panel.is-open {
-      transform: translateX(0);
-    }
+    .entry-panel.is-open { transform: translateX(0); }
 
     .entry-close {
-      position: absolute;
-      top: 14px;
-      right: 18px;
-      background: none;
-      border: none;
+      position: absolute; top: 14px; right: 18px;
+      background: none; border: none;
       font-family: 'Cormorant', serif;
-      font-size: 20px;
-      color: var(--ink-soft);
-      cursor: pointer;
-      line-height: 1;
-      padding: 4px 8px;
-      transition: color 0.2s;
+      font-size: 20px; color: var(--ink-soft);
+      cursor: pointer; line-height: 1;
+      padding: 4px 8px; transition: color 0.2s;
     }
 
-    .entry-close:hover {
-      color: var(--wine);
-    }
+    .entry-close:hover { color: var(--wine); }
 
-    .entry-content {
-      padding: 48px 36px 40px;
-    }
+    .entry-content { padding: 48px 36px 40px; }
 
     .entry-meta-top {
       font-family: 'Cormorant', serif;
-      font-size: 12px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
+      font-size: 12px; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--ink-soft);
       margin: 0 0 8px;
     }
 
     .entry-name {
       font-family: 'Cormorant', serif;
-      font-weight: 500;
-      font-size: 28px;
-      line-height: 1.2;
-      margin: 0 0 4px;
-      color: var(--ink);
+      font-weight: 500; font-size: 28px;
+      line-height: 1.2; margin: 0 0 4px; color: var(--ink);
     }
 
     .entry-place {
-      font-family: 'Cormorant', serif;
-      font-style: italic;
-      font-size: 16px;
-      color: var(--ink-soft);
-      margin: 0 0 24px;
+      font-family: 'Cormorant', serif; font-style: italic;
+      font-size: 16px; color: var(--ink-soft); margin: 0 0 24px;
     }
 
     .entry-rule {
-      width: 60px;
-      height: 1px;
-      background: var(--wine);
-      border: none;
+      width: 60px; height: 1px;
+      background: var(--wine); border: none;
       margin: 0 0 24px;
     }
 
-    .entry-section {
-      margin-bottom: 18px;
-    }
+    .entry-section { margin-bottom: 18px; }
 
     .entry-label {
       font-family: 'Cormorant', serif;
-      font-size: 11px;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--ink-soft);
-      margin: 0 0 4px;
-      font-weight: 600;
+      font-size: 11px; letter-spacing: 0.18em;
+      text-transform: uppercase; color: var(--ink-soft);
+      margin: 0 0 4px; font-weight: 600;
     }
 
-    .entry-value {
-      font-size: 16px;
-      margin: 0;
-      color: var(--ink);
-    }
+    .entry-value { font-size: 16px; margin: 0; color: var(--ink); }
 
-    .entry-value.is-list {
-      padding-left: 0;
-      list-style: none;
-    }
+    .entry-value.is-list { padding-left: 0; list-style: none; }
 
     .entry-value.is-list li {
       padding: 2px 0;
@@ -342,24 +240,16 @@
     }
 
     .entry-description {
-      margin-top: 24px;
-      padding-top: 24px;
+      margin-top: 24px; padding-top: 24px;
       border-top: 1px solid var(--rule);
-      font-size: 16.5px;
-      line-height: 1.65;
-      color: var(--ink);
+      font-size: 16.5px; line-height: 1.65; color: var(--ink);
     }
 
-    .entry-description p {
-      margin: 0;
-    }
+    .entry-description p { margin: 0; }
 
     .entry-founded-note {
-      font-family: 'Cormorant', serif;
-      font-style: italic;
-      font-size: 14px;
-      color: var(--ink-soft);
-      margin-top: 4px;
+      font-family: 'Cormorant', serif; font-style: italic;
+      font-size: 14px; color: var(--ink-soft); margin-top: 4px;
     }
 
     @media (max-width: 720px) {
@@ -367,31 +257,20 @@
         grid-template-columns: 1fr;
         grid-template-rows: auto auto 1fr;
       }
-
       .filter-rail {
         border-right: none;
         border-bottom: 1px solid var(--rule);
-        max-height: 35vh;
-        padding: 16px 18px;
+        max-height: 35vh; padding: 16px 18px;
       }
-
       .filter-rail-coverage { display: none; }
-
       .entry-panel {
-        width: 100%;
-        max-width: 100%;
-        top: auto;
-        bottom: 0;
-        height: 60vh;
+        width: 100%; max-width: 100%;
+        top: auto; bottom: 0; height: 60vh;
         border-left: none;
         border-top: 1px solid var(--rule);
         transform: translateY(100%);
       }
-
-      .entry-panel.is-open {
-        transform: translateY(0);
-      }
-
+      .entry-panel.is-open { transform: translateY(0); }
       .masthead { padding: 14px 18px; }
       .masthead-title { font-size: 22px; }
       .masthead-meta { font-size: 11px; }
@@ -415,7 +294,7 @@
 
   <aside class="filter-rail">
     <p class="filter-rail-coverage">
-      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently in pilot — fourteen estates encoded across the Mosel, the Northern Rhône, and the Bordeaux Left Bank, of the planned approximately one hundred and sixty.</em>
+      A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently in pilot — twenty-nine estates encoded across the Mosel, the Northern Rhône, both Bordeaux banks, the Burgundy Côte de Nuits, and Piedmont, of the planned approximately one hundred and sixty.</em>
     </p>
 
     <div class="filter-group">
@@ -451,24 +330,18 @@
 
     <aside class="entry-panel" id="entry-panel">
       <button class="entry-close" id="entry-close" aria-label="Close entry">✕</button>
-      <div class="entry-content" id="entry-content">
-        <!-- Populated by JS -->
-      </div>
+      <div class="entry-content" id="entry-content"></div>
     </aside>
   </main>
 
 </div>
 
 <script>
-/* ------------------------------------------------------------------
-   Estate data — embedded for the prototype.
-   In production this loads from estates.json via fetch().
-   ------------------------------------------------------------------ */
 const ATLAS_DATA = {
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.3.0-pilot"
+    "version": "0.6.0-pilot"
   },
   "estates": [
     {
@@ -860,41 +733,454 @@ const ATLAS_DATA = {
         "latitude": 44.7167,
         "longitude": -0.6097
       }
+    },
+    {
+      "id": "fr-burgundycotedenuits-drc",
+      "name": "Domaine de la Romanée-Conti",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Vosne-Romanée",
+      "appellation": "Vosne-Romanée and adjacent grands crus",
+      "founded": "1942",
+      "founded_note": "Estate origins traceable to the medieval period through ecclesiastical ownership of the Romanée-Conti vineyard; in its modern form the domaine has been continuously held in joint partnership between the de Villaine and Leroy/Roch families since 1942.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Romanée-Conti and La Tâche (the two grands crus the domaine holds in monopole)",
+        "Richebourg, Romanée-Saint-Vivant, Grands Échezeaux, Échezeaux (Vosne-Romanée and adjacent grands crus)",
+        "Le Montrachet (the white grand cru, from a small holding in the Côte de Beaune)",
+        "Corton"
+      ],
+      "description": "The singular reference of Burgundy and one of the most closely watched wine producers in the world, holding the two monopole grands crus from which it takes its name and substantial parcels in five further Vosne-Romanée and adjacent grand cru vineyards. The domaine has been continuously co-owned by the de Villaine and Leroy/Roch families since 1942, with viticulture run on biodynamic principles since the late 1980s. Production is small in absolute terms, and the domaine releases its wines on annual allocation rather than open sale. Beyond the monopoles, the domaine's holdings in Le Montrachet — a white grand cru in the Côte de Beaune — give it a single seriously regarded white wine alongside its principal red production.",
+      "coordinates": {
+        "latitude": 47.1844,
+        "longitude": 4.9614
+      }
+    },
+    {
+      "id": "fr-burgundycotedenuits-meocamuzet",
+      "name": "Domaine Méo-Camuzet",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Vosne-Romanée",
+      "appellation": "Vosne-Romanée and adjacent communes",
+      "founded": "1959",
+      "founded_note": "Domaine Méo-Camuzet established in its current form by Étienne Camuzet's grand-nephew Jean Méo; the family had owned the underlying vineyards since the 1920s, with parcels previously farmed under métayage.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Vosne-Romanée Cros Parantoux (the premier cru most identified with the domaine, formerly farmed by Henri Jayer)",
+        "Richebourg",
+        "Clos de Vougeot",
+        "Échezeaux",
+        "Corton-Clos Rognet",
+        "Range of Vosne-Romanée and Nuits-Saint-Georges premier cru wines"
+      ],
+      "description": "The reference Vosne-Romanée village domaine, with holdings spread across multiple grand cru and premier cru sites and a particular association with Cros Parantoux — the steep premier cru parcel above Vosne that was farmed under contract by Henri Jayer until the early 1990s, and that now returns to the domaine's own production. The estate was reorganised under Jean-Nicolas Méo from 1989, when many of the family's parcels previously farmed under métayage agreements returned to direct domaine production. The house style favours notable concentration with carefully managed new oak, in a register more polished than the most austere traditionalists but distinct from the most extracted modernists. A separate négociant operation, Méo-Camuzet Frère et Sœurs, sources additional fruit and produces a parallel range under a distinct labelling.",
+      "coordinates": {
+        "latitude": 47.1839,
+        "longitude": 4.9619
+      }
+    },
+    {
+      "id": "fr-burgundycotedenuits-roumier",
+      "name": "Domaine Georges Roumier",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Chambolle-Musigny",
+      "appellation": "Chambolle-Musigny and adjacent communes",
+      "founded": "1924",
+      "founded_note": "Estate established by Georges Roumier on land acquired through marriage; under direct family succession through three generations to the present.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay",
+        "Pinot Blanc"
+      ],
+      "signature_wines": [
+        "Bonnes-Mares (the grand cru most identified with the domaine, with holdings on both the Chambolle and Morey sides)",
+        "Musigny (a small but exceptionally regarded holding)",
+        "Chambolle-Musigny Les Amoureuses (the premier cru widely considered to perform at grand cru level)",
+        "Charmes-Chambertin",
+        "Ruchottes-Chambertin",
+        "Corton-Charlemagne",
+        "Chambolle-Musigny village"
+      ],
+      "description": "The reference Chambolle-Musigny domaine, in continuous family succession since 1924, with Bonnes-Mares as its central holding and a small but exceptional parcel of Musigny among the rarest production in Burgundy. Under Christophe Roumier, who has run the domaine since 1981, the house style has settled into a register that prioritises elegance, transparency to site, and restrained extraction — wines built for very long ageing in a deliberately classical register. Les Amoureuses, the premier cru immediately below Musigny, is widely held to be among the wines that most clearly express what the canon understands Chambolle-Musigny to mean. The domaine's small total production and broad geographic reputation have made allocation increasingly difficult outside long-established trade channels.",
+      "coordinates": {
+        "latitude": 47.1856,
+        "longitude": 4.9483
+      }
+    },
+    {
+      "id": "fr-burgundycotedenuits-dujac",
+      "name": "Domaine Dujac",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Morey-Saint-Denis",
+      "appellation": "Morey-Saint-Denis and adjacent communes",
+      "founded": "1968",
+      "founded_note": "Estate established by Jacques Seysses through the consolidation of vineyards in Morey-Saint-Denis and adjacent communes; subsequently expanded; under the second generation since the late 1990s.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Clos de la Roche",
+        "Clos Saint-Denis (the two grands crus at the heart of Morey-Saint-Denis, both held in significant parcel sizes by the domaine)",
+        "Bonnes-Mares",
+        "Échezeaux",
+        "Charmes-Chambertin",
+        "Vosne-Romanée Les Beaux Monts",
+        "Morey-Saint-Denis premier cru wines including Aux Charmes and Les Monts Luisants"
+      ],
+      "description": "A reference for Morey-Saint-Denis and one of the most consistent advocates of whole-cluster fermentation in modern Burgundy — the domaine's signature technique, applied across nearly all reds and credited with much of the structural and aromatic distinctiveness of the wines. Founded in 1968 by Jacques Seysses, the estate represents a comparatively recent foundation by Burgundian standards but has assembled holdings across the Côte's principal grand cru sites and now operates under the second generation. The wines are made in a deliberately classical register with respect to ageing — long élevage, careful new oak management, and a style intended for very long bottle development. A small négociant operation, Dujac Fils et Père, sources fruit beyond the domaine's own holdings.",
+      "coordinates": {
+        "latitude": 47.1769,
+        "longitude": 4.9528
+      }
+    },
+    {
+      "id": "fr-burgundycotedenuits-rousseau",
+      "name": "Domaine Armand Rousseau",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Gevrey-Chambertin",
+      "appellation": "Gevrey-Chambertin and adjacent communes",
+      "founded": "1909",
+      "founded_note": "Estate established by Armand Rousseau through accumulation of parcels in and around Gevrey-Chambertin; under direct family succession through four generations to the present.",
+      "principal_grapes": [
+        "Pinot Noir"
+      ],
+      "signature_wines": [
+        "Chambertin (the grand cru holding the domaine is most identified with)",
+        "Chambertin-Clos de Bèze (the adjacent grand cru considered Chambertin's stylistic equal)",
+        "Charmes-Chambertin",
+        "Mazy-Chambertin",
+        "Ruchottes-Chambertin",
+        "Clos de la Roche",
+        "Gevrey-Chambertin Clos Saint-Jacques (the premier cru widely held to perform at grand cru level)",
+        "Gevrey-Chambertin village"
+      ],
+      "description": "The reference Gevrey-Chambertin domaine, in continuous family succession since 1909 and the producer most centrally identified with the village's two apex grand crus, Chambertin and Clos de Bèze. The estate's holdings cover most of Gevrey's major grand cru and premier cru sites in significant parcel sizes, including Clos Saint-Jacques — the premier cru on the Lavaux Saint-Jacques side that has long been considered a grand cru in everything but name. The house style is classical, structured, and built for very long ageing, with restrained whole-cluster use and careful new oak management calibrated to the cuvée. Rousseau's combination of geographic concentration, vineyard quality, and four generations of stylistic continuity has made the domaine the consensus measure of what Gevrey is taken to mean.",
+      "coordinates": {
+        "latitude": 47.2306,
+        "longitude": 4.965
+      }
+    },
+    {
+      "id": "it-piedmont-giacomoconterno",
+      "name": "Giacomo Conterno",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Monforte d'Alba (cellar); vineyards principally in Serralunga d'Alba",
+      "appellation": "Barolo DOCG",
+      "founded": "1908",
+      "founded_note": "Estate established by Giovanni Conterno; the historic Monfortino bottling was first produced by his son Giacomo Conterno in 1920; under direct family succession, currently in the fifth generation under Roberto Conterno.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Freisa"
+      ],
+      "signature_wines": [
+        "Barolo Riserva Monfortino (the apex bottling, produced only in suitable vintages from the Francia vineyard, with extended ageing in large old Slavonian botti)",
+        "Barolo Cascina Francia (the regular Serralunga bottling)",
+        "Barolo Cerretta",
+        "Barbera d'Alba and Freisa (small parallel productions)"
+      ],
+      "description": "The reference traditionalist of Barolo and the producer most identified with the appellation's classical, long-ageing register, with the Monfortino Riserva representing the apex of what very old-style Barolo can be. The wines are made in a deliberately uncompromising classical idiom — long submerged-cap macerations, ageing exclusively in large old Slavonian oak botti, no new oak whatsoever, and release only when the cellar considers the wine ready, often six or seven years after the vintage for the Monfortino. The principal Francia vineyard, acquired in 1974 in the Cascina Francia portion of Serralunga d'Alba, is now the source of the entire grand vin production. Five generations of Conterno family winemaking have preserved the same approach essentially unchanged through the period of greatest stylistic upheaval in Barolo's modern history.",
+      "coordinates": {
+        "latitude": 44.6275,
+        "longitude": 7.9856
+      }
+    },
+    {
+      "id": "it-piedmont-paoloscavino",
+      "name": "Paolo Scavino",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Castiglione Falletto",
+      "appellation": "Barolo DOCG",
+      "founded": "1921",
+      "founded_note": "Estate established by Lorenzo Scavino and his son Paolo; expanded substantially under Enrico Scavino from 1951; under his daughters Enrica and Elisa Scavino in the current generation.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Dolcetto"
+      ],
+      "signature_wines": [
+        "Barolo Bric del Fiasc (the single-vineyard cru most identified with the estate, from a Castiglione Falletto parcel)",
+        "Barolo Cannubi (from the historic Barolo-commune cru)",
+        "Barolo Monvigliero (from Verduno)",
+        "Barolo Carobric (a multi-cru selection)",
+        "Barolo (the classical estate bottling)"
+      ],
+      "description": "A reference for the modernist register within Barolo, working a broad portfolio of single-cru bottlings across multiple Langhe communes from a base in Castiglione Falletto. The house style under Enrico Scavino settled in the 1990s into a temperate modernist register — shorter macerations than the traditionalists, ageing in a mix of large Slavonian botti and smaller French oak (with a measured rather than dominant new oak presence), and wines built for both earlier accessibility and long ageing. The Bric del Fiasc cru, on the eastern slopes of Castiglione Falletto, has been the estate's flagship since the early 1980s. Scavino represents the broad middle ground of the contemporary Barolo modernist movement — clearly distinct from the most extreme low-yield small-barrique houses, while equally distinct from the classical traditionalists.",
+      "coordinates": {
+        "latitude": 44.6172,
+        "longitude": 7.9817
+      }
+    },
+    {
+      "id": "it-piedmont-mascarello",
+      "name": "Giuseppe Mascarello e Figlio",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Monchiero (cellar); vineyards principally in Castiglione Falletto",
+      "appellation": "Barolo DOCG",
+      "founded": "1881",
+      "founded_note": "Estate established by Maurizio Mascarello; under direct family succession through five generations to the present, currently under Mauro Mascarello and his son Giuseppe.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Dolcetto",
+        "Freisa"
+      ],
+      "signature_wines": [
+        "Barolo Monprivato (the near-monopole single-cru bottling that defines the estate)",
+        "Barolo Riserva Monprivato Cà d'Morissio (a selection from the oldest Monprivato vines, produced only in suitable vintages)",
+        "Barolo Villero",
+        "Barolo Santo Stefano di Perno"
+      ],
+      "description": "A reference traditionalist Barolo estate in continuous family succession since 1881, defined by the near-monopole holding on the Monprivato cru — the steep, south-facing Castiglione Falletto vineyard that is widely considered one of the great single sites in Barolo. The house works in a classical register essentially unchanged across generations: long macerations, ageing exclusively in large Slavonian botti, no new oak, and release only when the wine is considered ready. Mauro Mascarello has been particularly outspoken in defence of traditional Barolo methods through the modernist debates of the 1980s and 1990s, and the estate's wines have come to function as a touchstone for what classical Barolo means. The Riserva Cà d'Morissio, produced only in selected vintages from the oldest Monprivato vines, represents the apex of the estate's production.",
+      "coordinates": {
+        "latitude": 44.6139,
+        "longitude": 7.955
+      }
+    },
+    {
+      "id": "it-piedmont-aldoconterno",
+      "name": "Aldo Conterno",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Monforte d'Alba",
+      "appellation": "Barolo DOCG",
+      "founded": "1969",
+      "founded_note": "Estate established by Aldo Conterno after his separation from the family Giacomo Conterno operation; under his three sons Franco, Stefano, and Giacomo Conterno in the current generation.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Barolo Granbussia Riserva (the apex bottling, a multi-parcel selection from the Bussia cru, produced only in suitable vintages)",
+        "Barolo Romirasco",
+        "Barolo Cicala",
+        "Barolo Colonnello (the three single-cru bottlings from distinct parcels within Bussia)",
+        "Barolo Bussia (the multi-parcel estate Barolo)",
+        "Il Favot (a Langhe Nebbiolo)"
+      ],
+      "description": "A reference Monforte d'Alba estate established in 1969 by Aldo Conterno after his separation from the historic family Giacomo Conterno operation in Serralunga, working a substantial holding within the Bussia cru — among the largest and most internally varied of Monforte's principal sites. The house style is widely understood as occupying the moderate-modernist middle ground: longer macerations than the most extreme modernists, ageing in a mix of botti and smaller French oak (with notably restrained new oak use compared with Barolo's modernist pole), and wines built to develop slowly without the most uncompromising austerity of the classical traditionalists. The Granbussia Riserva, made only in selected vintages from a multi-parcel Bussia selection, is the apex of the estate's range. The three single-cru Bussia bottlings — Romirasco, Cicala, and Colonnello — give the estate's portfolio unusual internal coherence, all from contiguous parcels within a single great vineyard.",
+      "coordinates": {
+        "latitude": 44.6128,
+        "longitude": 7.9794
+      }
+    },
+    {
+      "id": "it-piedmont-vietti",
+      "name": "Vietti",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Castiglione Falletto (cellar); vineyards across multiple Barolo communes",
+      "appellation": "Barolo DOCG",
+      "founded": "1873",
+      "founded_note": "Estate established by Carlo Vietti; expanded into single-vineyard cru bottling under Alfredo Currado from 1961; sold in 2016 to the Krause family while retaining Luca Currado as winemaker through 2022.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Arneis"
+      ],
+      "signature_wines": [
+        "Barolo Rocche di Castiglione (the cru most historically identified with the estate)",
+        "Barolo Lazzarito (from Serralunga d'Alba)",
+        "Barolo Brunate (from La Morra)",
+        "Barolo Ravera (from Novello)",
+        "Barolo Castiglione (the classical multi-cru estate Barolo)",
+        "Barbaresco Masseria",
+        "Roero Arneis (a serious dry white from the appellation across the Tanaro)"
+      ],
+      "description": "A reference Barolo estate distinguished by the unusual breadth of its single-vineyard cru holdings, with bottlings sourced from parcels across multiple Barolo communes including Castiglione Falletto, Serralunga, La Morra, and Novello. Alfredo Currado was among the first producers to release single-vineyard \"cru\" Barolo bottlings as a deliberate practice from the 1960s, anticipating by decades what is now standard across the appellation. The house style is broadly modernist in register but more restrained than the most extreme barrique-marked producers, with each cru vinified to express its specific site rather than a uniform house style. The Currado family sold the estate to the American Krause family in 2016, with Luca Currado continuing as winemaker through 2022; the change in ownership has not yet altered the fundamental editorial character of the wines.",
+      "coordinates": {
+        "latitude": 44.6181,
+        "longitude": 7.9844
+      }
+    },
+    {
+      "id": "it-piedmont-brunogiacosa",
+      "name": "Bruno Giacosa",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barbaresco",
+      "commune": "Neive (cellar); vineyards across Barbaresco and Barolo communes",
+      "appellation": "Barbaresco DOCG and Barolo DOCG",
+      "founded": "1900",
+      "founded_note": "Cellar established by Carlo Giacosa; transformed into a producing estate of major reputation under his grandson Bruno Giacosa from the 1960s; under Bruna Giacosa, his daughter, and the current technical team since Bruno Giacosa's death in 2018.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Dolcetto"
+      ],
+      "signature_wines": [
+        "Barbaresco Asili (the single-cru Barbaresco most identified with the estate, from a parcel in the commune of Barbaresco itself)",
+        "Barbaresco Santo Stefano (from Neive)",
+        "Barolo Falletto (from Serralunga d'Alba)",
+        "Barolo Le Rocche del Falletto (a selection from the Falletto vineyard)",
+        "Riserva bottlings under the distinctive red-label designation, produced only in suitable vintages"
+      ],
+      "description": "The reference Barbaresco estate of the modern era and one of the most respected names in Piedmontese wine, working principally with purchased grapes from contracted growers until the 1980s before progressively building a substantial estate vineyard portfolio across both Barbaresco and Barolo. Bruno Giacosa, who ran the estate from the 1960s until his death in 2018, became known for an uncompromising classical approach to winemaking — long macerations, ageing in large Slavonian botti, and a strict policy of releasing the apex Riserva bottlings under the distinctive red label only in vintages he considered worthy. The estate's holdings include the Asili cru in Barbaresco and the Falletto cru in Serralunga d'Alba — both among the most followed sites in their respective appellations. Since 2018 the estate has continued under Bruna Giacosa with the established technical team, preserving the classical register that defined her father's reputation.",
+      "coordinates": {
+        "latitude": 44.7256,
+        "longitude": 8.1167
+      }
+    },
+    {
+      "id": "fr-bordeauxrightbank-chevalblanc",
+      "name": "Château Cheval Blanc",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Saint-Émilion",
+      "appellation": "Saint-Émilion AOC",
+      "founded": "1832",
+      "founded_note": "Estate established under the Laussac-Fourcaud family through the consolidation of parcels carved from the larger Figeac estate; classified Premier Grand Cru Classé A in 1955; under the joint ownership of LVMH and the Frère family since 1998; withdrew from the Saint-Émilion Classification in 2022.",
+      "principal_grapes": [
+        "Cabernet Franc",
+        "Merlot",
+        "Cabernet Sauvignon",
+        "Malbec"
+      ],
+      "signature_wines": [
+        "Château Cheval Blanc (the grand vin, with its distinctive Cabernet Franc-led blend of approximately 50–60% Cabernet Franc and 40–50% Merlot — an unusual proportion for Bordeaux)",
+        "Le Petit Cheval (red second wine)",
+        "Le Petit Cheval Blanc (a small white wine introduced in 2014)"
+      ],
+      "description": "A historical reference of Saint-Émilion and the property most identified with Cabernet Franc in fine red Bordeaux, with a blend distinctively dominated by Cabernet Franc rather than Merlot — a result of the estate's particular gravelly soils, more reminiscent of the Left Bank than of typical Saint-Émilion limestone. The estate held Premier Grand Cru Classé A status from the introduction of the Saint-Émilion Classification in 1955 until 2022, when the property withdrew along with Château Ausone in protest at revisions to the classification's criteria. Under the joint LVMH/Frère ownership since 1998, the estate has undergone substantial cellar and vineyard investment without altering the fundamentally classical character of the wines. The grand vin is structured for very long bottle development and is widely considered one of the longest-lived wines made anywhere in Bordeaux.",
+      "coordinates": {
+        "latitude": 44.9111,
+        "longitude": -0.1956
+      }
+    },
+    {
+      "id": "fr-bordeauxrightbank-angelus",
+      "name": "Château Angélus",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Saint-Émilion",
+      "appellation": "Saint-Émilion AOC",
+      "founded": "Long-documented",
+      "founded_note": "Estate of long-documented origin under the de Boüard de Laforest family; promoted to Grand Cru Classé in 1955; promoted to Premier Grand Cru Classé in 1996; promoted to Premier Grand Cru Classé A in 2012; withdrew from the Saint-Émilion Classification in 2022.",
+      "principal_grapes": [
+        "Merlot",
+        "Cabernet Franc",
+        "Cabernet Sauvignon"
+      ],
+      "signature_wines": [
+        "Château Angélus (the grand vin, traditionally a Merlot-led blend with substantial Cabernet Franc)",
+        "Le Carillon d'Angélus (second wine)",
+        "No. 3 d'Angélus (a third wine introduced more recently)"
+      ],
+      "description": "A reference Saint-Émilion estate distinguished by an unusual classification trajectory — the only property to have been promoted twice within the modern Saint-Émilion Classification, rising from Grand Cru Classé in 1955 to Premier Grand Cru Classé in 1996 and finally to Premier Grand Cru Classé A in 2012, before withdrawing from the classification entirely in 2022. The de Boüard de Laforest family has owned the estate for many generations, with Hubert de Boüard playing the central role in its modern transformation from the 1980s onward. The house style sits at the temperate-modernist pole of Saint-Émilion — riper extraction, careful new oak management, and a register more immediately expressive than the historical apex estates while remaining structured for long ageing. The classification withdrawal in 2022 placed Angélus alongside Cheval Blanc and Ausone in declining further participation in the Saint-Émilion ranking system.",
+      "coordinates": {
+        "latitude": 44.8908,
+        "longitude": -0.1611
+      }
+    },
+    {
+      "id": "fr-bordeauxrightbank-petrus",
+      "name": "Château Pétrus",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Pomerol",
+      "appellation": "Pomerol AOC",
+      "founded": "Long-documented",
+      "founded_note": "Estate of long-documented origin in Pomerol; came to international prominence under the management of Établissements Jean-Pierre Moueix from 1945, with Jean-Pierre Moueix and his son Christian Moueix progressively building the estate's reputation; ownership consolidated under the Moueix family from the 1960s.",
+      "principal_grapes": [
+        "Merlot",
+        "Cabernet Franc"
+      ],
+      "signature_wines": [
+        "Château Pétrus (a single-wine estate — no second wine is produced, and the entire production is bottled under the grand vin label)"
+      ],
+      "description": "The singular reference of Pomerol and one of the most followed wine estates in the world, working a small holding of approximately eleven hectares on the distinctive blue clay soils at the heart of the Pomerol plateau — a geological feature unique to the immediate area and central to the wine's character. The estate is essentially a Merlot monoculture, with the grand vin produced from 100% Merlot in nearly all vintages and the wine's structure deriving from the unusual clay rather than from grape variety blending. Under the Moueix family stewardship since the mid-twentieth century, Pomerol has been managed with deliberate restraint — no second wine is made, and the entire production is bottled under the single Château Pétrus label. The wine is built for very long bottle development and the estate's small production has long been distributed through allocation rather than open sale.",
+      "coordinates": {
+        "latitude": 44.9319,
+        "longitude": -0.1842
+      }
+    },
+    {
+      "id": "fr-bordeauxrightbank-lepin",
+      "name": "Le Pin",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Pomerol",
+      "appellation": "Pomerol AOC",
+      "founded": "1979",
+      "founded_note": "Estate established by Jacques Thienpont through the acquisition of a small parcel adjacent to Vieux Château Certan, the historic Thienpont family domaine; the first Le Pin vintage was 1979, with the estate progressively expanded through the 1980s and 1990s; under Fiona Morrison-Thienpont and Jacques Thienpont in the current generation.",
+      "principal_grapes": [
+        "Merlot",
+        "Cabernet Franc"
+      ],
+      "signature_wines": [
+        "Le Pin (the single estate wine — no second wine is produced)"
+      ],
+      "description": "The reference \"garagiste\" Pomerol — an exceptionally small estate working approximately two and a half hectares adjacent to Vieux Château Certan, founded in 1979 by Jacques Thienpont as a personal project from his family's broader Pomerol holdings. The estate produces only a few hundred cases of Le Pin in a typical vintage, all from a single block of old Merlot vines on Pomerol's gravel-and-clay soils, and ages exclusively in new French oak. Unlike Pétrus, which became a reference through nearly a century of progressive build-up under the Moueix family, Le Pin's reputation was established within a decade of its founding — the wine became one of the most discussed Pomerol bottlings of the late twentieth century almost from its first releases. The wines are made in a deliberately classical register with respect to ageing, despite the new-oak signature, and have established themselves alongside Pétrus as references for what intensely site-specific, very-small-production Pomerol can be.",
+      "coordinates": {
+        "latitude": 44.93,
+        "longitude": -0.1814
+      }
     }
   ]
 };
 
-/* ------------------------------------------------------------------
-   Map setup — Leaflet with a quiet, near-monochrome tile style
-   so the wine-coloured pins read as the editorial figure.
-   ------------------------------------------------------------------ */
 const map = L.map('map', {
-  center: [30, 10],
-  zoom: 2,
-  minZoom: 2,
-  maxZoom: 12,
+  center: [30, 10], zoom: 2,
+  minZoom: 2, maxZoom: 12,
   worldCopyJump: true,
-  zoomControl: true,
-  attributionControl: true
+  zoomControl: true, attributionControl: true
 });
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
   attribution: '© OpenStreetMap contributors · © CARTO',
-  subdomains: 'abcd',
-  maxZoom: 19
+  subdomains: 'abcd', maxZoom: 19
 }).addTo(map);
 
-/* ------------------------------------------------------------------
-   Pin rendering with custom DivIcon
-   ------------------------------------------------------------------ */
 const estateMarkers = new Map();
 
 function makePinIcon() {
   return L.divIcon({
     className: '',
     html: '<div class="estate-pin"></div>',
-    iconSize: [14, 14],
-    iconAnchor: [7, 7]
+    iconSize: [14, 14], iconAnchor: [7, 7]
   });
 }
 
@@ -924,9 +1210,6 @@ function renderPins(estates) {
   }
 }
 
-/* ------------------------------------------------------------------
-   Filter UI
-   ------------------------------------------------------------------ */
 function populateFilters() {
   const countries = [...new Set(ATLAS_DATA.estates.map(e => e.country))].sort();
   const regions   = [...new Set(ATLAS_DATA.estates.map(e => e.region))].sort();
@@ -974,9 +1257,6 @@ document.getElementById('filter-reset').addEventListener('click', () => {
   closeEntry();
 });
 
-/* ------------------------------------------------------------------
-   Entry panel
-   ------------------------------------------------------------------ */
 function openEntry(estateId) {
   const entry = ATLAS_DATA.estates.find(e => e.id === estateId);
   if (!entry) return;
@@ -1043,9 +1323,6 @@ document.getElementById('download-pdf').addEventListener('click', e => {
   alert('The PDF companion volume is generated in a later step. (This link will resolve to the_estate_atlas.pdf once published.)');
 });
 
-/* ------------------------------------------------------------------
-   Init
-   ------------------------------------------------------------------ */
 populateFilters();
 renderPins(ATLAS_DATA.estates);
 

@@ -2,11 +2,11 @@
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.3.0-pilot",
+    "version": "0.6.0-pilot",
     "license": "CC BY-NC 4.0",
     "target_count": 160,
-    "current_count": 14,
-    "last_updated": "2026-04-24"
+    "current_count": 29,
+    "last_updated": "2026-04-25"
   },
   "estates": [
     {
@@ -20,7 +20,9 @@
       "appellation": "Mosel",
       "founded": "1911",
       "founded_note": "Estate under the present family name; the estate's holdings descend from earlier Prüm family operations.",
-      "principal_grapes": ["Riesling"],
+      "principal_grapes": [
+        "Riesling"
+      ],
       "signature_wines": [
         "Wehlener Sonnenuhr Riesling (Kabinett, Spätlese, Auslese, and where conditions permit Beerenauslese, Trockenbeerenauslese, Eiswein)",
         "Graacher Himmelreich Riesling",
@@ -28,7 +30,10 @@
         "Bernkasteler Badstube Riesling"
       ],
       "description": "A reference estate for classical Mittelmosel Riesling, with prized parcels on the Wehlener Sonnenuhr — the steep, slate-soiled slope that has helped define what fine Mosel wine is taken to mean. The house style favours residual sweetness balanced against sharp Mosel acidity, with a deliberately reductive character that often leaves young wines closed and rewards long bottle age. Production is concentrated in the traditional Prädikat hierarchy rather than in the dry styles that have come to occupy other Mosel estates. The wines are released slowly and are widely held to be among the longest-lived white wines made anywhere.",
-      "coordinates": { "latitude": 49.9095, "longitude": 6.9420 },
+      "coordinates": {
+        "latitude": 49.9095,
+        "longitude": 6.942
+      },
       "coordinates_note": "Wehlen, on the Mosel"
     },
     {
@@ -42,13 +47,18 @@
       "appellation": "Mosel",
       "founded": "1797",
       "founded_note": "Müller family ownership of the Scharzhof estate.",
-      "principal_grapes": ["Riesling"],
+      "principal_grapes": [
+        "Riesling"
+      ],
       "signature_wines": [
         "Scharzhofberger Riesling (Kabinett through Trockenbeerenauslese and Eiswein)",
         "Wiltinger Braune Kupp Riesling (under the Le Gallais label)"
       ],
       "description": "The reference address of the Saar — the Mosel's coolest tributary, where Riesling ripens later, retains more acid, and produces wines of marked tension and clarity. The estate's holdings on the Scharzhofberg, a south-facing slate slope above Wiltingen, have been continuously associated with the family for over two centuries. The house works almost exclusively in the classical Prädikat hierarchy; the rarest sweet bottlings are produced only in suitable vintages and in tiny quantities. As with the great Mittelmosel houses, the wines are made to age, with the dry-tasting Kabinetts and the apex sweet wines both holding their character for decades in bottle.",
-      "coordinates": { "latitude": 49.6306, "longitude": 6.6122 },
+      "coordinates": {
+        "latitude": 49.6306,
+        "longitude": 6.6122
+      },
       "coordinates_note": "Wiltingen, on the Saar"
     },
     {
@@ -62,7 +72,9 @@
       "appellation": "Mosel",
       "founded": "1992",
       "founded_note": "Estate of historical origin; revived in its current form from 1992 under Thomas Haag.",
-      "principal_grapes": ["Riesling"],
+      "principal_grapes": [
+        "Riesling"
+      ],
       "signature_wines": [
         "Brauneberger Juffer Riesling (dry / Großes Gewächs and Prädikat)",
         "Brauneberger Juffer-Sonnenuhr Riesling",
@@ -71,7 +83,10 @@
         "Piesporter Goldtröpfchen Riesling"
       ],
       "description": "A historically rooted Mittelmosel estate that has become one of the principal addresses for the modern Mosel — equally at home in the classical Prädikat hierarchy and in the dry-style Großes Gewächs work that has reshaped how German fine wine is read. Holdings span several of the great Mittelmosel sites, with the Brauneberger Juffer slope at the heart of the estate's identity. The wines are made in a precise, vineyard-driven register that lets each parcel speak distinctly across both dry and naturally sweet styles. The estate's rise since the early 1990s tracks the broader trajectory of the Mosel's contemporary revival.",
-      "coordinates": { "latitude": 49.9211, "longitude": 6.8839 },
+      "coordinates": {
+        "latitude": 49.9211,
+        "longitude": 6.8839
+      },
       "coordinates_note": "Lieser, on the Mosel"
     },
     {
@@ -85,14 +100,20 @@
       "appellation": "Côte-Rôtie",
       "founded": "1976",
       "founded_note": "Estate established under the present name by Joseph Jamet; the family had been growing on the slope for earlier generations.",
-      "principal_grapes": ["Syrah", "Viognier"],
+      "principal_grapes": [
+        "Syrah",
+        "Viognier"
+      ],
       "signature_wines": [
         "Côte-Rôtie (the classical multi-parcel cuvée, sourced across some two dozen lieux-dits on both the Côte Brune and Côte Blonde)",
         "Côte-Rôtie Côte Brune (single-parcel bottling)",
         "Côtes-du-Rhône (from younger or off-slope fruit)"
       ],
       "description": "A reference single-domaine address for traditional Côte-Rôtie, working a patchwork of small parcels scattered across the appellation's two great slopes. The house style favours whole-cluster fermentation, restrained extraction, and long ageing in older oak — wines built for length rather than weight, and notably austere in their youth. The estate's classical multi-parcel Côte-Rôtie remains its principal expression, with single-parcel bottlings produced only in the most suitable vintages. Since the late 1970s the domaine has been a touchstone for those who hold the appellation's traditional, less-extracted register as definitive.",
-      "coordinates": { "latitude": 45.5023, "longitude": 4.8131 },
+      "coordinates": {
+        "latitude": 45.5023,
+        "longitude": 4.8131
+      },
       "coordinates_note": "Le Vallin, above Ampuis"
     },
     {
@@ -106,7 +127,11 @@
       "appellation": "Hermitage and Saint-Joseph",
       "founded": "1481",
       "founded_note": "The Chave family is documented as winegrowers in the region from the late fifteenth century; the estate as it presently operates has continued under direct family succession through the modern era.",
-      "principal_grapes": ["Syrah", "Marsanne", "Roussanne"],
+      "principal_grapes": [
+        "Syrah",
+        "Marsanne",
+        "Roussanne"
+      ],
       "signature_wines": [
         "Hermitage rouge (a multi-parcel blend assembled across the hill's principal lieux-dits — Le Méal, Les Bessards, Péléat, Beaume, L'Hermite, and others)",
         "Hermitage blanc (Marsanne-led, with Roussanne)",
@@ -114,7 +139,10 @@
         "Cuvée Cathelin (produced only in selected vintages)"
       ],
       "description": "The historical reference of the hill of Hermitage, with continuous family succession going back to the late fifteenth century — the longest unbroken winegrowing lineage on the slope. The domaine's signature is its multi-parcel assemblage approach: rather than bottling individual lieux-dits, the principal Hermitage rouge is composed each vintage from across the hill's distinct soils to give what the family treats as the truest expression of the appellation as a whole. Both the rouge and the Marsanne-led blanc are made for very long ageing, with the white in particular showing a capacity for several decades in bottle. A separate négociant operation, J.L. Chave Sélections, sources fruit from across the Northern Rhône and trades under its own labelling distinct from the domaine.",
-      "coordinates": { "latitude": 45.0389, "longitude": 4.8478 },
+      "coordinates": {
+        "latitude": 45.0389,
+        "longitude": 4.8478
+      },
       "coordinates_note": "Mauves, opposite the hill of Hermitage"
     },
     {
@@ -128,14 +156,19 @@
       "appellation": "Cornas",
       "founded": "1955",
       "founded_note": "Estate established under Auguste Clape; the family had cultivated vines in the appellation for earlier generations.",
-      "principal_grapes": ["Syrah"],
+      "principal_grapes": [
+        "Syrah"
+      ],
       "signature_wines": [
         "Cornas (the principal cuvée, sourced from old-vine parcels on the appellation's classic granite slopes)",
         "Renaissance (cuvée from younger vines)",
         "Côtes-du-Rhône and a vin de pays from off-slope fruit"
       ],
       "description": "The canonical traditional address of Cornas, more responsible than any other single estate for the appellation's modern reputation. The house works with old vines on the granite slopes immediately above the village, in a deliberately classical register — whole-cluster fermentation, no destemming, ageing in old foudres rather than new oak, no fining or filtration. The wines are made for very long bottle development and are widely held to be among the most ageworthy Northern Rhône Syrahs produced anywhere. Successive generations of the family have continued the same approach essentially unchanged, making the domaine a stable reference point through the appellation's late-twentieth-century revival.",
-      "coordinates": { "latitude": 44.9606, "longitude": 4.8369 },
+      "coordinates": {
+        "latitude": 44.9606,
+        "longitude": 4.8369
+      },
       "coordinates_note": "Cornas village"
     },
     {
@@ -149,7 +182,13 @@
       "appellation": "Côte-Rôtie (with substantial activity across Condrieu, Hermitage, Saint-Joseph, and the Southern Rhône)",
       "founded": "1946",
       "founded_note": "Founded by Étienne Guigal; transitioned to a négociant-grower of major scale under his son Marcel Guigal from 1961 onward.",
-      "principal_grapes": ["Syrah", "Viognier", "Marsanne", "Roussanne", "Grenache"],
+      "principal_grapes": [
+        "Syrah",
+        "Viognier",
+        "Marsanne",
+        "Roussanne",
+        "Grenache"
+      ],
       "signature_wines": [
         "Côte-Rôtie La Mouline, La Landonne, La Turque (the three single-parcel \"La La\" cuvées)",
         "Côte-Rôtie Château d'Ampuis",
@@ -160,7 +199,10 @@
         "Substantial négociant ranges across the Northern and Southern Rhône"
       ],
       "description": "The largest and most influential house of the Northern Rhône, operating as both grower and négociant across the full sweep of Rhône appellations. The house is most identified with its three single-parcel Côte-Rôtie cuvées — La Mouline, La Landonne, and La Turque — released from the early 1970s onward, which played a decisive role in repositioning Côte-Rôtie among the world's most followed red wines. The style across the top range is more extracted and more new-oak-marked than the traditional pole occupied by domaines such as Jamet, and the house is widely treated as the reference for the modernist register within the appellation. Beyond the estate wines, the négociant arm sources broadly across the Rhône and produces a substantial range under the Guigal label.",
-      "coordinates": { "latitude": 45.4894, "longitude": 4.8186 },
+      "coordinates": {
+        "latitude": 45.4894,
+        "longitude": 4.8186
+      },
       "coordinates_note": "Ampuis, on the river opposite the Côte-Rôtie slope"
     },
     {
@@ -174,14 +216,22 @@
       "appellation": "Pauillac",
       "founded": "1331",
       "founded_note": "The Tour de Saint-Lambert is documented from the early fourteenth century; the modern estate took shape under the Ségur family from the seventeenth century. Classified First Growth in 1855.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
       "signature_wines": [
         "Château Latour (the grand vin)",
         "Les Forts de Latour (second wine)",
         "Pauillac de Latour (third wine)"
       ],
       "description": "A First Growth of the 1855 Classification and one of the most consistent reference expressions of Pauillac Cabernet, with the Enclos vineyard at its core — the walled parcel directly above the Gironde estuary that gives the grand vin its name. The house works in a deliberately classical register, with long ageing in new oak and a style built for very long bottle development; young vintages are often considered closed for a decade or more after release. The estate withdrew from the Place de Bordeaux primary release system in 2012, releasing wines only when the château considers them ready to drink — a practice that distinguishes it from the rest of the classified growths. Latour's reputation rests on a level of vintage-to-vintage consistency that few estates in any region match.",
-      "coordinates": { "latitude": 45.2056, "longitude": -0.7472 },
+      "coordinates": {
+        "latitude": 45.2056,
+        "longitude": -0.7472
+      },
       "coordinates_note": "Pauillac, on the Gironde"
     },
     {
@@ -195,14 +245,22 @@
       "appellation": "Pauillac",
       "founded": "1853",
       "founded_note": "Acquisition by Baron Nathaniel de Rothschild of the property then called Château Brane-Mouton; classified as a Second Growth in 1855 and elevated to First Growth status in 1973.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
       "signature_wines": [
         "Château Mouton Rothschild (the grand vin)",
         "Le Petit Mouton de Mouton Rothschild (second wine)",
         "Aile d'Argent (a small white wine production)"
       ],
       "description": "The only château ever promoted within the 1855 Classification, elevated from Second to First Growth in 1973 after a decades-long campaign by Baron Philippe de Rothschild. The estate's labels have featured a different commissioned artist each vintage since 1945 — Picasso, Chagall, Bacon, Warhol and others have contributed work — making the wine as recognisable for its art programme as for its content. The house style runs warmer and more flamboyant than the more austere classical pole occupied by Latour, with prominent new oak and a more immediately expressive register. The estate sits on the northern edge of Pauillac, with vineyards adjacent to those of Château Lafite Rothschild and Château d'Armailhac, both also under Rothschild family ownership.",
-      "coordinates": { "latitude": 45.2167, "longitude": -0.7544 },
+      "coordinates": {
+        "latitude": 45.2167,
+        "longitude": -0.7544
+      },
       "coordinates_note": "Pauillac, northern commune"
     },
     {
@@ -216,14 +274,23 @@
       "appellation": "Margaux",
       "founded": "16th century",
       "founded_note": "Estate documented from the sixteenth century; classified as a First Growth in 1855; the modern era of the estate dates from the Mentzelopoulos family acquisition in 1977.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot", "Sauvignon Blanc"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Sauvignon Blanc"
+      ],
       "signature_wines": [
         "Château Margaux (the grand vin)",
         "Pavillon Rouge du Château Margaux (second wine)",
         "Pavillon Blanc du Château Margaux (a white wine of distinguished reputation in its own right)"
       ],
       "description": "A First Growth of the 1855 Classification and the apex address of the Margaux commune, with a neoclassical château that is among the most architecturally distinguished in the Médoc. The house style has long been associated with finesse, perfume, and a particular silken texture — the elegant or perfumed pole of First Growth Bordeaux, distinct from Latour's density or Mouton's flamboyance. The estate's revival from a difficult mid-twentieth-century period is generally dated from the 1977 acquisition by the Mentzelopoulos family, under whom the vineyards and winemaking were progressively rebuilt. The Pavillon Blanc, made from old-vine Sauvignon Blanc, is unusual among the First Growths in being a serious white wine production alongside the principal red.",
-      "coordinates": { "latitude": 45.0419, "longitude": -0.6694 },
+      "coordinates": {
+        "latitude": 45.0419,
+        "longitude": -0.6694
+      },
       "coordinates_note": "Margaux commune"
     },
     {
@@ -237,14 +304,22 @@
       "appellation": "Saint-Julien",
       "founded": "17th century",
       "founded_note": "Estate origins in the seventeenth century as part of the larger Léoville domain; divided in the early nineteenth century, with the Las Cases portion classified as a Second Growth in 1855.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
       "signature_wines": [
         "Château Léoville Las Cases (the grand vin)",
         "Le Petit Lion du Marquis de Las Cases (second wine)",
         "Clos du Marquis (a separate wine made from a distinct vineyard, not a second wine)"
       ],
       "description": "A Second Growth of the 1855 Classification widely regarded as performing at First Growth quality — frequently grouped with Mouton, Cos, Pichon-Lalande and Léoville Poyferré among the so-called \"super-seconds.\" The estate's principal vineyard sits immediately south of Château Latour, separated only by a stone wall and a stream, and the wines share Latour's classical, structured, long-ageing register. The house works in a deliberately austere register and the grand vin is typically among the most reserved and slowest-developing wines of the commune. Together with the Léoville Poyferré and Léoville Barton estates carved from the same nineteenth-century division, the Las Cases name represents one of the most consistent stretches of classical Médoc.",
-      "coordinates": { "latitude": 45.1644, "longitude": -0.7361 },
+      "coordinates": {
+        "latitude": 45.1644,
+        "longitude": -0.7361
+      },
       "coordinates_note": "Saint-Julien, on the Saint-Julien/Pauillac boundary"
     },
     {
@@ -258,14 +333,22 @@
       "appellation": "Saint-Estèphe",
       "founded": "1815",
       "founded_note": "Estate established by Étienne-Théodore Dumoulin on previously uncultivated land; classified as a Second Growth in 1855; acquired by the Bouygues family in 2006.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot"
+      ],
       "signature_wines": [
         "Château Montrose (the grand vin)",
         "La Dame de Montrose (second wine)",
         "Le Saint-Estèphe de Montrose (third wine)"
       ],
       "description": "A Second Growth of the 1855 Classification and the reference address of Saint-Estèphe, with vineyards on a single elevated gravel plateau looking directly onto the Gironde estuary — among the most coherent single sites in the Médoc. The house style is densely structured, classical, and built for very long bottle ageing; Montrose has long been considered the most ageworthy expression of its commune, with great vintages developing over four to five decades. The estate's character — more austere and less immediately approachable than the Pauillac First Growths to the south — defines what the broader canon understands Saint-Estèphe to mean. Substantial investment under Bouygues family ownership since 2006 has not altered the fundamentally classical register of the wines.",
-      "coordinates": { "latitude": 45.2611, "longitude": -0.7567 },
+      "coordinates": {
+        "latitude": 45.2611,
+        "longitude": -0.7567
+      },
       "coordinates_note": "Saint-Estèphe, on the Gironde"
     },
     {
@@ -279,14 +362,24 @@
       "appellation": "Pessac-Léognan",
       "founded": "1525",
       "founded_note": "Estate documented from the early sixteenth century; the only non-Médoc property included as a First Growth in the 1855 Classification; classified Cru Classé de Graves in 1959; under Domaine Clarence Dillon ownership since 1935.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot", "Sémillon", "Sauvignon Blanc"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Sémillon",
+        "Sauvignon Blanc"
+      ],
       "signature_wines": [
         "Château Haut-Brion rouge (the grand vin)",
         "Le Clarence de Haut-Brion (second wine)",
         "Château Haut-Brion blanc (a small but exceptionally regarded white wine production)"
       ],
       "description": "The historical reference of the southern Left Bank and the only First Growth of the 1855 Classification located outside the Médoc — a recognition of the estate's exceptional standing dating back to the late seventeenth century, when its wines were already being sold under the château name in London. The vineyards now sit within the suburban sprawl south of Bordeaux city, an unusual geography that has done nothing to diminish the wines. The red is densely structured and built for long ageing; the white, made in tiny quantities from old-vine Sémillon and Sauvignon Blanc, has a long-standing reputation as one of the world's finest dry white wines. The estate has been continuously owned by the Domaine Clarence Dillon group since 1935, which also owns the neighbouring Château La Mission Haut-Brion.",
-      "coordinates": { "latitude": 44.8069, "longitude": -0.6092 },
+      "coordinates": {
+        "latitude": 44.8069,
+        "longitude": -0.6092
+      },
       "coordinates_note": "Pessac, southern outskirts of Bordeaux"
     },
     {
@@ -300,15 +393,465 @@
       "appellation": "Pessac-Léognan",
       "founded": "1953",
       "founded_note": "Estate of long-documented origin in the Léognan forest; classified Cru Classé de Graves in 1953 (and confirmed in 1959) for both red and white; under Bernard family ownership since 1983.",
-      "principal_grapes": ["Cabernet Sauvignon", "Merlot", "Cabernet Franc", "Petit Verdot", "Sauvignon Blanc", "Sémillon"],
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Sauvignon Blanc",
+        "Sémillon"
+      ],
       "signature_wines": [
         "Domaine de Chevalier rouge (the grand vin red)",
         "Domaine de Chevalier blanc (the grand vin white, in many years more highly regarded than the red)",
         "L'Esprit de Chevalier (red and white second wines)"
       ],
       "description": "A Cru Classé de Graves whose unusual setting — a single forty-hectare clearing within a forest south of Léognan — gives the estate distinct microclimatic conditions, with cooler nights and a longer growing season than the more open vineyards of the appellation. The estate is one of the few Bordeaux properties classified for both red and white at the highest level, and the white in particular has a long-standing reputation as among the most ageworthy dry white wines made anywhere. The reds are made in a relatively elegant, less-extracted register than the principal Médoc First Growths, with notable freshness and aromatic precision. The estate has been carefully developed under the Bernard family since 1983, with substantial investment in cellar and vineyard while preserving the classical character of the wines.",
-      "coordinates": { "latitude": 44.7167, "longitude": -0.6097 },
+      "coordinates": {
+        "latitude": 44.7167,
+        "longitude": -0.6097
+      },
       "coordinates_note": "Léognan, in the forest south of Bordeaux"
+    },
+    {
+      "id": "fr-burgundycotedenuits-drc",
+      "name": "Domaine de la Romanée-Conti",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Vosne-Romanée",
+      "appellation": "Vosne-Romanée and adjacent grands crus",
+      "founded": "1942",
+      "founded_note": "Estate origins traceable to the medieval period through ecclesiastical ownership of the Romanée-Conti vineyard; in its modern form the domaine has been continuously held in joint partnership between the de Villaine and Leroy/Roch families since 1942.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Romanée-Conti and La Tâche (the two grands crus the domaine holds in monopole)",
+        "Richebourg, Romanée-Saint-Vivant, Grands Échezeaux, Échezeaux (Vosne-Romanée and adjacent grands crus)",
+        "Le Montrachet (the white grand cru, from a small holding in the Côte de Beaune)",
+        "Corton"
+      ],
+      "description": "The singular reference of Burgundy and one of the most closely watched wine producers in the world, holding the two monopole grands crus from which it takes its name and substantial parcels in five further Vosne-Romanée and adjacent grand cru vineyards. The domaine has been continuously co-owned by the de Villaine and Leroy/Roch families since 1942, with viticulture run on biodynamic principles since the late 1980s. Production is small in absolute terms, and the domaine releases its wines on annual allocation rather than open sale. Beyond the monopoles, the domaine's holdings in Le Montrachet — a white grand cru in the Côte de Beaune — give it a single seriously regarded white wine alongside its principal red production.",
+      "coordinates": {
+        "latitude": 47.1844,
+        "longitude": 4.9614
+      },
+      "coordinates_note": "Vosne-Romanée"
+    },
+    {
+      "id": "fr-burgundycotedenuits-meocamuzet",
+      "name": "Domaine Méo-Camuzet",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Vosne-Romanée",
+      "appellation": "Vosne-Romanée and adjacent communes",
+      "founded": "1959",
+      "founded_note": "Domaine Méo-Camuzet established in its current form by Étienne Camuzet's grand-nephew Jean Méo; the family had owned the underlying vineyards since the 1920s, with parcels previously farmed under métayage.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Vosne-Romanée Cros Parantoux (the premier cru most identified with the domaine, formerly farmed by Henri Jayer)",
+        "Richebourg",
+        "Clos de Vougeot",
+        "Échezeaux",
+        "Corton-Clos Rognet",
+        "Range of Vosne-Romanée and Nuits-Saint-Georges premier cru wines"
+      ],
+      "description": "The reference Vosne-Romanée village domaine, with holdings spread across multiple grand cru and premier cru sites and a particular association with Cros Parantoux — the steep premier cru parcel above Vosne that was farmed under contract by Henri Jayer until the early 1990s, and that now returns to the domaine's own production. The estate was reorganised under Jean-Nicolas Méo from 1989, when many of the family's parcels previously farmed under métayage agreements returned to direct domaine production. The house style favours notable concentration with carefully managed new oak, in a register more polished than the most austere traditionalists but distinct from the most extracted modernists. A separate négociant operation, Méo-Camuzet Frère et Sœurs, sources additional fruit and produces a parallel range under a distinct labelling.",
+      "coordinates": {
+        "latitude": 47.1839,
+        "longitude": 4.9619
+      },
+      "coordinates_note": "Vosne-Romanée"
+    },
+    {
+      "id": "fr-burgundycotedenuits-roumier",
+      "name": "Domaine Georges Roumier",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Chambolle-Musigny",
+      "appellation": "Chambolle-Musigny and adjacent communes",
+      "founded": "1924",
+      "founded_note": "Estate established by Georges Roumier on land acquired through marriage; under direct family succession through three generations to the present.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay",
+        "Pinot Blanc"
+      ],
+      "signature_wines": [
+        "Bonnes-Mares (the grand cru most identified with the domaine, with holdings on both the Chambolle and Morey sides)",
+        "Musigny (a small but exceptionally regarded holding)",
+        "Chambolle-Musigny Les Amoureuses (the premier cru widely considered to perform at grand cru level)",
+        "Charmes-Chambertin",
+        "Ruchottes-Chambertin",
+        "Corton-Charlemagne",
+        "Chambolle-Musigny village"
+      ],
+      "description": "The reference Chambolle-Musigny domaine, in continuous family succession since 1924, with Bonnes-Mares as its central holding and a small but exceptional parcel of Musigny among the rarest production in Burgundy. Under Christophe Roumier, who has run the domaine since 1981, the house style has settled into a register that prioritises elegance, transparency to site, and restrained extraction — wines built for very long ageing in a deliberately classical register. Les Amoureuses, the premier cru immediately below Musigny, is widely held to be among the wines that most clearly express what the canon understands Chambolle-Musigny to mean. The domaine's small total production and broad geographic reputation have made allocation increasingly difficult outside long-established trade channels.",
+      "coordinates": {
+        "latitude": 47.1856,
+        "longitude": 4.9483
+      },
+      "coordinates_note": "Chambolle-Musigny"
+    },
+    {
+      "id": "fr-burgundycotedenuits-dujac",
+      "name": "Domaine Dujac",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Morey-Saint-Denis",
+      "appellation": "Morey-Saint-Denis and adjacent communes",
+      "founded": "1968",
+      "founded_note": "Estate established by Jacques Seysses through the consolidation of vineyards in Morey-Saint-Denis and adjacent communes; subsequently expanded; under the second generation since the late 1990s.",
+      "principal_grapes": [
+        "Pinot Noir",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Clos de la Roche",
+        "Clos Saint-Denis (the two grands crus at the heart of Morey-Saint-Denis, both held in significant parcel sizes by the domaine)",
+        "Bonnes-Mares",
+        "Échezeaux",
+        "Charmes-Chambertin",
+        "Vosne-Romanée Les Beaux Monts",
+        "Morey-Saint-Denis premier cru wines including Aux Charmes and Les Monts Luisants"
+      ],
+      "description": "A reference for Morey-Saint-Denis and one of the most consistent advocates of whole-cluster fermentation in modern Burgundy — the domaine's signature technique, applied across nearly all reds and credited with much of the structural and aromatic distinctiveness of the wines. Founded in 1968 by Jacques Seysses, the estate represents a comparatively recent foundation by Burgundian standards but has assembled holdings across the Côte's principal grand cru sites and now operates under the second generation. The wines are made in a deliberately classical register with respect to ageing — long élevage, careful new oak management, and a style intended for very long bottle development. A small négociant operation, Dujac Fils et Père, sources fruit beyond the domaine's own holdings.",
+      "coordinates": {
+        "latitude": 47.1769,
+        "longitude": 4.9528
+      },
+      "coordinates_note": "Morey-Saint-Denis"
+    },
+    {
+      "id": "fr-burgundycotedenuits-rousseau",
+      "name": "Domaine Armand Rousseau",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Burgundy",
+      "sub_region": "Côte de Nuits",
+      "commune": "Gevrey-Chambertin",
+      "appellation": "Gevrey-Chambertin and adjacent communes",
+      "founded": "1909",
+      "founded_note": "Estate established by Armand Rousseau through accumulation of parcels in and around Gevrey-Chambertin; under direct family succession through four generations to the present.",
+      "principal_grapes": [
+        "Pinot Noir"
+      ],
+      "signature_wines": [
+        "Chambertin (the grand cru holding the domaine is most identified with)",
+        "Chambertin-Clos de Bèze (the adjacent grand cru considered Chambertin's stylistic equal)",
+        "Charmes-Chambertin",
+        "Mazy-Chambertin",
+        "Ruchottes-Chambertin",
+        "Clos de la Roche",
+        "Gevrey-Chambertin Clos Saint-Jacques (the premier cru widely held to perform at grand cru level)",
+        "Gevrey-Chambertin village"
+      ],
+      "description": "The reference Gevrey-Chambertin domaine, in continuous family succession since 1909 and the producer most centrally identified with the village's two apex grand crus, Chambertin and Clos de Bèze. The estate's holdings cover most of Gevrey's major grand cru and premier cru sites in significant parcel sizes, including Clos Saint-Jacques — the premier cru on the Lavaux Saint-Jacques side that has long been considered a grand cru in everything but name. The house style is classical, structured, and built for very long ageing, with restrained whole-cluster use and careful new oak management calibrated to the cuvée. Rousseau's combination of geographic concentration, vineyard quality, and four generations of stylistic continuity has made the domaine the consensus measure of what Gevrey is taken to mean.",
+      "coordinates": {
+        "latitude": 47.2306,
+        "longitude": 4.965
+      },
+      "coordinates_note": "Gevrey-Chambertin"
+    },
+    {
+      "id": "it-piedmont-giacomoconterno",
+      "name": "Giacomo Conterno",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Monforte d'Alba (cellar); vineyards principally in Serralunga d'Alba",
+      "appellation": "Barolo DOCG",
+      "founded": "1908",
+      "founded_note": "Estate established by Giovanni Conterno; the historic Monfortino bottling was first produced by his son Giacomo Conterno in 1920; under direct family succession, currently in the fifth generation under Roberto Conterno.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Freisa"
+      ],
+      "signature_wines": [
+        "Barolo Riserva Monfortino (the apex bottling, produced only in suitable vintages from the Francia vineyard, with extended ageing in large old Slavonian botti)",
+        "Barolo Cascina Francia (the regular Serralunga bottling)",
+        "Barolo Cerretta",
+        "Barbera d'Alba and Freisa (small parallel productions)"
+      ],
+      "description": "The reference traditionalist of Barolo and the producer most identified with the appellation's classical, long-ageing register, with the Monfortino Riserva representing the apex of what very old-style Barolo can be. The wines are made in a deliberately uncompromising classical idiom — long submerged-cap macerations, ageing exclusively in large old Slavonian oak botti, no new oak whatsoever, and release only when the cellar considers the wine ready, often six or seven years after the vintage for the Monfortino. The principal Francia vineyard, acquired in 1974 in the Cascina Francia portion of Serralunga d'Alba, is now the source of the entire grand vin production. Five generations of Conterno family winemaking have preserved the same approach essentially unchanged through the period of greatest stylistic upheaval in Barolo's modern history.",
+      "coordinates": {
+        "latitude": 44.6275,
+        "longitude": 7.9856
+      },
+      "coordinates_note": "Monforte d'Alba; vineyards in Serralunga"
+    },
+    {
+      "id": "it-piedmont-paoloscavino",
+      "name": "Paolo Scavino",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Castiglione Falletto",
+      "appellation": "Barolo DOCG",
+      "founded": "1921",
+      "founded_note": "Estate established by Lorenzo Scavino and his son Paolo; expanded substantially under Enrico Scavino from 1951; under his daughters Enrica and Elisa Scavino in the current generation.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Dolcetto"
+      ],
+      "signature_wines": [
+        "Barolo Bric del Fiasc (the single-vineyard cru most identified with the estate, from a Castiglione Falletto parcel)",
+        "Barolo Cannubi (from the historic Barolo-commune cru)",
+        "Barolo Monvigliero (from Verduno)",
+        "Barolo Carobric (a multi-cru selection)",
+        "Barolo (the classical estate bottling)"
+      ],
+      "description": "A reference for the modernist register within Barolo, working a broad portfolio of single-cru bottlings across multiple Langhe communes from a base in Castiglione Falletto. The house style under Enrico Scavino settled in the 1990s into a temperate modernist register — shorter macerations than the traditionalists, ageing in a mix of large Slavonian botti and smaller French oak (with a measured rather than dominant new oak presence), and wines built for both earlier accessibility and long ageing. The Bric del Fiasc cru, on the eastern slopes of Castiglione Falletto, has been the estate's flagship since the early 1980s. Scavino represents the broad middle ground of the contemporary Barolo modernist movement — clearly distinct from the most extreme low-yield small-barrique houses, while equally distinct from the classical traditionalists.",
+      "coordinates": {
+        "latitude": 44.6172,
+        "longitude": 7.9817
+      },
+      "coordinates_note": "Castiglione Falletto"
+    },
+    {
+      "id": "it-piedmont-mascarello",
+      "name": "Giuseppe Mascarello e Figlio",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Monchiero (cellar); vineyards principally in Castiglione Falletto",
+      "appellation": "Barolo DOCG",
+      "founded": "1881",
+      "founded_note": "Estate established by Maurizio Mascarello; under direct family succession through five generations to the present, currently under Mauro Mascarello and his son Giuseppe.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Dolcetto",
+        "Freisa"
+      ],
+      "signature_wines": [
+        "Barolo Monprivato (the near-monopole single-cru bottling that defines the estate)",
+        "Barolo Riserva Monprivato Cà d'Morissio (a selection from the oldest Monprivato vines, produced only in suitable vintages)",
+        "Barolo Villero",
+        "Barolo Santo Stefano di Perno"
+      ],
+      "description": "A reference traditionalist Barolo estate in continuous family succession since 1881, defined by the near-monopole holding on the Monprivato cru — the steep, south-facing Castiglione Falletto vineyard that is widely considered one of the great single sites in Barolo. The house works in a classical register essentially unchanged across generations: long macerations, ageing exclusively in large Slavonian botti, no new oak, and release only when the wine is considered ready. Mauro Mascarello has been particularly outspoken in defence of traditional Barolo methods through the modernist debates of the 1980s and 1990s, and the estate's wines have come to function as a touchstone for what classical Barolo means. The Riserva Cà d'Morissio, produced only in selected vintages from the oldest Monprivato vines, represents the apex of the estate's production.",
+      "coordinates": {
+        "latitude": 44.6139,
+        "longitude": 7.955
+      },
+      "coordinates_note": "Monchiero; vineyards in Castiglione Falletto"
+    },
+    {
+      "id": "it-piedmont-aldoconterno",
+      "name": "Aldo Conterno",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Monforte d'Alba",
+      "appellation": "Barolo DOCG",
+      "founded": "1969",
+      "founded_note": "Estate established by Aldo Conterno after his separation from the family Giacomo Conterno operation; under his three sons Franco, Stefano, and Giacomo Conterno in the current generation.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Barolo Granbussia Riserva (the apex bottling, a multi-parcel selection from the Bussia cru, produced only in suitable vintages)",
+        "Barolo Romirasco",
+        "Barolo Cicala",
+        "Barolo Colonnello (the three single-cru bottlings from distinct parcels within Bussia)",
+        "Barolo Bussia (the multi-parcel estate Barolo)",
+        "Il Favot (a Langhe Nebbiolo)"
+      ],
+      "description": "A reference Monforte d'Alba estate established in 1969 by Aldo Conterno after his separation from the historic family Giacomo Conterno operation in Serralunga, working a substantial holding within the Bussia cru — among the largest and most internally varied of Monforte's principal sites. The house style is widely understood as occupying the moderate-modernist middle ground: longer macerations than the most extreme modernists, ageing in a mix of botti and smaller French oak (with notably restrained new oak use compared with Barolo's modernist pole), and wines built to develop slowly without the most uncompromising austerity of the classical traditionalists. The Granbussia Riserva, made only in selected vintages from a multi-parcel Bussia selection, is the apex of the estate's range. The three single-cru Bussia bottlings — Romirasco, Cicala, and Colonnello — give the estate's portfolio unusual internal coherence, all from contiguous parcels within a single great vineyard.",
+      "coordinates": {
+        "latitude": 44.6128,
+        "longitude": 7.9794
+      },
+      "coordinates_note": "Monforte d'Alba, Bussia"
+    },
+    {
+      "id": "it-piedmont-vietti",
+      "name": "Vietti",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barolo",
+      "commune": "Castiglione Falletto (cellar); vineyards across multiple Barolo communes",
+      "appellation": "Barolo DOCG",
+      "founded": "1873",
+      "founded_note": "Estate established by Carlo Vietti; expanded into single-vineyard cru bottling under Alfredo Currado from 1961; sold in 2016 to the Krause family while retaining Luca Currado as winemaker through 2022.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Arneis"
+      ],
+      "signature_wines": [
+        "Barolo Rocche di Castiglione (the cru most historically identified with the estate)",
+        "Barolo Lazzarito (from Serralunga d'Alba)",
+        "Barolo Brunate (from La Morra)",
+        "Barolo Ravera (from Novello)",
+        "Barolo Castiglione (the classical multi-cru estate Barolo)",
+        "Barbaresco Masseria",
+        "Roero Arneis (a serious dry white from the appellation across the Tanaro)"
+      ],
+      "description": "A reference Barolo estate distinguished by the unusual breadth of its single-vineyard cru holdings, with bottlings sourced from parcels across multiple Barolo communes including Castiglione Falletto, Serralunga, La Morra, and Novello. Alfredo Currado was among the first producers to release single-vineyard \"cru\" Barolo bottlings as a deliberate practice from the 1960s, anticipating by decades what is now standard across the appellation. The house style is broadly modernist in register but more restrained than the most extreme barrique-marked producers, with each cru vinified to express its specific site rather than a uniform house style. The Currado family sold the estate to the American Krause family in 2016, with Luca Currado continuing as winemaker through 2022; the change in ownership has not yet altered the fundamental editorial character of the wines.",
+      "coordinates": {
+        "latitude": 44.6181,
+        "longitude": 7.9844
+      },
+      "coordinates_note": "Castiglione Falletto"
+    },
+    {
+      "id": "it-piedmont-brunogiacosa",
+      "name": "Bruno Giacosa",
+      "country": "Italy",
+      "country_code": "IT",
+      "region": "Piedmont",
+      "sub_region": "Barbaresco",
+      "commune": "Neive (cellar); vineyards across Barbaresco and Barolo communes",
+      "appellation": "Barbaresco DOCG and Barolo DOCG",
+      "founded": "1900",
+      "founded_note": "Cellar established by Carlo Giacosa; transformed into a producing estate of major reputation under his grandson Bruno Giacosa from the 1960s; under Bruna Giacosa, his daughter, and the current technical team since Bruno Giacosa's death in 2018.",
+      "principal_grapes": [
+        "Nebbiolo",
+        "Barbera",
+        "Dolcetto"
+      ],
+      "signature_wines": [
+        "Barbaresco Asili (the single-cru Barbaresco most identified with the estate, from a parcel in the commune of Barbaresco itself)",
+        "Barbaresco Santo Stefano (from Neive)",
+        "Barolo Falletto (from Serralunga d'Alba)",
+        "Barolo Le Rocche del Falletto (a selection from the Falletto vineyard)",
+        "Riserva bottlings under the distinctive red-label designation, produced only in suitable vintages"
+      ],
+      "description": "The reference Barbaresco estate of the modern era and one of the most respected names in Piedmontese wine, working principally with purchased grapes from contracted growers until the 1980s before progressively building a substantial estate vineyard portfolio across both Barbaresco and Barolo. Bruno Giacosa, who ran the estate from the 1960s until his death in 2018, became known for an uncompromising classical approach to winemaking — long macerations, ageing in large Slavonian botti, and a strict policy of releasing the apex Riserva bottlings under the distinctive red label only in vintages he considered worthy. The estate's holdings include the Asili cru in Barbaresco and the Falletto cru in Serralunga d'Alba — both among the most followed sites in their respective appellations. Since 2018 the estate has continued under Bruna Giacosa with the established technical team, preserving the classical register that defined her father's reputation.",
+      "coordinates": {
+        "latitude": 44.7256,
+        "longitude": 8.1167
+      },
+      "coordinates_note": "Neive, Barbaresco zone"
+    },
+    {
+      "id": "fr-bordeauxrightbank-chevalblanc",
+      "name": "Château Cheval Blanc",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Saint-Émilion",
+      "appellation": "Saint-Émilion AOC",
+      "founded": "1832",
+      "founded_note": "Estate established under the Laussac-Fourcaud family through the consolidation of parcels carved from the larger Figeac estate; classified Premier Grand Cru Classé A in 1955; under the joint ownership of LVMH and the Frère family since 1998; withdrew from the Saint-Émilion Classification in 2022.",
+      "principal_grapes": [
+        "Cabernet Franc",
+        "Merlot",
+        "Cabernet Sauvignon",
+        "Malbec"
+      ],
+      "signature_wines": [
+        "Château Cheval Blanc (the grand vin, with its distinctive Cabernet Franc-led blend of approximately 50–60% Cabernet Franc and 40–50% Merlot — an unusual proportion for Bordeaux)",
+        "Le Petit Cheval (red second wine)",
+        "Le Petit Cheval Blanc (a small white wine introduced in 2014)"
+      ],
+      "description": "A historical reference of Saint-Émilion and the property most identified with Cabernet Franc in fine red Bordeaux, with a blend distinctively dominated by Cabernet Franc rather than Merlot — a result of the estate's particular gravelly soils, more reminiscent of the Left Bank than of typical Saint-Émilion limestone. The estate held Premier Grand Cru Classé A status from the introduction of the Saint-Émilion Classification in 1955 until 2022, when the property withdrew along with Château Ausone in protest at revisions to the classification's criteria. Under the joint LVMH/Frère ownership since 1998, the estate has undergone substantial cellar and vineyard investment without altering the fundamentally classical character of the wines. The grand vin is structured for very long bottle development and is widely considered one of the longest-lived wines made anywhere in Bordeaux.",
+      "coordinates": {
+        "latitude": 44.9111,
+        "longitude": -0.1956
+      },
+      "coordinates_note": "Saint-Émilion, on the Pomerol border"
+    },
+    {
+      "id": "fr-bordeauxrightbank-angelus",
+      "name": "Château Angélus",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Saint-Émilion",
+      "appellation": "Saint-Émilion AOC",
+      "founded": "Long-documented",
+      "founded_note": "Estate of long-documented origin under the de Boüard de Laforest family; promoted to Grand Cru Classé in 1955; promoted to Premier Grand Cru Classé in 1996; promoted to Premier Grand Cru Classé A in 2012; withdrew from the Saint-Émilion Classification in 2022.",
+      "principal_grapes": [
+        "Merlot",
+        "Cabernet Franc",
+        "Cabernet Sauvignon"
+      ],
+      "signature_wines": [
+        "Château Angélus (the grand vin, traditionally a Merlot-led blend with substantial Cabernet Franc)",
+        "Le Carillon d'Angélus (second wine)",
+        "No. 3 d'Angélus (a third wine introduced more recently)"
+      ],
+      "description": "A reference Saint-Émilion estate distinguished by an unusual classification trajectory — the only property to have been promoted twice within the modern Saint-Émilion Classification, rising from Grand Cru Classé in 1955 to Premier Grand Cru Classé in 1996 and finally to Premier Grand Cru Classé A in 2012, before withdrawing from the classification entirely in 2022. The de Boüard de Laforest family has owned the estate for many generations, with Hubert de Boüard playing the central role in its modern transformation from the 1980s onward. The house style sits at the temperate-modernist pole of Saint-Émilion — riper extraction, careful new oak management, and a register more immediately expressive than the historical apex estates while remaining structured for long ageing. The classification withdrawal in 2022 placed Angélus alongside Cheval Blanc and Ausone in declining further participation in the Saint-Émilion ranking system.",
+      "coordinates": {
+        "latitude": 44.8908,
+        "longitude": -0.1611
+      },
+      "coordinates_note": "Saint-Émilion, on the limestone slopes south of the village"
+    },
+    {
+      "id": "fr-bordeauxrightbank-petrus",
+      "name": "Château Pétrus",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Pomerol",
+      "appellation": "Pomerol AOC",
+      "founded": "Long-documented",
+      "founded_note": "Estate of long-documented origin in Pomerol; came to international prominence under the management of Établissements Jean-Pierre Moueix from 1945, with Jean-Pierre Moueix and his son Christian Moueix progressively building the estate's reputation; ownership consolidated under the Moueix family from the 1960s.",
+      "principal_grapes": [
+        "Merlot",
+        "Cabernet Franc"
+      ],
+      "signature_wines": [
+        "Château Pétrus (a single-wine estate — no second wine is produced, and the entire production is bottled under the grand vin label)"
+      ],
+      "description": "The singular reference of Pomerol and one of the most followed wine estates in the world, working a small holding of approximately eleven hectares on the distinctive blue clay soils at the heart of the Pomerol plateau — a geological feature unique to the immediate area and central to the wine's character. The estate is essentially a Merlot monoculture, with the grand vin produced from 100% Merlot in nearly all vintages and the wine's structure deriving from the unusual clay rather than from grape variety blending. Under the Moueix family stewardship since the mid-twentieth century, Pomerol has been managed with deliberate restraint — no second wine is made, and the entire production is bottled under the single Château Pétrus label. The wine is built for very long bottle development and the estate's small production has long been distributed through allocation rather than open sale.",
+      "coordinates": {
+        "latitude": 44.9319,
+        "longitude": -0.1842
+      },
+      "coordinates_note": "Pomerol, on the central plateau"
+    },
+    {
+      "id": "fr-bordeauxrightbank-lepin",
+      "name": "Le Pin",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Right Bank",
+      "commune": "Pomerol",
+      "appellation": "Pomerol AOC",
+      "founded": "1979",
+      "founded_note": "Estate established by Jacques Thienpont through the acquisition of a small parcel adjacent to Vieux Château Certan, the historic Thienpont family domaine; the first Le Pin vintage was 1979, with the estate progressively expanded through the 1980s and 1990s; under Fiona Morrison-Thienpont and Jacques Thienpont in the current generation.",
+      "principal_grapes": [
+        "Merlot",
+        "Cabernet Franc"
+      ],
+      "signature_wines": [
+        "Le Pin (the single estate wine — no second wine is produced)"
+      ],
+      "description": "The reference \"garagiste\" Pomerol — an exceptionally small estate working approximately two and a half hectares adjacent to Vieux Château Certan, founded in 1979 by Jacques Thienpont as a personal project from his family's broader Pomerol holdings. The estate produces only a few hundred cases of Le Pin in a typical vintage, all from a single block of old Merlot vines on Pomerol's gravel-and-clay soils, and ages exclusively in new French oak. Unlike Pétrus, which became a reference through nearly a century of progressive build-up under the Moueix family, Le Pin's reputation was established within a decade of its founding — the wine became one of the most discussed Pomerol bottlings of the late twentieth century almost from its first releases. The wines are made in a deliberately classical register with respect to ageing, despite the new-oak signature, and have established themselves alongside Pétrus as references for what intensely site-specific, very-small-production Pomerol can be.",
+      "coordinates": {
+        "latitude": 44.93,
+        "longitude": -0.1814
+      },
+      "coordinates_note": "Pomerol, adjacent to Vieux Château Certan"
     }
   ]
 }
