@@ -2,10 +2,10 @@
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.10.0-pilot",
+    "version": "0.11.0-pilot",
     "license": "CC BY-NC 4.0",
     "target_count": 160,
-    "current_count": 49,
+    "current_count": 53,
     "last_updated": "2026-04-25"
   },
   "estates": [
@@ -1431,6 +1431,133 @@
         "longitude": -122.4514
       },
       "coordinates_note": "Angwin, Howell Mountain"
+    },
+    {
+      "id": "es-rioja-lopezdeheredia",
+      "name": "R. López de Heredia Viña Tondonia",
+      "country": "Spain",
+      "country_code": "ES",
+      "region": "Rioja",
+      "sub_region": "Rioja Alta",
+      "commune": "Haro",
+      "appellation": "Rioja DOCa",
+      "founded": "1877",
+      "founded_note": "Estate established by Rafael López de Heredia in Haro, with the original Tondonia vineyard planted in 1913 on a meander of the Ebro River; under continuous López de Heredia family ownership across four generations to the present, currently with María José, Mercedes, and Julio César López de Heredia in succession.",
+      "principal_grapes": [
+        "Tempranillo",
+        "Garnacha",
+        "Graciano",
+        "Mazuelo",
+        "Viura",
+        "Malvasía",
+        "Garnacha Blanca"
+      ],
+      "signature_wines": [
+        "Viña Tondonia Reserva (the principal red Reserva, a Tempranillo-led traditional blend)",
+        "Viña Tondonia Gran Reserva (released only in selected vintages, with very long ageing)",
+        "Viña Tondonia Blanco Reserva (the apex aged white Rioja, produced from Viura and Malvasía with extended oak ageing — widely considered the singular reference for aged white Rioja)",
+        "Viña Bosconia (a separate parcel, more Tempranillo-led)",
+        "Viña Cubillo (the entry-level Crianza)",
+        "Viña Gravonia (a young white Rioja)"
+      ],
+      "description": "The reference uncompromising classical Rioja and the producer most centrally identified with the historical Bordeaux-influenced Rioja tradition, working entirely from estate vineyards within sight of the bodega in Haro and operating in a register essentially unchanged across four generations of family management. The house ages all wines for far longer than the Rioja DOCa minimums — Reservas typically released a decade after the vintage, Gran Reservas after fifteen years or more — in old American oak that the bodega makes itself in its own cooperage. The Tondonia Blanco Reserva, made from Viura and Malvasía with extended oxidative ageing in old oak, is widely considered the singular reference for what aged white Rioja can be and has no real stylistic equivalent in any other wine region. The estate's deliberate refusal to modernize — no estate vineyards acquired since the original 1913 holdings, no French oak, no shortened ageing schedules — has made it the editorial anchor for what classical Rioja has historically meant.",
+      "coordinates": {
+        "latitude": 42.5772,
+        "longitude": -2.8511
+      },
+      "coordinates_note": "Haro, Rioja Alta"
+    },
+    {
+      "id": "es-rioja-lariojaaltasa",
+      "name": "La Rioja Alta SA",
+      "country": "Spain",
+      "country_code": "ES",
+      "region": "Rioja",
+      "sub_region": "Rioja Alta",
+      "commune": "Haro",
+      "appellation": "Rioja DOCa",
+      "founded": "1890",
+      "founded_note": "Bodega founded as Sociedad Vinícola de La Rioja Alta by five Rioja Alta and Basque founding families; converted to a corporate structure as La Rioja Alta SA, retaining strong continuity of ownership through descendants of the founding families to the present.",
+      "principal_grapes": [
+        "Tempranillo",
+        "Mazuelo",
+        "Graciano",
+        "Garnacha"
+      ],
+      "signature_wines": [
+        "Gran Reserva 904 (the principal Gran Reserva, a Tempranillo-Graciano blend with very long American oak ageing, released approximately a decade after the vintage)",
+        "Gran Reserva 890 (the apex Gran Reserva, produced only in selected vintages with even longer ageing — typically released fifteen-plus years after harvest)",
+        "Viña Ardanza Reserva (the principal Reserva, also a multi-grape blend)",
+        "Alberdi Reserva (Tempranillo-led, broader distribution)",
+        "Viña Lanciano"
+      ],
+      "description": "A reference Rioja Alta house anchored in the classical American-oak ageing tradition, operating from the Estación de Haro railway-station district that became Rioja's nineteenth-century bodega cluster. The house works in a deliberately classical register — long maceration, extended ageing in American oak (some barrels still produced in the bodega's own cooperage), Reservas typically released after a decade and Gran Reservas only in suitable vintages with even longer ageing schedules. The Gran Reserva 890, named for the bodega's 1890 founding year, is produced only in selected vintages and is widely considered among the apex traditional Riojas of the modern era; the Gran Reserva 904 (named for the bodega's 1904 incorporation) anchors the regular Gran Reserva production. Throughout the broader stylistic upheaval of the 1990s and 2000s in Rioja, the bodega has held to its classical-traditional register essentially unchanged, making it together with López de Heredia one of the two principal references for what classical Rioja Alta means.",
+      "coordinates": {
+        "latitude": 42.5775,
+        "longitude": -2.8467
+      },
+      "coordinates_note": "Haro, Rioja Alta — Estación district"
+    },
+    {
+      "id": "es-rioja-artadi",
+      "name": "Artadi (Bodegas y Viñedos Artadi)",
+      "country": "Spain",
+      "country_code": "ES",
+      "region": "Rioja",
+      "sub_region": "Rioja Alavesa",
+      "commune": "Laguardia",
+      "appellation": "Formerly Rioja DOCa (withdrawn 2015) and labeled as Vino de España; subsequent return to Rioja DOCa designation under the 2018 Viñedos Singulares classification for its single-vineyard wines",
+      "founded": "1985",
+      "founded_note": "Bodega established as a cooperative venture in Laguardia by Juan Carlos López de Lacalle and others; reorganized under López de Lacalle family control from 1992 with progressive concentration on single-vineyard work; the family has continued to direct the estate to the present.",
+      "principal_grapes": [
+        "Tempranillo",
+        "Garnacha",
+        "Viura"
+      ],
+      "signature_wines": [
+        "Viña El Pisón (the apex single-vineyard 100% Tempranillo, from a small old-vine parcel in Laguardia, produced annually since 1991)",
+        "Pagos Viejos (a multi-parcel old-vine cuvée)",
+        "Valdeginés (a single-vineyard cuvée)",
+        "La Poza de Ballesteros (single-vineyard)",
+        "Viñas de Gain (the entry-level Crianza)"
+      ],
+      "description": "The reference modern Rioja Alavesa and the producer most centrally identified with the single-vineyard movement that reshaped contemporary Rioja from the 1990s onward. Under Juan Carlos López de Lacalle, the bodega progressively concentrated production on small old-vine parcels in Laguardia and the surrounding Rioja Alavesa villages, working with 100% Tempranillo, French oak, and a deliberately concentrated extraction style — a register editorially distinct from both the American-oak classical tradition and the broader négociant-house Rioja mainstream. In 2015 the bodega withdrew from the Rioja DOCa in protest at the appellation's refusal to recognize single-vineyard classification, releasing its wines as Vino de España rather than under the appellation; following the 2018 introduction of the Viñedos Singulares classification, the estate has progressively returned to Rioja designation for its single-vineyard wines that meet the new criteria. Viña El Pisón, made from a small old-vine parcel that has produced the wine annually since 1991, anchors the apex of the range and is widely held to be among the most editorially singular wines in modern Rioja.",
+      "coordinates": {
+        "latitude": 42.5511,
+        "longitude": -2.5856
+      },
+      "coordinates_note": "Laguardia, Rioja Alavesa"
+    },
+    {
+      "id": "es-rioja-remirezdeganuza",
+      "name": "Remírez de Ganuza (Bodegas Fernando Remírez de Ganuza)",
+      "country": "Spain",
+      "country_code": "ES",
+      "region": "Rioja",
+      "sub_region": "Rioja Alavesa",
+      "commune": "Samaniego",
+      "appellation": "Rioja DOCa",
+      "founded": "1989",
+      "founded_note": "Bodega established by Fernando Remírez de Ganuza in Samaniego through the acquisition of old-vine parcels across the Rioja Alavesa villages of Samaniego, Leza, Villabuena, and Laguardia; under continuous family direction to the present.",
+      "principal_grapes": [
+        "Tempranillo",
+        "Graciano",
+        "Viura",
+        "Malvasía"
+      ],
+      "signature_wines": [
+        "Trasnocho (the apex single-vineyard cuvée, produced only in suitable vintages from selected old-vine parcels)",
+        "Fincas de Ganuza Reserva (the principal Reserva)",
+        "Reserva (the standard Reserva)",
+        "Gran Reserva (produced only in selected vintages)",
+        "Erre Punto (the entry-level)"
+      ],
+      "description": "A reference modern Rioja Alavesa boutique bodega, working approximately seventy hectares of old-vine parcels concentrated in the Rioja Alavesa villages around Samaniego and Laguardia, with a deliberate editorial focus on viticultural precision and meticulous parcel-by-parcel selection. Fernando Remírez de Ganuza established the bodega in 1989 specifically to work with old-vine fruit, and developed several distinctive viticultural practices — including the strict separation of grape clusters by ripeness and the destemming of berries from each cluster's two distinct halves — that have become signature techniques of the estate. The house style is stylistically modernist (French oak, concentrated extraction, low yields) but with selective application of classical Rioja Reserva and Gran Reserva ageing schedules — a hybrid register between Rioja's two principal stylistic poles. Trasnocho, the apex cuvée named for the practice of overnight skin maceration before fermentation, is produced only in vintages considered worthy and represents the apex of the estate's range.",
+      "coordinates": {
+        "latitude": 42.5683,
+        "longitude": -2.6822
+      },
+      "coordinates_note": "Samaniego, Rioja Alavesa"
     }
   ]
 }
