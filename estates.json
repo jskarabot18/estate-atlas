@@ -2,10 +2,10 @@
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.15.0-pilot",
+    "version": "0.16.0-pilot",
     "license": "CC BY-NC 4.0",
     "target_count": 160,
-    "current_count": 68,
+    "current_count": 71,
     "last_updated": "2026-04-26"
   },
   "estates": [
@@ -2035,6 +2035,106 @@
         "longitude": 0.2256
       },
       "coordinates_note": "Sazilly, Chinon"
+    },
+    {
+      "id": "fr-southernrhone-rayas",
+      "name": "Château Rayas",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Southern Rhône",
+      "sub_region": "Châteauneuf-du-Pape",
+      "commune": "Châteauneuf-du-Pape",
+      "appellation": "Châteauneuf-du-Pape AOC",
+      "founded": "1880",
+      "founded_note": "Estate established under the Reynaud family in the late 19th century; the modern Rayas reputation built under Louis Reynaud and especially under his son Jacques Reynaud — the eccentric figurehead who ran the estate from the 1940s until his death in 1997; under Emmanuel Reynaud, Jacques's nephew, since 1997 to the present.",
+      "principal_grapes": [
+        "Grenache",
+        "Clairette",
+        "Grenache Blanc"
+      ],
+      "signature_wines": [
+        "Château Rayas (the apex single-wine red, 100% Grenache, made from old-vine fruit on sandy soils — the appellation's most singular wine, produced in tiny quantities of approximately 25,000 bottles annually)",
+        "Château Rayas Blanc (a small white production, principally Clairette and Grenache Blanc)",
+        "Pignan (the second wine, also 100% Grenache from a younger-vine parcel of the same vineyards)",
+        "Château de Fonsalette (a separate Reynaud family estate in the Côtes du Rhône appellation)",
+        "Château des Tours (a further family Vacqueyras estate)"
+      ],
+      "description": "The singular reference of Châteauneuf-du-Pape and one of the most editorially distinctive wines made anywhere — a small estate working old-vine Grenache on sandy soils (with no galets roulés, distinguishing the property from most of the appellation), producing 100% Grenache wines in a deliberately classical register essentially unchanged across multiple generations of the Reynaud family. Jacques Reynaud, who ran the estate from the 1940s until his death in 1997, became the appellation's most idiosyncratic figurehead — known for refusing to sell wine to visitors he disliked, declining to bottle wines from vintages he considered unworthy, and operating with a deliberate disregard for commercial conventions that became inseparable from the estate's editorial identity. The wines are made with whole-cluster fermentation, ageing in old foudres rather than barriques, and very long bottle ageing before release — a register that produces wines structurally distinct from the broader Châteauneuf tradition, with a perfumed elegance often compared more closely to fine Burgundy than to the appellation's typical robust style. Under Emmanuel Reynaud since 1997, the estate has continued in essentially the same editorial register, with the wines released in tiny annual quantities through long-established trade channels rather than open sale.",
+      "coordinates": {
+        "latitude": 44.0631,
+        "longitude": 4.8458
+      },
+      "coordinates_note": "Châteauneuf-du-Pape"
+    },
+    {
+      "id": "fr-southernrhone-beaucastel",
+      "name": "Château de Beaucastel",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Southern Rhône",
+      "sub_region": "Châteauneuf-du-Pape",
+      "commune": "Courthézon",
+      "appellation": "Châteauneuf-du-Pape AOC",
+      "founded": "1909",
+      "founded_note": "Estate acquired by Pierre Perrin and his family from the Beaucastel family — whose vineyards on the property dated to the 16th century; under continuous Perrin family ownership across five generations to the present, currently with Marc Perrin and Pierre Perrin leading the operation; the estate converted to organic viticulture in 1950 and to biodynamic viticulture progressively from the 1970s — among the earliest biodynamic conversions in serious French fine wine.",
+      "principal_grapes": [
+        "Grenache",
+        "Mourvèdre",
+        "Syrah",
+        "Cinsault",
+        "Counoise",
+        "Roussanne",
+        "Bourboulenc",
+        "Clairette",
+        "Grenache Blanc",
+        "Picpoul"
+      ],
+      "signature_wines": [
+        "Château de Beaucastel rouge (the principal red, a multi-grape blend using all 13 authorized Châteauneuf varieties — distinctive within the appellation for its substantial Mourvèdre proportion of approximately 30%, much higher than the typical Châteauneuf blend)",
+        "Château de Beaucastel blanc (the principal white, with substantial Roussanne)",
+        "Hommage à Jacques Perrin (the apex bottling, produced only in suitable vintages, with very high Mourvèdre content and an editorial register distinct from the principal red)",
+        "Coudoulet de Beaucastel (the second wine, from younger-vine and adjacent Côtes du Rhône parcels)"
+      ],
+      "description": "The reference multi-grape Châteauneuf and the producer most centrally identified with the appellation's all-13-varieties blending tradition, with a house style distinguished by its substantial Mourvèdre proportion — typically around 30% of the principal red blend, far higher than the Grenache-dominant proportions typical of the appellation. The Perrin family acquired the estate in 1909 from the historical Beaucastel family, whose vineyards on the property dated to the 16th century, and have continued under direct family direction across five generations to the present. The estate converted to organic viticulture in 1950 and progressively to biodynamic farming from the 1970s — among the earliest biodynamic conversions in serious French fine wine, anticipating the broader biodynamic movement by decades and placing Beaucastel alongside Domaine Leflaive (Burgundy) and Coulée de Serrant (Loire) as the founding estates of the biodynamic register in serious French winemaking. The Hommage à Jacques Perrin bottling, produced only in selected vintages from the highest-Mourvèdre parcels, represents the apex of the estate's range and is widely held to be among the most ageworthy Châteauneufs made anywhere.",
+      "coordinates": {
+        "latitude": 44.0808,
+        "longitude": 4.8281
+      },
+      "coordinates_note": "Courthézon, Châteauneuf-du-Pape"
+    },
+    {
+      "id": "fr-southernrhone-vieuxtelegraphe",
+      "name": "Domaine du Vieux Télégraphe",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Southern Rhône",
+      "sub_region": "Châteauneuf-du-Pape",
+      "commune": "Bédarrides",
+      "appellation": "Châteauneuf-du-Pape AOC",
+      "founded": "1891",
+      "founded_note": "Estate established by Hippolyte Brunier through the acquisition of vineyards on the La Crau plateau, named for an 18th-century Chappe optical telegraph station that had stood on the site; under continuous Brunier family ownership across five generations to the present, currently with Daniel Brunier, his brother Frédéric Brunier, and the next generation Edouard and Manuel Brunier in succession.",
+      "principal_grapes": [
+        "Grenache",
+        "Mourvèdre",
+        "Syrah",
+        "Cinsault",
+        "Clairette",
+        "Grenache Blanc",
+        "Roussanne",
+        "Bourboulenc"
+      ],
+      "signature_wines": [
+        "La Crau (the principal red, a Grenache-led blend from the iconic galets-rich parcel that defines the estate's identity)",
+        "Le Vieux Télégraphe blanc (the principal white, with substantial Clairette and Grenache Blanc)",
+        "Télégramme (the second wine, from younger-vine parcels)",
+        "Piedlong (a single-parcel cuvée from the deeper-soiled section of La Crau, produced only in suitable vintages)"
+      ],
+      "description": "The reference galets-driven Châteauneuf and the producer most centrally identified with the appellation's iconic stone-soil character, working the historic La Crau plateau — an elevated south-facing parcel covered in the large rounded ice-age stones (galets roulés) that have become the visual signature of Châteauneuf-du-Pape. The Brunier family acquired the original Vieux Télégraphe vineyards in 1891 — the property taking its name from an 18th-century Chappe optical telegraph station that had stood on the site — and have continued under direct family direction across five generations to the present. The house style sits at the classical-modern hybrid pole of the appellation: traditional whole-cluster fermentation and ageing in foudres rather than barriques, but with carefully refined extraction and yields that produce wines more immediately expressive than the most austere traditionalists while remaining structured for very long bottle development. La Crau, the principal red, has been produced continuously since the late 19th century from the same vineyard parcels, making it one of the longest continuously-produced single-vineyard wines in the appellation and the editorial reference for what the canon understands \"galets-driven Châteauneuf\" to mean.",
+      "coordinates": {
+        "latitude": 44.0769,
+        "longitude": 4.8728
+      },
+      "coordinates_note": "Bédarrides, Châteauneuf-du-Pape, La Crau plateau"
     }
   ]
 }
