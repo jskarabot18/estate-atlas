@@ -1,11 +1,11 @@
 {
   "atlas": {
     "title": "The Estate Atlas",
-    "edition": "2026",
-    "version": "0.29.0-pilot",
+    "edition": "1st edition (2026)",
+    "version": "1.0.0",
     "license": "CC BY-NC 4.0",
-    "target_count": 160,
-    "current_count": 157,
+    "target_count": 158,
+    "current_count": 158,
     "last_updated": "2026-04-29"
   },
   "estates": [
@@ -4835,6 +4835,41 @@
         "longitude": 105.9786
       },
       "coordinates_note": "Yinchuan, Helan Mountain area, Ningxia"
+    },
+    {
+      "id": "de-pfalz-rebholz",
+      "name": "Weingut Ökonomierat Rebholz",
+      "country": "Germany",
+      "country_code": "DE",
+      "region": "Pfalz",
+      "sub_region": "Südliche Weinstraße (the southern Pfalz wine route, near the French border with Alsace; geologically and stylistically distinct from the more famous Mittelhaardt sub-region in the northern Pfalz; warmer Mediterranean-influenced microclimate that has historically been editorially under-represented in the broader German fine-wine canon despite its substantial contemporary apex emergence)",
+      "commune": "Siebeldingen",
+      "appellation": "Pfalz Anbaugebiet (German wine region)",
+      "founded": "1900",
+      "founded_note": "Estate established by Eduard Rebholz through the acquisition of vineyard parcels in Siebeldingen; the \"Ökonomierat\" honorific in the estate's name is a German agricultural distinction historically awarded to leading agriculturalists; transformed into the contemporary canonical reference under Hansjörg Rebholz — third generation, who took over from his father Hans in 1989 and progressively built the contemporary editorial position around the multi-grape apex framework and the deliberate exclusively-dry winemaking discipline; under continued Rebholz family direction across four generations, currently with Hansjörg Rebholz as winemaker and his son Valentin Rebholz now in the operation; converted to biodynamic viticulture, joining the broader contemporary European biodynamic founding generation.",
+      "principal_grapes": [
+        "Riesling",
+        "Spätburgunder",
+        "Weissburgunder",
+        "Grauburgunder",
+        "Chardonnay",
+        "Muskateller",
+        "Gewürztraminer"
+      ],
+      "signature_wines": [
+        "Im Sonnenschein Riesling Großes Gewächs (the apex single-vineyard Riesling — sourced from the Im Sonnenschein parcel in Siebeldingen; bottled under the VDP Großes Gewächs framework that designates the apex German dry single-vineyard wines)",
+        "Kastanienbusch Riesling Großes Gewächs (a second apex single-vineyard Riesling from the Kastanienbusch parcel — the canonical Rebholz Riesling reference)",
+        "Kastanienbusch Spätburgunder Großes Gewächs (the apex German Pinot Noir from the same Kastanienbusch parcel)",
+        "Im Sonnenschein Weissburgunder Großes Gewächs (the apex Pinot Blanc)",
+        "Sankt Laurent (the indigenous Austrian-German red grape, occasionally produced)",
+        "The broader Rebholz range across multiple Pfalz indigenous grapes"
+      ],
+      "description": "The contemporary apex Pfalz reference and the multi-generational Rebholz family operation across four generations most centrally identified with establishing the Südliche Weinstraße — the southern Pfalz, near the Alsace border — as a serious German fine-wine sub-region distinct from the more famous Mittelhaardt to the north. Eduard Rebholz founded the estate in 1900 in Siebeldingen, with the contemporary editorial position built progressively under Hansjörg Rebholz (third generation) since 1989 around three substantively distinctive registers: the multi-grape apex framework working seriously across Riesling, Spätburgunder (Pinot Noir), Weissburgunder, Grauburgunder, Chardonnay, Muskateller, and Gewürztraminer — a breadth unmatched at the contemporary German apex level where most apex producers concentrate on one or two grapes; the biodynamic conversion that places Rebholz alongside the broader contemporary European biodynamic founding generation (Beaucastel, Leflaive, Coulée de Serrant, Zind-Humbrecht, Mullineux, Felton Road, Pieropan, Bergström, Cullen, Chappaz, Ganevat, Larmandier-Bernier); and the deliberate exclusively-dry winemaking discipline (no Auslese, Beerenauslese, or Trockenbeerenauslese sweet wines) that distinguishes Rebholz within the broader German fine-wine convention historically built on Prädikat sweet wine traditions. Together with Weingut Dr. Bürklin-Wolf (Mittelhaardt classical apex), Rebholz anchors Pfalz's editorial position in the atlas across the appellation's two principal sub-regions, with the Kastanienbusch single-vineyard parcels in Siebeldingen producing apex bottlings across both Riesling (Kastanienbusch GG) and Spätburgunder (Kastanienbusch Spätburgunder GG) — the latter representing the canonical contemporary German Pinot Noir reference within the atlas's broader German coverage. The fourth-generation Rebholz family direction through Valentin Rebholz now joining Hansjörg in the operation continues the multi-generational continuity that has defined the estate across more than 125 years of continuous family operation.",
+      "coordinates": {
+        "latitude": 49.2089,
+        "longitude": 8.0489
+      },
+      "coordinates_note": "Siebeldingen, Südliche Weinstraße, Pfalz"
     }
   ]
 }
