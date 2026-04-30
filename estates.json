@@ -2,10 +2,10 @@
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.26.0-pilot",
+    "version": "0.27.0-pilot",
     "license": "CC BY-NC 4.0",
     "target_count": 160,
-    "current_count": 130,
+    "current_count": 137,
     "last_updated": "2026-04-29"
   },
   "estates": [
@@ -3976,6 +3976,244 @@
         "longitude": 7.11
       },
       "coordinates_note": "Fully, Valais"
+    },
+    {
+      "id": "au-coonawarra-wynns",
+      "name": "Wynns Coonawarra Estate",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "Coonawarra",
+      "sub_region": "Coonawarra (the famous terra rossa strip in southeastern South Australia, near the Victorian border)",
+      "commune": "Coonawarra",
+      "appellation": "Coonawarra GI",
+      "founded": "1891",
+      "founded_note": "Estate established by John Riddoch — the founder of Coonawarra as a wine region — through the planting of vineyards and construction of the original Coonawarra cellar; Riddoch's deliberate development of Coonawarra in the late nineteenth century established the region as a serious viticulture area decades before the broader Australian fine-wine industry recognized its editorial significance; acquired by Samuel and David Wynn in 1951 and renamed Wynns Coonawarra Estate; now under Treasury Wine Estates ownership through multiple corporate transitions; under Sue Hodder as long-term winemaker since 1998.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Shiraz",
+        "Chardonnay",
+        "Riesling",
+        "Merlot"
+      ],
+      "signature_wines": [
+        "John Riddoch Cabernet Sauvignon (the apex Cabernet — single-vineyard from the historical Riddoch parcels, produced only in suitable vintages with very long ageing in French oak; named for the estate's founder; the canonical Coonawarra Cabernet reference)",
+        "Michael Shiraz (the apex Coonawarra Shiraz, paralleling the John Riddoch in editorial register)",
+        "Black Label Cabernet Sauvignon (the principal Cabernet bottling, produced annually)",
+        "Wynns Coonawarra Estate Riesling (the apex Coonawarra Riesling)",
+        "The broader Wynns range across multiple Coonawarra grapes"
+      ],
+      "description": "The historical anchor of Coonawarra and the producer most centrally identified with the editorial establishment of Coonawarra as Australia's reference Cabernet Sauvignon region from the late nineteenth century onward. John Riddoch — a Scottish-born settler who became the founder of Coonawarra as a wine region — established the original 1891 vineyards and cellar, with his deliberate development of the terra rossa strip predating by decades the broader Australian fine-wine industry's recognition of Coonawarra's editorial significance and establishing the geological framework (terra rossa over limestone — a structurally singular Australian soil type) that defines serious Coonawarra Cabernet to the present. The estate was acquired by Samuel and David Wynn in 1951 and renamed Wynns Coonawarra Estate, with the contemporary editorial position built across multiple decades through the John Riddoch Cabernet Sauvignon (named for the founder, produced only in suitable vintages from the historical Riddoch parcels, the canonical Coonawarra Cabernet reference) and the parallel Michael Shiraz. Under Treasury Wine Estates ownership through multiple corporate transitions — placing Wynns alongside Penfolds in the same corporate portfolio — the estate has continued under Sue Hodder as long-term winemaker since 1998, with the disciplined classical Coonawarra register preserved across the broader corporate framework.",
+      "coordinates": {
+        "latitude": -37.2925,
+        "longitude": 140.8186
+      },
+      "coordinates_note": "Coonawarra, southeastern South Australia"
+    },
+    {
+      "id": "au-coonawarra-petaluma",
+      "name": "Petaluma",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "Coonawarra",
+      "sub_region": "Coonawarra (principal Cabernet); Adelaide Hills (Chardonnay, Pinot Noir, Sauvignon Blanc); Clare Valley (Riesling)",
+      "commune": "Piccadilly Valley (cellar in Adelaide Hills)",
+      "appellation": "Coonawarra GI, Adelaide Hills GI, Clare Valley GI",
+      "founded": "1976",
+      "founded_note": "Estate established by Brian Croser — widely held to be one of the most editorially influential figures in contemporary Australian fine wine — initially in the Adelaide Hills before progressively expanding into multiple South Australian regions; Croser had studied at UC Davis and trained under André Tchelistcheff before returning to Australia to establish Petaluma; under Croser's continued direction across multiple decades; acquired by Lion Nathan in 2001 with continued operation; under continuous Croser editorial direction.",
+      "principal_grapes": [
+        "Chardonnay",
+        "Cabernet Sauvignon",
+        "Riesling",
+        "Pinot Noir",
+        "Merlot",
+        "Shiraz"
+      ],
+      "signature_wines": [
+        "Petaluma Coonawarra (the principal Coonawarra Cabernet-led Bordeaux-style blend — sourced from Petaluma's Coonawarra parcels; the canonical contemporary Coonawarra reference alongside the multi-generational family operations)",
+        "Petaluma Hanlin Hill Riesling (the apex Clare Valley Riesling — single-vineyard from the Hanlin Hill parcel)",
+        "Petaluma Tiers Chardonnay (apex Adelaide Hills Chardonnay)",
+        "Petaluma B&V Vineyard Shiraz",
+        "Croser (the separate apex traditional-method sparkling project, also under Croser direction — Adelaide Hills méthode champenoise from Chardonnay and Pinot Noir)"
+      ],
+      "description": "The reference contemporary Australian multi-region producer and the operation most centrally identified with Brian Croser — widely held to be one of the most editorially influential figures in contemporary Australian fine wine — across his multi-decade work establishing serious cool-climate viticulture in South Australia. Croser had studied at UC Davis and trained under the legendary California winemaker André Tchelistcheff before returning to Australia to establish Petaluma in 1976 in the Adelaide Hills, then progressively expanding the operation across multiple South Australian regions — Coonawarra for the Cabernet-led Bordeaux-style work, Clare Valley for the apex Riesling (Hanlin Hill), Adelaide Hills for the Chardonnay (Tiers) and traditional-method sparkling (the separate Croser label) — with each region's bottlings expressing the disciplined single-vineyard precision that has defined Croser's editorial register across multiple decades. The estate's editorial position is structurally similar to other founding-figure multi-region operations in the New World canon — Eduardo Chadwick at Errazuriz/Almaviva/Seña in Chile, Eben Sadie's Sadie Family Wines in South Africa, Marc de Grazia at Tenuta delle Terre Nere in Italy — with Croser's broader influence on Australian fine wine extending well beyond Petaluma itself through his consulting work, his founding role in establishing the Adelaide Hills as a serious cool-climate region, and his editorial commitment to disciplined site-specific winemaking across multiple Australian regions.",
+      "coordinates": {
+        "latitude": -34.9869,
+        "longitude": 138.7458
+      },
+      "coordinates_note": "Piccadilly Valley, Adelaide Hills"
+    },
+    {
+      "id": "au-mclarenvale-darenberg",
+      "name": "d'Arenberg",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "McLaren Vale",
+      "sub_region": "McLaren Vale (the Mediterranean-climate sub-region south of Adelaide; principal Australian Rhône-grape region alongside Barossa)",
+      "commune": "McLaren Vale",
+      "appellation": "McLaren Vale GI",
+      "founded": "1912",
+      "founded_note": "Estate established by Joseph Osborn through the acquisition of vineyard parcels in McLaren Vale; under continuous Osborn family ownership across four generations to the present, currently with Chester Osborn as winemaker and the contemporary editorial figurehead since 1984; the estate has built the contemporary editorial position around old-vine Shiraz and Grenache parcels — many vines exceeding 100 years of age — that have given d'Arenberg one of the deepest old-vine resources in McLaren Vale.",
+      "principal_grapes": [
+        "Shiraz",
+        "Grenache",
+        "Mourvèdre",
+        "Cabernet Sauvignon",
+        "Chardonnay",
+        "Marsanne",
+        "Roussanne",
+        "Viognier"
+      ],
+      "signature_wines": [
+        "The Dead Arm Shiraz (the apex Shiraz — sourced from very old-vine parcels affected by the Eutypa \"dead arm\" fungal disease that reduces yields but concentrates fruit; widely the canonical d'Arenberg reference; the bottling that established the estate's contemporary editorial position from the 1990s onward)",
+        "The Ironstone Pressings (apex Grenache-led GSM blend)",
+        "The Coppermine Road Cabernet Sauvignon (apex Cabernet)",
+        "The Dry Dam Riesling",
+        "The Hermit Crab (Marsanne-Viognier white blend)",
+        "The broader d'Arenberg range across many distinctively-named bottlings"
+      ],
+      "description": "The reference contemporary McLaren Vale producer and the multi-generational Osborn family operation across four generations most centrally identified with treating McLaren Vale's old-vine Shiraz and Grenache parcels as serious global fine-wine resources from the 1990s onward. Joseph Osborn founded the estate in 1912, with the contemporary editorial position built across multiple generations under Francis d'Arenberg \"d'Arry\" Osborn (the multi-decade family figurehead until his retirement) and his son Chester Osborn (winemaker since 1984), whose long editorial direction has been central to McLaren Vale's emergence as one of Australia's most followed contemporary Rhône-grape regions. The Dead Arm Shiraz — sourced from very old-vine parcels affected by the Eutypa \"dead arm\" fungal disease that reduces yields but concentrates fruit — has become widely the canonical d'Arenberg reference, with the parallel Ironstone Pressings (Grenache-led GSM blend) and the broader d'Arenberg range across distinctively-named bottlings establishing the estate as the principal multi-grape McLaren Vale family operation. The estate's old-vine resources — many vines exceeding 100 years of age — place d'Arenberg alongside Henschke (Hill of Grace) and Yalumba (Old Vine Garden) in the broader Australian old-vine Shiraz canon, with McLaren Vale providing the Mediterranean-climate counterpart to the Barossa Valley's continental old-vine tradition.",
+      "coordinates": {
+        "latitude": -35.2128,
+        "longitude": 138.53
+      },
+      "coordinates_note": "McLaren Vale, south of Adelaide"
+    },
+    {
+      "id": "au-margaretriver-cullen",
+      "name": "Cullen Wines",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "Margaret River",
+      "sub_region": "Margaret River (the Wilyabrup sub-region, the historical heart of Margaret River fine-wine production)",
+      "commune": "Wilyabrup",
+      "appellation": "Margaret River GI (Wilyabrup sub-GI)",
+      "founded": "1971",
+      "founded_note": "Estate established by Diana and Kevin Cullen through the planting of Cabernet Sauvignon and Riesling vineyards in Wilyabrup, with planting work completed in 1971 alongside the broader Margaret River pioneers Tom Cullity at Vasse Felix (1967) and Bill Pannell at Moss Wood (1969); under Cullen family direction across two generations, currently with Vanya Cullen — Diana and Kevin's daughter — as winemaker since 1989; converted to organic viticulture in 1998 and biodynamic viticulture in 2003, becoming one of the early-adopter biodynamic Australian estates; the estate also has the distinction of being one of the first Australian fine-wine operations led by a woman winemaker through Vanya Cullen's multi-decade direction.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Sauvignon Blanc",
+        "Sémillon",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Malbec",
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Diana Madeline Cabernet Sauvignon (the apex Cabernet — Cabernet Sauvignon-led Bordeaux-style blend with Merlot, Cabernet Franc, Petit Verdot, and Malbec; named for Vanya Cullen's mother Diana Madeline Cullen; widely the canonical Margaret River Cabernet reference)",
+        "Cullen Sauvignon Blanc Sémillon (the apex Bordeaux-style white blend)",
+        "Kevin John Chardonnay (apex single-vineyard Chardonnay, named for Vanya's father)",
+        "Mangan Vineyard Bordeaux blend",
+        "Amber (a small skin-contact orange wine release)"
+      ],
+      "description": "The reference contemporary Margaret River Cabernet producer and the multi-generational Cullen family operation most centrally identified with the broader Margaret River editorial establishment alongside the founding 1967-1971 generation. Diana and Kevin Cullen founded the estate in 1971 through the planting of vineyards in Wilyabrup, alongside the broader Margaret River pioneers Tom Cullity at Vasse Felix (1967) and Bill Pannell at Moss Wood (1969) whose collective work established the editorial framework that subsequent generations of serious Margaret River producers have inherited. The estate's biodynamic conversion in 2003 — alongside the parallel organic conversion in 1998 — placed Cullen Wines among the early-adopter biodynamic Australian estates, alongside the broader contemporary biodynamic European-and-New-World movement (Beaucastel, Leflaive, Mullineux, Felton Road, Bergström, Chappaz, Pieropan) that has established biodynamic viticulture as the contemporary apex fine-wine framework. Diana Madeline Cabernet Sauvignon — the apex Bordeaux-style blend named for Vanya Cullen's mother — is widely held to be the canonical contemporary Margaret River Cabernet reference, with the parallel Sauvignon Blanc Sémillon (the canonical Margaret River Bordeaux-style white blend) and Kevin John Chardonnay establishing the estate as a multi-grape Margaret River reference across the region's principal apex categories. Vanya Cullen's multi-decade direction since 1989 — making her one of the longest continuously-active women winemakers in Australian fine wine — anchors the estate's contemporary editorial position alongside the founding family lineage.",
+      "coordinates": {
+        "latitude": -33.8208,
+        "longitude": 115.0419
+      },
+      "coordinates_note": "Wilyabrup, Margaret River"
+    },
+    {
+      "id": "au-margaretriver-leeuwin",
+      "name": "Leeuwin Estate",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "Margaret River",
+      "sub_region": "Margaret River (the southern Margaret River sub-region, near the Indian Ocean coast)",
+      "commune": "Margaret River",
+      "appellation": "Margaret River GI",
+      "founded": "1974",
+      "founded_note": "Estate established by Denis and Tricia Horgan through the acquisition of vineyard land in southern Margaret River, with deliberate consultation from Robert Mondavi — who had identified the site as suitable for serious Chardonnay production — establishing the estate with the explicit ambition of producing apex Australian Chardonnay; under continuous Horgan family ownership across two generations, currently with Justin Horgan as managing director and Tim Lovett as winemaker; the estate is also editorially distinctive for its Art Series — annual concerts at the estate featuring international classical and jazz musicians, plus the Art Series wine labels featuring commissioned Australian artworks.",
+      "principal_grapes": [
+        "Chardonnay",
+        "Cabernet Sauvignon",
+        "Sauvignon Blanc",
+        "Riesling",
+        "Shiraz"
+      ],
+      "signature_wines": [
+        "Art Series Chardonnay (the apex Chardonnay — widely held to be Australia's reference apex Chardonnay; produced from selected estate parcels with extended lees ageing and bottle development, designed for very long cellaring; first vintage 1980, with the bottling progressively becoming Australia's most editorially celebrated Chardonnay over the following four decades)",
+        "Art Series Cabernet Sauvignon (the apex Cabernet)",
+        "Art Series Riesling",
+        "Art Series Shiraz",
+        "Prelude Vineyard Chardonnay (the second-tier Chardonnay)",
+        "Siblings (the entry-level range)"
+      ],
+      "description": "The canonical reference of Australian apex Chardonnay and the multi-generational Horgan family operation most centrally identified with establishing Margaret River as the canonical Australian Chardonnay region from the 1970s onward. Denis and Tricia Horgan founded the estate in 1974 through the acquisition of vineyard land in southern Margaret River with deliberate consultation from Robert Mondavi — who had identified the site as suitable for serious Chardonnay production — establishing the estate with the explicit ambition of producing apex Australian Chardonnay rather than the broader multi-grape range that defined most contemporary Australian estates. Art Series Chardonnay, first produced with the 1980 vintage and progressively becoming Australia's most editorially celebrated Chardonnay across the following four decades, anchors the estate's editorial position as the canonical Australian Chardonnay reference — with the wines designed for very long bottle development (multiple decades) and producing structurally precise apex Chardonnay that the canon increasingly recognizes as parallel to apex Burgundian Chardonnay (Domaine Leflaive, Coche-Dury, Roulot) in editorial register. The parallel Art Series range across Cabernet Sauvignon, Riesling, and Shiraz establishes the estate's broader Margaret River presence beyond the principal Chardonnay focus, while the Art Series itself — featuring annual concerts at the estate with international classical and jazz musicians and wine labels featuring commissioned Australian artworks — has become editorially distinctive within the broader Australian fine-wine cultural framework.",
+      "coordinates": {
+        "latitude": -34.0167,
+        "longitude": 115.0833
+      },
+      "coordinates_note": "Margaret River, southern Margaret River sub-region"
+    },
+    {
+      "id": "au-hunter-tyrrells",
+      "name": "Tyrrell's Wines",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "Hunter Valley",
+      "sub_region": "Hunter Valley (Pokolbin, the historical heart of Hunter Valley fine-wine production, north of Sydney in New South Wales)",
+      "commune": "Pokolbin",
+      "appellation": "Hunter Valley GI",
+      "founded": "1858",
+      "founded_note": "Estate established by Edward Tyrrell — an English-born settler — through the acquisition of land in Pokolbin and progressive vineyard planting; under continuous Tyrrell family ownership across five generations to the present, currently with Bruce Tyrrell as managing director and Andrew Spinaze as long-term winemaker; the estate has the rare distinction of being one of the longest continuously family-owned wine operations in Australia, with the founding 1858 vineyard plot — Tyrrell's Old Patch — still producing fruit from the original plantings.",
+      "principal_grapes": [
+        "Sémillon",
+        "Shiraz",
+        "Chardonnay",
+        "Pinot Noir",
+        "Verdelho"
+      ],
+      "signature_wines": [
+        "Vat 1 Sémillon (the apex Hunter Valley Sémillon — widely the canonical Hunter Sémillon reference; produced from old-vine Sémillon parcels in the Pokolbin region; bottled without oak, designed for very long bottle development that produces the structurally distinctive aged Hunter Sémillon character — toasty, honeyed, lanolin-rich at maturity, very different from the youthful citrus-driven character at release)",
+        "Vat 47 Chardonnay (the apex Hunter Chardonnay)",
+        "Vat 9 Shiraz (the apex Hunter Shiraz, in the deliberately classical Hunter register — lighter and more medium-bodied than the broader Australian Shiraz convention)",
+        "Vat 6 Pinot Noir",
+        "Vat 8 Shiraz Cabernet",
+        "The broader Tyrrell's range across multiple Hunter Valley grapes"
+      ],
+      "description": "The historical anchor of contemporary Hunter Valley fine wine and the multi-generational Tyrrell family operation across five generations most centrally identified with the canonical Hunter Sémillon — widely held to be one of the most editorially distinctive Australian white wine traditions, structurally distinct from any other major Australian white through its characteristic ageing trajectory from youthful citrus character to mature toasty-honeyed-lanolin complexity across multiple decades of bottle development. Edward Tyrrell — an English-born settler — founded the estate in 1858 through the acquisition of land in Pokolbin, with the estate's continuous Tyrrell family ownership across five generations to the present making it one of the longest continuously family-owned wine operations in Australia and the founding 1858 vineyard plot — Tyrrell's Old Patch — still producing fruit from the original plantings. Vat 1 Sémillon — the apex Hunter Sémillon, bottled without oak and designed for very long bottle development — has become widely the canonical Hunter reference, with the parallel Vat 47 Chardonnay and Vat 9 Shiraz establishing the estate as the multi-grape Hunter reference across both whites and the deliberately classical Hunter Shiraz register (lighter and more medium-bodied than the broader Australian Shiraz convention, reflecting Hunter's hot maritime climate and the historical Hunter winemaking tradition). The estate's editorial position alongside Penfolds (Barossa) and Henschke (Eden Valley) places multi-generational Australian family wine operations substantively in the atlas across the country's three principal historical fine-wine regions — Hunter, Barossa, Eden Valley.",
+      "coordinates": {
+        "latitude": -32.7833,
+        "longitude": 151.3033
+      },
+      "coordinates_note": "Pokolbin, Hunter Valley"
+    },
+    {
+      "id": "au-yarra-yarrayering",
+      "name": "Yarra Yering",
+      "country": "Australia",
+      "country_code": "AU",
+      "region": "Yarra Valley",
+      "sub_region": "Yarra Valley (the cool-climate sub-region east of Melbourne; the canonical Australian counterpart to Burgundy and Bordeaux in editorial register)",
+      "commune": "Gruyere",
+      "appellation": "Yarra Valley GI",
+      "founded": "1969",
+      "founded_note": "Estate established by Bailey Carrodus — a New Zealand-born botanist and viticulturist — through the planting of vineyards near Gruyere in the Yarra Valley, becoming one of the founding modern Yarra Valley estates alongside Mount Mary (1971) and others in the contemporary cool-climate Yarra Valley re-establishment after the long phylloxera-driven decline of the original 1850s Yarra Valley wine industry; under Carrodus's continued direction until his death in 2008; subsequently acquired by an investor group with continued operation under the Yarra Yering team; Sarah Crowe as winemaker since 2013, having previously worked at Yarra Yering as assistant winemaker.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Shiraz",
+        "Pinot Noir",
+        "Chardonnay",
+        "Merlot",
+        "Cabernet Franc",
+        "Petit Verdot",
+        "Malbec",
+        "Viognier"
+      ],
+      "signature_wines": [
+        "Dry Red No. 1 (the apex Bordeaux-style blend — Cabernet Sauvignon-led with Merlot, Cabernet Franc, Petit Verdot, and Malbec; the canonical contemporary Yarra Valley Cabernet-style reference)",
+        "Dry Red No. 2 (the apex Rhône-style blend — Shiraz-led with Mourvèdre, Viognier, and other Rhône varieties; the canonical Yarra Valley Rhône-style reference)",
+        "Pinot Noir (the apex Yarra Valley Pinot Noir)",
+        "Chardonnay",
+        "Underhill Shiraz (a single-vineyard Shiraz from a specific Underhill Vineyard parcel)"
+      ],
+      "description": "The founding figure of contemporary Yarra Valley fine wine and the producer most centrally identified with reframing the cool-climate Victorian region as a serious global fine-wine region capable of producing both Bordeaux-style and Rhône-style apex blends. Bailey Carrodus — a New Zealand-born botanist and viticulturist — established the estate in 1969 through the planting of vineyards near Gruyere in the Yarra Valley, becoming one of the founding modern Yarra Valley estates alongside Mount Mary (1971) and others in the contemporary cool-climate Yarra Valley re-establishment after the long phylloxera-driven decline of the original 1850s Yarra Valley wine industry. Carrodus's editorial framework — particularly the Dry Red No. 1 (the apex Bordeaux-style blend with Cabernet Sauvignon, Merlot, Cabernet Franc, Petit Verdot, and Malbec) and Dry Red No. 2 (the apex Rhône-style blend with Shiraz, Mourvèdre, and Viognier) — established the Yarra Valley as capable of producing serious classical-style apex blends in both the Bordeaux and Rhône traditions, parallel to how Cullen (Margaret River) established the western Australian region as a serious Bordeaux-style Cabernet region. Under Sarah Crowe as winemaker since 2013, the estate has continued in the founding editorial register essentially unchanged, with the disciplined classical framework that has defined Yarra Yering across more than five decades preserved through the contemporary winemaking direction.",
+      "coordinates": {
+        "latitude": -37.7011,
+        "longitude": 145.5497
+      },
+      "coordinates_note": "Gruyere, Yarra Valley"
     }
   ]
 }
