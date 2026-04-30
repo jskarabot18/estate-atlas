@@ -288,7 +288,7 @@
       <span class="masthead-divider">·</span>
       <span>2026 edition · prototype</span>
       <span class="masthead-divider">·</span>
-      <a href="#" id="download-pdf">Download PDF</a>
+      <a href="The_Estate_Atlas.pdf#page=1&amp;view=Fit" id="download-pdf" target="_blank" rel="noopener">Download PDF</a>
     </div>
   </header>
 
@@ -5207,10 +5207,8 @@ document.addEventListener('keydown', e => {
   if (e.key === 'Escape') closeEntry();
 });
 
-document.getElementById('download-pdf').addEventListener('click', e => {
-  e.preventDefault();
-  alert('The PDF companion volume is generated in a later step. (This link will resolve to the_estate_atlas.pdf once published.)');
-});
+// (Download-PDF link is now a plain anchor pointing to The_Estate_Atlas.pdf;
+// no JS handler needed.)
 
 populateFilters();
 renderPins(ATLAS_DATA.estates);
