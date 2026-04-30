@@ -5214,7 +5214,12 @@ function makePinIcon() {
   });
 }
 
-function renderPins(estates) {
+function renderPins(estates, opts) {
+  // opts.fitView controls whether the map auto-zooms to the rendered pins.
+  // Default: false. Filters/search pass true so the map zooms to the
+  // narrowed set; the initial load doesn't, preserving the Europe view.
+  const fitView = !!(opts && opts.fitView);
+
   estateMarkers.forEach(({ marker }) => map.removeLayer(marker));
   estateMarkers.clear();
 
@@ -5230,6 +5235,7 @@ function renderPins(estates) {
   document.getElementById('total-count').textContent = ATLAS_DATA.estates.length;
 
   if (estates.length === 0) return;
+  if (!fitView) return;
 
   if (estates.length === 1) {
     const { latitude, longitude } = estates[0].coordinates;
@@ -5302,7 +5308,10 @@ function applyFilters() {
     return true;
   });
 
-  renderPins(filtered);
+  // Only auto-zoom when at least one filter is active; otherwise just refresh
+  // the pins in place and leave the user's current view alone.
+  const hasActiveFilter = !!(c || r || g);
+  renderPins(filtered, { fitView: hasActiveFilter });
 }
 
 document.getElementById('filter-country').addEventListener('change', () => {
