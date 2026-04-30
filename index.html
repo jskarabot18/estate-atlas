@@ -185,6 +185,63 @@
 
     .filter-group select:focus { outline: none; border-color: var(--wine); }
 
+    .filter-search { position: relative; }
+
+    .filter-search input[type="text"] {
+      width: 100%; padding: 8px 10px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 15px; color: var(--ink);
+      background: var(--paper);
+      border: 1px solid var(--rule); border-radius: 0;
+      outline: none;
+    }
+
+    .filter-search input[type="text"]::placeholder {
+      color: var(--ink-soft); font-style: italic; opacity: 0.7;
+    }
+
+    .filter-search input[type="text"]:focus { border-color: var(--wine); }
+
+    .filter-search-results {
+      display: none;
+      position: absolute; left: 0; right: 0; top: 100%;
+      margin-top: 2px;
+      max-height: 280px; overflow-y: auto;
+      background: #ffffff;
+      border: 1px solid var(--rule);
+      z-index: 1100;
+    }
+
+    .filter-search-results.is-open { display: block; }
+
+    .filter-search-result {
+      padding: 7px 10px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 14px; color: var(--ink);
+      cursor: pointer;
+      border-bottom: 1px solid var(--rule);
+      line-height: 1.3;
+    }
+
+    .filter-search-result:last-child { border-bottom: none; }
+    .filter-search-result:hover,
+    .filter-search-result.is-active {
+      background: var(--paper); color: var(--wine);
+    }
+
+    .filter-search-result .result-meta {
+      display: block; font-size: 12px;
+      font-style: italic; color: var(--ink-soft);
+      margin-top: 1px;
+    }
+
+    .filter-search-empty {
+      padding: 10px;
+      font-family: 'Cormorant', serif; font-style: italic;
+      font-size: 13px; color: var(--ink-soft);
+      text-align: center;
+    }
+
     .filter-reset {
       font-family: 'Cormorant', serif; font-style: italic;
       font-size: 14px; color: var(--wine);
@@ -361,6 +418,13 @@
       A curated reference of approximately <strong>160</strong> wine estates of established reputation, presented as a clickable world map. <em>Currently in pilot — one hundred and fifty-eight estates encoded across the principal canonical regions of France, Italy, Germany, Spain, Portugal, Austria, Hungary, Greece, England, Slovenia, Switzerland, Lebanon, Georgia, Israel, the United States, Australia, New Zealand, South Africa, Chile, Argentina, and China, of the planned approximately one hundred and sixty.</em>
     </p>
 
+    <div class="filter-group filter-search">
+      <label class="filter-group-label" for="filter-search-input">Search</label>
+      <input type="text" id="filter-search-input" autocomplete="off"
+             placeholder="Estate, region, grape…" />
+      <div class="filter-search-results" id="filter-search-results"></div>
+    </div>
+
     <div class="filter-group">
       <label class="filter-group-label" for="filter-country">Country</label>
       <select id="filter-country">
@@ -399,9 +463,6 @@
         <a href="https://github.com/jskarabot18/estate-atlas/blob/main/LICENSE">License · CC BY-NC 4.0</a>
         <a href="https://jskarabot18.github.io/vinotheca/">Vinotheca</a>
         <a href="mailto:skarabot@yahoo.com">Correspondence</a>
-      </p>
-      <p class="atlas-footer-disclaimer">
-        A reference work, not a guide. Not affiliated with any producer, certification body, or publication.
       </p>
       <p class="atlas-footer-copyright">© Jure Skarabot · MMXXVI</p>
     </footer>
@@ -5134,7 +5195,7 @@ const ATLAS_DATA = {
 };
 
 const map = L.map('map', {
-  center: [30, 10], zoom: 2,
+  center: [48, 10], zoom: 4,
   minZoom: 2, maxZoom: 12,
   worldCopyJump: true,
   zoomControl: true, attributionControl: true
@@ -5181,24 +5242,54 @@ function renderPins(estates) {
   }
 }
 
+// Default map view — kept as constants so reset can return here.
+const DEFAULT_VIEW = { center: [48, 10], zoom: 4 };
+
+// Region <-> country lookup, built once. Used to cascade the Region dropdown
+// when a country is selected.
+const REGIONS_BY_COUNTRY = (() => {
+  const m = new Map();
+  for (const e of ATLAS_DATA.estates) {
+    if (!m.has(e.country)) m.set(e.country, new Set());
+    m.get(e.country).add(e.region);
+  }
+  return m;
+})();
+
+const ALL_REGIONS = [...new Set(ATLAS_DATA.estates.map(e => e.region))].sort();
+const ALL_COUNTRIES = [...new Set(ATLAS_DATA.estates.map(e => e.country))].sort();
+const ALL_GRAPES = [...new Set(ATLAS_DATA.estates.flatMap(e => e.principal_grapes))].sort();
+
+function fillSelect(id, items, placeholder) {
+  const sel = document.getElementById(id);
+  // Preserve current value if it's still valid in the new list
+  const current = sel.value;
+  sel.innerHTML = `<option value="">${placeholder}</option>`;
+  items.forEach(item => {
+    const opt = document.createElement('option');
+    opt.value = item;
+    opt.textContent = item;
+    sel.appendChild(opt);
+  });
+  if (current && items.includes(current)) sel.value = current;
+  else sel.value = '';
+}
+
 function populateFilters() {
-  const countries = [...new Set(ATLAS_DATA.estates.map(e => e.country))].sort();
-  const regions   = [...new Set(ATLAS_DATA.estates.map(e => e.region))].sort();
-  const grapes    = [...new Set(ATLAS_DATA.estates.flatMap(e => e.principal_grapes))].sort();
+  fillSelect('filter-country', ALL_COUNTRIES, 'All countries');
+  fillSelect('filter-region',  ALL_REGIONS,   'All regions');
+  fillSelect('filter-grape',   ALL_GRAPES,    'All grapes');
+}
 
-  const fill = (id, items) => {
-    const sel = document.getElementById(id);
-    items.forEach(item => {
-      const opt = document.createElement('option');
-      opt.value = item;
-      opt.textContent = item;
-      sel.appendChild(opt);
-    });
-  };
-
-  fill('filter-country', countries);
-  fill('filter-region',  regions);
-  fill('filter-grape',   grapes);
+// When the country changes, narrow the Region dropdown to that country.
+// If the previously-selected region isn't valid for the new country,
+// fillSelect will reset it to "All regions" automatically.
+function refreshRegionOptions() {
+  const country = document.getElementById('filter-country').value;
+  const regions = country
+    ? [...REGIONS_BY_COUNTRY.get(country)].sort()
+    : ALL_REGIONS;
+  fillSelect('filter-region', regions, 'All regions');
 }
 
 function applyFilters() {
@@ -5216,16 +5307,148 @@ function applyFilters() {
   renderPins(filtered);
 }
 
-['filter-country', 'filter-region', 'filter-grape'].forEach(id => {
-  document.getElementById(id).addEventListener('change', applyFilters);
+document.getElementById('filter-country').addEventListener('change', () => {
+  refreshRegionOptions();
+  applyFilters();
 });
+document.getElementById('filter-region').addEventListener('change', applyFilters);
+document.getElementById('filter-grape').addEventListener('change', applyFilters);
 
 document.getElementById('filter-reset').addEventListener('click', () => {
+  // Clear search input and hide results panel
+  const searchInput = document.getElementById('filter-search-input');
+  const searchResults = document.getElementById('filter-search-results');
+  if (searchInput) searchInput.value = '';
+  if (searchResults) {
+    searchResults.classList.remove('is-open');
+    searchResults.innerHTML = '';
+  }
+
+  // Reset all selects (and rebuild Region to its full list, since cascading
+  // may have narrowed it).
   document.getElementById('filter-country').value = '';
-  document.getElementById('filter-region').value  = '';
   document.getElementById('filter-grape').value   = '';
+  refreshRegionOptions();
+  document.getElementById('filter-region').value  = '';
+
   applyFilters();
   closeEntry();
+
+  // Return the map to its default centred view.
+  map.setView(DEFAULT_VIEW.center, DEFAULT_VIEW.zoom);
+});
+
+// ----- Search field --------------------------------------------------------
+// Matches against estate name, region, sub-region, commune, appellation, and
+// principal grapes. Results are clickable and either zoom to a single estate
+// or apply a filter (e.g. clicking a grape result filters by that grape).
+
+const SEARCH_INDEX = ATLAS_DATA.estates.map(e => ({
+  estate: e,
+  haystack: [
+    e.name,
+    e.region, e.sub_region, e.commune, e.appellation,
+    ...(e.principal_grapes || []),
+    e.country
+  ].filter(Boolean).join(' · ').toLowerCase()
+}));
+
+function renderSearchResults(query) {
+  const resultsEl = document.getElementById('filter-search-results');
+  const q = (query || '').trim().toLowerCase();
+  if (!q) {
+    resultsEl.classList.remove('is-open');
+    resultsEl.innerHTML = '';
+    return;
+  }
+
+  // Estate matches first (name match wins over generic field match).
+  const estateMatches = SEARCH_INDEX
+    .filter(({ haystack }) => haystack.includes(q))
+    .slice(0, 8)
+    .map(({ estate }) => estate);
+
+  // Surface grape-name matches as their own row, so users can click
+  // "Riesling" and get all Riesling estates.
+  const grapeMatches = ALL_GRAPES
+    .filter(g => g.toLowerCase().includes(q))
+    .slice(0, 5);
+
+  // Same for region matches.
+  const regionMatches = ALL_REGIONS
+    .filter(r => r.toLowerCase().includes(q))
+    .slice(0, 5);
+
+  let html = '';
+
+  grapeMatches.forEach(g => {
+    html += `<div class="filter-search-result" data-action="grape" data-value="${escapeHTML(g)}">
+      ${escapeHTML(g)}
+      <span class="result-meta">All ${escapeHTML(g)} estates</span>
+    </div>`;
+  });
+
+  regionMatches.forEach(r => {
+    html += `<div class="filter-search-result" data-action="region" data-value="${escapeHTML(r)}">
+      ${escapeHTML(r)}
+      <span class="result-meta">All estates in ${escapeHTML(r)}</span>
+    </div>`;
+  });
+
+  estateMatches.forEach(e => {
+    const sub = [e.region, e.country].filter(Boolean).join(' · ');
+    html += `<div class="filter-search-result" data-action="estate" data-value="${escapeHTML(e.id)}">
+      ${escapeHTML(e.name)}
+      <span class="result-meta">${escapeHTML(sub)}</span>
+    </div>`;
+  });
+
+  if (!html) {
+    html = '<div class="filter-search-empty">No matches</div>';
+  }
+
+  resultsEl.innerHTML = html;
+  resultsEl.classList.add('is-open');
+}
+
+document.getElementById('filter-search-input').addEventListener('input', e => {
+  renderSearchResults(e.target.value);
+});
+
+document.getElementById('filter-search-input').addEventListener('focus', e => {
+  if (e.target.value) renderSearchResults(e.target.value);
+});
+
+document.getElementById('filter-search-results').addEventListener('click', e => {
+  const item = e.target.closest('.filter-search-result');
+  if (!item) return;
+  const action = item.dataset.action;
+  const value  = item.dataset.value;
+
+  // Hide search results
+  document.getElementById('filter-search-results').classList.remove('is-open');
+  document.getElementById('filter-search-input').value = '';
+
+  if (action === 'estate') {
+    openEntry(value);
+    const estate = ATLAS_DATA.estates.find(x => x.id === value);
+    if (estate && estate.coordinates) {
+      map.setView([estate.coordinates.latitude, estate.coordinates.longitude], 9);
+    }
+  } else if (action === 'grape') {
+    document.getElementById('filter-grape').value = value;
+    applyFilters();
+  } else if (action === 'region') {
+    document.getElementById('filter-region').value = value;
+    applyFilters();
+  }
+});
+
+// Close search results when clicking outside
+document.addEventListener('click', e => {
+  if (!e.target.closest('.filter-search')) {
+    document.getElementById('filter-search-results').classList.remove('is-open');
+  }
 });
 
 function openEntry(estateId) {
