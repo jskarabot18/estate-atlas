@@ -407,9 +407,7 @@
     <div class="masthead-meta">
       <a href="https://jskarabot18.github.io/vinotheca/">Vinotheca</a>
       <span class="masthead-divider">·</span>
-      <span>2026 edition · prototype</span>
-      <span class="masthead-divider">·</span>
-      <a href="The_Estate_Atlas.pdf#page=1&amp;view=Fit" id="download-pdf" target="_blank" rel="noopener">Download PDF</a>
+      <a href="The_Estate_Atlas.pdf#page=1&amp;view=Fit&amp;toolbar=1&amp;navpanes=0" id="download-pdf" target="_blank" rel="noopener">Download Estate Atlas PDF</a>
     </div>
   </header>
 
@@ -5498,7 +5496,11 @@ function openEntry(estateId) {
   `;
 
   document.getElementById('entry-content').innerHTML = html;
-  document.getElementById('entry-panel').classList.add('is-open');
+  const panel = document.getElementById('entry-panel');
+  panel.classList.add('is-open');
+  // Always show the new estate from the top — don't inherit scroll position
+  // from a previously-viewed estate.
+  panel.scrollTop = 0;
 }
 
 function closeEntry() {
