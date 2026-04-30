@@ -2,10 +2,10 @@
   "atlas": {
     "title": "The Estate Atlas",
     "edition": "2026",
-    "version": "0.27.0-pilot",
+    "version": "0.28.0-pilot",
     "license": "CC BY-NC 4.0",
     "target_count": 160,
-    "current_count": 137,
+    "current_count": 153,
     "last_updated": "2026-04-29"
   },
   "estates": [
@@ -4214,6 +4214,498 @@
         "longitude": 145.5497
       },
       "coordinates_note": "Gruyere, Yarra Valley"
+    },
+    {
+      "id": "fr-alsace-trimbach",
+      "name": "Domaine Trimbach",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Alsace",
+      "sub_region": "Ribeauvillé (in the central Alsace, the historical heart of fine-wine Alsace)",
+      "commune": "Ribeauvillé",
+      "appellation": "Alsace AOC",
+      "founded": "1626",
+      "founded_note": "Estate established by Jean Trimbach in the early seventeenth century; under continuous Trimbach family direction across thirteen generations to the present, currently with Pierre Trimbach and Jean Trimbach Jr. as winemakers; the estate has the rare distinction of being among the longest continuously family-owned wine operations in Europe, predating the formal Alsace AOC by over 300 years; the estate has historically refused to label its wines under the Alsace Grand Cru classification system that was introduced from 1975 onward, choosing instead to bottle its grand cru parcels under proprietary names — Clos Sainte Hune, Cuvée Frédéric Emile, Geisberg.",
+      "principal_grapes": [
+        "Riesling",
+        "Gewürztraminer",
+        "Pinot Gris",
+        "Muscat",
+        "Pinot Blanc",
+        "Pinot Noir"
+      ],
+      "signature_wines": [
+        "Clos Sainte Hune Riesling (the apex single-vineyard Riesling — sourced from a 1.67-hectare parcel within the Rosacker grand cru in Hunawihr but bottled under the proprietary Clos Sainte Hune name; widely held to be the canonical apex Alsace Riesling and one of the most editorially celebrated dry Rieslings produced anywhere)",
+        "Cuvée Frédéric Emile Riesling (sourced from grand cru Geisberg and Osterberg parcels in Ribeauvillé; the second canonical Trimbach Riesling reference)",
+        "Geisberg Riesling (single grand cru bottling)",
+        "Réserve Personnelle Gewürztraminer",
+        "Réserve Personnelle Pinot Gris",
+        "The broader Trimbach range across multiple Alsace varietals"
+      ],
+      "description": "The historical anchor of contemporary Alsace fine wine and the multi-generational Trimbach family operation across thirteen generations most centrally identified with the canonical apex Alsace Riesling — Clos Sainte Hune, widely held to be one of the most editorially celebrated dry Rieslings produced anywhere in the global fine-wine canon. The estate's continuous Trimbach family direction since 1626 makes it among the longest continuously family-owned wine operations in Europe, predating the formal Alsace AOC by over 300 years and establishing the editorial framework for serious Alsace winemaking across multiple centuries of continuous production. The estate has historically refused to label its wines under the Alsace Grand Cru classification system introduced from 1975 onward — choosing instead to bottle its grand cru parcels under proprietary names (Clos Sainte Hune from within the Rosacker grand cru, Cuvée Frédéric Emile from Geisberg and Osterberg) — making Trimbach editorially distinctive within the broader Alsace appellation framework as a producer that has prioritized house-name traditions over the formal grand cru hierarchy. Together with Domaine Zind-Humbrecht and Domaine Weinbach, Trimbach anchors Alsace's editorial position in the atlas as the multi-generational classical reference, with the Clos Sainte Hune Riesling specifically representing the historical continuity of Alsace's apex Riesling tradition.",
+      "coordinates": {
+        "latitude": 48.1953,
+        "longitude": 7.3197
+      },
+      "coordinates_note": "Ribeauvillé, central Alsace"
+    },
+    {
+      "id": "fr-alsace-zindhumbrecht",
+      "name": "Domaine Zind-Humbrecht",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Alsace",
+      "sub_region": "Turckheim (in the Colmar area; principal grand cru holdings across multiple Alsace villages)",
+      "commune": "Turckheim",
+      "appellation": "Alsace AOC and Alsace Grand Cru AOC",
+      "founded": "1959",
+      "founded_note": "Estate established by Léonard Humbrecht through the joining of the Humbrecht and Zind family vineyard holdings; Léonard's son Olivier Humbrecht — who became the first Frenchman to earn the Master of Wine qualification in 1989 — joined the operation in 1989 and has directed the estate since; converted to biodynamic viticulture in 1997 — among the early-adopter biodynamic European estates alongside Beaucastel, Leflaive, and others; the estate works across multiple grand cru parcels with each bottled separately in the Burgundian framework.",
+      "principal_grapes": [
+        "Riesling",
+        "Gewürztraminer",
+        "Pinot Gris",
+        "Muscat",
+        "Pinot Blanc",
+        "Auxerrois"
+      ],
+      "signature_wines": [
+        "Clos Saint Urbain Rangen Riesling (the apex single-vineyard Riesling from the volcanic-soil Rangen grand cru in Thann — the southernmost Alsace grand cru, with extreme volcanic soils unique within Alsace; widely held to be one of the canonical contemporary apex Alsace Rieslings)",
+        "Clos Windsbuhl Riesling (single-vineyard from a calcareous parcel in Hunawihr)",
+        "Brand Riesling (Brand grand cru)",
+        "Goldert Gewürztraminer (Goldert grand cru)",
+        "Hengst Pinot Gris (Hengst grand cru)",
+        "Heimbourg Pinot Gris (single-vineyard)",
+        "Clos Jebsal Pinot Gris (single-vineyard)",
+        "Vendanges Tardives and Sélection de Grains Nobles bottlings (the late-harvest sweet wine traditions)"
+      ],
+      "description": "The reference contemporary biodynamic Alsace producer and the operation most centrally identified with Olivier Humbrecht — the first Frenchman to earn the Master of Wine qualification in 1989 — across his multi-decade direction since 1989. Léonard Humbrecht established the estate in 1959 through the joining of the Humbrecht and Zind family vineyard holdings, with the contemporary editorial position built progressively under Olivier Humbrecht around named single-vineyard and grand cru bottlings from multiple Alsace villages — Clos Saint Urbain Rangen (the volcanic-soil grand cru in Thann; widely the canonical apex Zind-Humbrecht bottling), Clos Windsbuhl (calcareous parcel in Hunawihr), Brand, Goldert, Hengst — each labeled with its specific vineyard origin in the Burgundian framework rather than the broader Alsace varietal-only convention. The estate's biodynamic conversion in 1997 placed Zind-Humbrecht alongside Beaucastel (Châteauneuf), Leflaive (Burgundy), and the broader European biodynamic founding generation as the early-adopter biodynamic estates whose collective work established biodynamic viticulture as the contemporary apex fine-wine framework. Together with Trimbach (multi-generational classical anchor) and Weinbach (multi-generational classical alternative), Zind-Humbrecht anchors Alsace's editorial position in the atlas as the contemporary biodynamic apex, with the disciplined single-vineyard grand cru framework that has defined Olivier Humbrecht's editorial direction across multiple decades.",
+      "coordinates": {
+        "latitude": 48.0858,
+        "longitude": 7.2706
+      },
+      "coordinates_note": "Turckheim, Colmar area"
+    },
+    {
+      "id": "fr-alsace-weinbach",
+      "name": "Domaine Weinbach",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Alsace",
+      "sub_region": "Kaysersberg-Vignoble (in the Colmar area; principal vineyard holdings around the Schlossberg grand cru)",
+      "commune": "Kaysersberg",
+      "appellation": "Alsace AOC and Alsace Grand Cru AOC",
+      "founded": "1898",
+      "founded_note": "Estate established by the Faller family through the acquisition of the Clos des Capucins property — a former Capuchin monastery vineyard documented from 1612; transformed into the contemporary canonical Alsace reference under Théo Faller from the 1950s onward; under his widow Colette Faller from 1979 until her death in 2015, with her daughters Catherine Faller and Laurence Faller as winemakers; Catherine Faller died in 2014 with Laurence continuing as winemaker; Catherine's daughter Eddy Leiber-Faller now in the operation; the estate has been under continuous Faller family direction across four generations to the present, with all-women family direction across multiple decades.",
+      "principal_grapes": [
+        "Riesling",
+        "Gewürztraminer",
+        "Pinot Gris",
+        "Muscat",
+        "Pinot Blanc",
+        "Pinot Noir"
+      ],
+      "signature_wines": [
+        "Cuvée Sainte Catherine Riesling (the apex single-vineyard Riesling from the Schlossberg grand cru — named for Catherine Faller; produced from old-vine parcels in the Schlossberg grand cru above the estate)",
+        "Schlossberg Grand Cru Riesling Cuvée Sainte Catherine L'Inédit (a higher selection from Cuvée Sainte Catherine; produced only in suitable vintages)",
+        "Quintessence de Grains Nobles Gewürztraminer (the apex sweet wine from extreme botrytis selection)",
+        "Mambourg Grand Cru Gewürztraminer",
+        "Cuvée Théo Riesling (named for Théo Faller)",
+        "The broader Weinbach range across multiple Alsace varietals"
+      ],
+      "description": "The reference multi-generational classical Alsace producer and the Faller family operation across four generations most centrally identified with the all-women family direction that has defined the estate across multiple decades. The Faller family established the estate in 1898 through the acquisition of the Clos des Capucins property — a former Capuchin monastery vineyard documented from 1612 — and transformed it into the contemporary canonical Alsace reference under Théo Faller from the 1950s onward, with the family direction subsequently continuing through Théo's widow Colette Faller (1979 until her death in 2015) and her daughters Catherine Faller (until her 2014 death) and Laurence Faller. The estate's editorial position is built around named cuvées rather than the broader Alsace varietal-only convention — Cuvée Sainte Catherine Riesling (named for Catherine Faller; the apex single-vineyard Riesling from the Schlossberg grand cru), Quintessence de Grains Nobles Gewürztraminer (the apex sweet wine), Cuvée Théo Riesling (named for Théo Faller) — making Weinbach editorially distinctive within Alsace through the family-named cuvée framework that parallels how Trimbach has used proprietary names rather than grand cru classifications. Together with Trimbach (the longest historical continuity) and Zind-Humbrecht (contemporary biodynamic apex), Weinbach anchors Alsace's editorial position in the atlas as the multi-generational classical alternative, with the Faller family's all-women direction across multiple decades providing additional editorial substance alongside the founding family lineage.",
+      "coordinates": {
+        "latitude": 48.1364,
+        "longitude": 7.2603
+      },
+      "coordinates_note": "Kaysersberg, Colmar area"
+    },
+    {
+      "id": "fr-provence-tempier",
+      "name": "Domaine Tempier",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Provence",
+      "sub_region": "Bandol AOC (the small structured-red appellation in the western Provence, near Toulon)",
+      "commune": "Le Plan-du-Castellet",
+      "appellation": "Bandol AOC",
+      "founded": "1834",
+      "founded_note": "Estate established by the Peyraud family in the early nineteenth century with continuous family vineyard work documented across multiple generations; transformed into the contemporary canonical Bandol reference under Lucien Peyraud and his wife Lulu Peyraud — Lucien Peyraud was central to the establishment of the Bandol AOC in 1941, becoming the editorial figurehead of the appellation across multiple decades — and continued under their sons François Peyraud and Jean-Marie Peyraud; under continuous Peyraud family direction across multiple generations to the present, currently with Daniel Ravier as managing director and the family in editorial roles.",
+      "principal_grapes": [
+        "Mourvèdre",
+        "Grenache",
+        "Cinsault",
+        "Carignan"
+      ],
+      "signature_wines": [
+        "La Tourtine (the apex single-vineyard Mourvèdre-led Bandol — sourced from the Tourtine parcel; one of multiple named single-vineyard Bandol bottlings)",
+        "Migoua (a second single-vineyard Bandol from the Migoua parcel)",
+        "Cabassaou (a third single-vineyard, the smallest production)",
+        "Bandol Cuvée Spéciale (a multi-vineyard cuvée)",
+        "Bandol Rouge (the principal Bandol red)",
+        "Bandol Rosé (the canonical Tempier rosé — Mourvèdre-based, structurally distinct from the broader Provence rosé commercial register; one of the most editorially celebrated Provence rosés produced)"
+      ],
+      "description": "The canonical Bandol producer and the multi-generational Peyraud family operation most centrally identified with the editorial establishment of Bandol as a serious global fine-wine appellation through Lucien Peyraud's central role in the establishment of the Bandol AOC in 1941 and his subsequent multi-decade work as the appellation's editorial figurehead. The estate has been under continuous Peyraud family direction across multiple generations since 1834, with the contemporary editorial position built around named single-vineyard Mourvèdre-based Bandol bottlings — La Tourtine, Migoua, Cabassaou — each labeled with its specific vineyard origin in the Burgundian framework. The Tempier rosé — Mourvèdre-based, structurally distinct from the broader Provence rosé commercial register — has become widely held to be one of the most editorially celebrated Provence rosés produced, providing a counterpart to the apex red work and reframing Provence rosé as a serious editorial category rather than the commercial commodity that has dominated the broader Provence rosé framework. The estate's editorial influence on serious Provence winemaking — and on the broader contemporary recognition of Mourvèdre as a serious global fine-wine grape — extends well beyond Bandol itself, with Tempier widely held to be one of the most editorially significant small-AOC family operations in serious French fine wine.",
+      "coordinates": {
+        "latitude": 43.2153,
+        "longitude": 5.7411
+      },
+      "coordinates_note": "Le Plan-du-Castellet, Bandol"
+    },
+    {
+      "id": "fr-provence-chateausimone",
+      "name": "Château Simone",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Provence",
+      "sub_region": "Palette AOC (a tiny appellation east of Aix-en-Provence — one of France's smallest AOCs, with only a handful of producers across approximately 40 hectares)",
+      "commune": "Meyreuil",
+      "appellation": "Palette AOC",
+      "founded": "1830",
+      "founded_note": "Estate established under the Rougier family through the acquisition of the Château Simone property — vineyard work on the property documented from the seventeenth century through the Carmes Déchaussés monastic order that originally cultivated the site; under continuous Rougier family direction across multiple generations to the present, currently with Jean-François Rougier as winemaker; the estate is editorially distinguished within French fine wine for its work in the small Palette AOC and its multi-grape blends including indigenous Provence varieties rarely seen elsewhere.",
+      "principal_grapes": [
+        "Grenache",
+        "Mourvèdre",
+        "Cinsault",
+        "Syrah",
+        "Carignan",
+        "Castet",
+        "Clairette",
+        "Grenache Blanc",
+        "Bourboulenc",
+        "Ugni Blanc"
+      ],
+      "signature_wines": [
+        "Château Simone Rouge (the apex Palette red — multi-grape blend dominated by Grenache, Mourvèdre, Cinsault, Syrah with smaller proportions of indigenous Provence varieties; produced in a deliberately classical register with extended ageing in old foudres before release)",
+        "Château Simone Blanc (the apex Palette white — multi-grape blend of Clairette, Grenache Blanc, Bourboulenc, Ugni Blanc with indigenous varieties; also extended-aged)",
+        "Château Simone Rosé (the apex Palette rosé — distinct from the broader Provence rosé register through its multi-grape composition and extended ageing)"
+      ],
+      "description": "The canonical Palette AOC reference and one of the most editorially singular small-AOC family operations in serious French fine wine, working a tiny appellation (approximately 40 hectares total across all producers) that has been continuously cultivated since the seventeenth century through the original Carmes Déchaussés monastic order and subsequently the Rougier family from 1830 onward. The estate has been under continuous Rougier family direction across multiple generations, with the contemporary editorial position built around the multi-grape blends that distinguish Palette from the broader Provence appellation framework — the Château Simone Rouge incorporates smaller proportions of indigenous Provence varieties (Castet, Manosquin, Théoulier, Ribeyrenc among others) alongside the principal Grenache, Mourvèdre, Cinsault, and Syrah; the Château Simone Blanc incorporates indigenous whites alongside Clairette, Grenache Blanc, Bourboulenc, and Ugni Blanc. The estate's deliberately classical winemaking — extended ageing in old foudres before release, refusal of the contemporary new-oak convention that dominates broader fine-wine practice — has preserved a winemaking framework that the canon increasingly recognizes as one of the most editorially distinctive surviving examples of historical Provence winemaking. Together with Tempier (Bandol), Château Simone anchors Provence's editorial position in the atlas through the singular Palette AOC framework, providing a structural counterpart to Tempier's Bandol Mourvèdre work through the multi-grape Palette tradition.",
+      "coordinates": {
+        "latitude": 43.4731,
+        "longitude": 5.5439
+      },
+      "coordinates_note": "Meyreuil, Palette AOC"
+    },
+    {
+      "id": "fr-languedoc-masdedaumasgassac",
+      "name": "Mas de Daumas Gassac",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Languedoc",
+      "sub_region": "Hérault (near Aniane, in the inland Languedoc; the property's geological substrate is uniquely identified as a deep deposit of glacial detritus on red volcanic stones, structurally similar to certain Bordeaux Médoc parcels)",
+      "commune": "Aniane",
+      "appellation": "IGP Pays d'Hérault (the estate is bottled outside the conventional appellation framework as Vin de Pays / IGP because the principal Cabernet Sauvignon is not authorized in the regional AOCs)",
+      "founded": "1971",
+      "founded_note": "Estate established by Aimé Guibert — the \"godfather of fine Languedoc,\" died 2016 — through the acquisition of property near Aniane after Guibert had identified the unique geological substrate through consultation with the geologist Henri Enjalbert, who recognized the site as structurally similar to certain Bordeaux Médoc parcels; Guibert deliberately planted Cabernet Sauvignon as the principal grape rather than the indigenous Languedoc varieties, becoming the founding figure of contemporary serious Languedoc fine wine; under continued Guibert family direction across two generations, currently with Samuel Guibert and Roman Guibert as managing directors.",
+      "principal_grapes": [
+        "Cabernet Sauvignon",
+        "Syrah",
+        "Merlot",
+        "Carignan",
+        "Grenache",
+        "Cinsault",
+        "Mourvèdre",
+        "Chardonnay",
+        "Viognier",
+        "Petit Manseng",
+        "Chenin Blanc"
+      ],
+      "signature_wines": [
+        "Mas de Daumas Gassac Rouge (the principal red — Cabernet Sauvignon-led with smaller proportions of indigenous Languedoc varieties; the bottling that established the estate's contemporary editorial position from the late 1970s onward)",
+        "Mas de Daumas Gassac Blanc (a multi-grape white blend)",
+        "Émile Peynaud Rouge (a separate apex bottling named for the legendary Bordeaux oenologist Émile Peynaud who consulted at the estate in its founding period)"
+      ],
+      "description": "The founding figure of contemporary serious Languedoc fine wine and the producer most centrally identified with the editorial reframing of the Languedoc from a bulk-wine region into a serious global fine-wine category from the 1970s onward. Aimé Guibert founded the estate in 1971 after identifying the unique geological substrate through consultation with the geologist Henri Enjalbert, who recognized the site near Aniane as structurally similar to certain Bordeaux Médoc parcels — leading Guibert to deliberately plant Cabernet Sauvignon as the principal grape rather than the indigenous Languedoc varieties that had defined the broader regional viticulture. The estate's bottling outside the conventional appellation framework as IGP Pays d'Hérault — necessitated by the principal Cabernet Sauvignon not being authorized in the regional AOCs — established the editorial framework that subsequent contemporary Languedoc apex producers have inherited, with the deliberate refusal of restrictive AOC rules in favor of the broader IGP framework providing winemaking flexibility that has come to define serious Languedoc work across multiple decades. Aimé Guibert's multi-decade direction until his 2016 death made him the canonical \"godfather of fine Languedoc\" — the producer most centrally identified with establishing the editorial framework that subsequent Languedoc apex producers (Domaine de la Grange des Pères, Domaine Gauby, Mas Jullien, and others) have inherited.",
+      "coordinates": {
+        "latitude": 43.6878,
+        "longitude": 3.5994
+      },
+      "coordinates_note": "Aniane, Hérault"
+    },
+    {
+      "id": "fr-languedoc-grangedesperes",
+      "name": "Domaine de la Grange des Pères",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Languedoc",
+      "sub_region": "Hérault (Aniane area; in the same broader inland Languedoc region as Mas de Daumas Gassac)",
+      "commune": "Aniane",
+      "appellation": "IGP Pays d'Hérault (also bottled outside the conventional appellation framework)",
+      "founded": "1989",
+      "founded_note": "Estate established by Laurent Vaillé — who died December 2021 — through the acquisition of vineyard land near Aniane after Vaillé had worked at multiple French apex estates including Domaine Trévallon, Coche-Dury in Burgundy, and Beaucastel in Châteauneuf; the estate was established with very small production from the founding period, with Vaillé deliberately limiting production to maintain editorial discipline; under Vaillé direction until his death in December 2021; subsequently under his brother Pascal Vaillé and Vaillé family direction with the founding editorial register preserved.",
+      "principal_grapes": [
+        "Syrah",
+        "Mourvèdre",
+        "Cabernet Sauvignon",
+        "Counoise",
+        "Roussanne",
+        "Chardonnay",
+        "Marsanne"
+      ],
+      "signature_wines": [
+        "Grange des Pères Rouge (the apex red — Syrah-led blend with Mourvèdre and Cabernet Sauvignon; very small production — typically around 25,000 bottles annually; widely held to be one of the most editorially celebrated contemporary French wines outside the conventional appellation framework)",
+        "Grange des Pères Blanc (the apex white — Roussanne-led with Chardonnay; even smaller production than the red)"
+      ],
+      "description": "The contemporary apex Languedoc producer and the operation most centrally identified with Laurent Vaillé's multi-decade work establishing serious singular winemaking outside the conventional appellation framework. Laurent Vaillé founded the estate in 1989 near Aniane — in the same broader inland Languedoc region as Mas de Daumas Gassac — after working at multiple French apex estates including Domaine Trévallon, Coche-Dury in Burgundy, and Beaucastel in Châteauneuf, bringing the editorial framework absorbed from those operations to his own estate with deliberate production discipline (typically around 25,000 bottles annually for the apex red). The Grange des Pères Rouge — Syrah-led blend with Mourvèdre and Cabernet Sauvignon, bottled outside the conventional appellation framework as IGP — has become widely held to be one of the most editorially celebrated contemporary French wines outside the conventional appellation framework, with cult status within the contemporary global fine-wine canon and editorial standing comparable to apex single-estate work in major canonical French regions. Vaillé's death in December 2021 created a succession question; the estate has continued under his brother Pascal Vaillé and the broader Vaillé family direction with the founding editorial register preserved, structurally similar to other founder-death succession patterns already in the atlas (Schubert/Penfolds, Joguet, Dagueneau, Clendenen/Au Bon Climat, Carrodus/Yarra Yering).",
+      "coordinates": {
+        "latitude": 43.6939,
+        "longitude": 3.6008
+      },
+      "coordinates_note": "Aniane, Hérault"
+    },
+    {
+      "id": "fr-beaujolais-lapierre",
+      "name": "Marcel Lapierre",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Beaujolais",
+      "sub_region": "Morgon (the apex cru Beaujolais village within the broader Beaujolais region)",
+      "commune": "Villié-Morgon",
+      "appellation": "Morgon AOC (Beaujolais Cru)",
+      "founded": "1973",
+      "founded_note": "Marcel Lapierre took over the family vineyard holdings from his father in 1973 and progressively built the contemporary editorial position; under Marcel Lapierre's direction from 1973 until his death in October 2010; under his son Mathieu Lapierre as winemaker since 2010 with the founding editorial register preserved; Marcel Lapierre is widely the founding figure of the contemporary natural-wine Beaujolais movement — the producer most centrally identified with the rejection of commercial Beaujolais Nouveau practices in the early 1980s and the establishment of natural-wine winemaking in serious Beaujolais.",
+      "principal_grapes": [
+        "Gamay"
+      ],
+      "signature_wines": [
+        "Lapierre Morgon (the principal Morgon — produced through deliberate natural-wine framework: indigenous yeast fermentation, no added sulfur during fermentation, minimal sulfur addition at bottling; the canonical contemporary natural-wine Beaujolais reference)",
+        "Lapierre Morgon Cuvée MMXX or vintage-specific cuvées",
+        "Raisins Gaulois (the entry-level Gamay from younger-vine parcels)"
+      ],
+      "description": "The founding figure of the contemporary natural-wine Beaujolais movement and the producer most centrally identified with the rejection of commercial Beaujolais Nouveau practices that had dominated the broader Beaujolais commercial framework through the late twentieth century. Marcel Lapierre — who took over the family vineyard holdings in 1973 and directed the estate until his death in October 2010 — was central to the formation of the \"Gang of Four\" alongside Jean Foillard, Guy Breton, and Jean-Paul Thévenet, four Morgon producers who collectively rejected the commercial Beaujolais Nouveau framework in the early 1980s and embraced natural-wine winemaking (indigenous yeast fermentation, no added sulfur during fermentation, minimal intervention) as the editorial foundation for serious contemporary Beaujolais. Lapierre's mentorship of the broader Gang of Four and the subsequent generations of natural-wine winemakers has placed him editorially alongside other founding figures of contemporary natural wine globally — Pierre Overnoy in Jura, Josko Gravner in Friuli, the broader natural-wine movement that has reframed serious fine wine through deliberate technical anachronism since the late twentieth century. Under Mathieu Lapierre (Marcel's son) since 2010, the estate has continued in the founding editorial register essentially unchanged, with the disciplined natural-wine framework that has defined the operation across nearly five decades preserved through the contemporary winemaking direction.",
+      "coordinates": {
+        "latitude": 46.1814,
+        "longitude": 4.6839
+      },
+      "coordinates_note": "Villié-Morgon, Beaujolais"
+    },
+    {
+      "id": "fr-beaujolais-foillard",
+      "name": "Jean Foillard",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Beaujolais",
+      "sub_region": "Morgon (the apex cru Beaujolais village; principal vineyard holdings on the Côte du Py granite slopes above Morgon)",
+      "commune": "Villié-Morgon",
+      "appellation": "Morgon AOC (Beaujolais Cru)",
+      "founded": "1981",
+      "founded_note": "Jean Foillard took over the family vineyard holdings from his father in 1981 and progressively built the contemporary editorial position alongside Marcel Lapierre as the second canonical Gang of Four reference; under Foillard's continued direction; the estate has been particularly central to establishing the Côte du Py — the granite slopes above Morgon — as the apex Morgon sub-zone, with the Côte du Py single-vineyard Morgon as the canonical Foillard reference.",
+      "principal_grapes": [
+        "Gamay"
+      ],
+      "signature_wines": [
+        "Morgon Côte du Py (the apex single-vineyard Morgon — sourced from old-vine Gamay parcels on the granite Côte du Py slopes above Morgon; widely the canonical contemporary single-vineyard Beaujolais reference)",
+        "Morgon Eponym (a second Morgon bottling)",
+        "Morgon Corcelette (a third single-vineyard Morgon)",
+        "Beaujolais Cuvée 3.14 (an entry-level Gamay)"
+      ],
+      "description": "The second canonical Gang of Four Beaujolais reference and the producer most centrally identified with establishing the Côte du Py — the granite slopes above Morgon — as the apex Morgon sub-zone within the broader Beaujolais cru framework. Jean Foillard took over the family vineyard holdings in 1981 and progressively built the contemporary editorial position alongside Marcel Lapierre, joining Lapierre, Guy Breton, and Jean-Paul Thévenet in the formation of the Gang of Four — the four Morgon producers who collectively rejected commercial Beaujolais Nouveau practices in the early 1980s and embraced natural-wine winemaking as the editorial foundation for serious contemporary Beaujolais. The Morgon Côte du Py — sourced from old-vine Gamay parcels on the granite Côte du Py slopes above Morgon — has become widely the canonical contemporary single-vineyard Beaujolais reference, with the disciplined natural-wine framework (indigenous yeast fermentation, minimal intervention) and the deliberate single-vineyard discipline that has reshaped how the canon reads serious Beaujolais. Together with Marcel Lapierre, Foillard anchors the contemporary natural-wine Beaujolais movement in the atlas, with the pair representing the Gang of Four collective editorial story that has substantively reshaped how the broader fine-wine canon reads cru Beaujolais.",
+      "coordinates": {
+        "latitude": 46.1881,
+        "longitude": 4.6797
+      },
+      "coordinates_note": "Villié-Morgon, Beaujolais"
+    },
+    {
+      "id": "fr-jura-ganevat",
+      "name": "Domaine Jean-François Ganevat",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Jura",
+      "sub_region": "La Combe (in the Sud Revermont, the southern Jura)",
+      "commune": "Rotalier",
+      "appellation": "Côtes du Jura AOC, Crémant du Jura AOC",
+      "founded": "1998 (contemporary direction)",
+      "founded_note": "Family vineyard holdings across multi-generational continuity in Rotalier; Jean-François Ganevat took over from his father Jean Ganevat in 1998 after working at multiple Burgundy estates and progressively built the contemporary editorial position; under Ganevat's continued direction; converted to biodynamic viticulture progressively from the early 2000s.",
+      "principal_grapes": [
+        "Chardonnay",
+        "Savagnin",
+        "Trousseau",
+        "Poulsard",
+        "Pinot Noir"
+      ],
+      "signature_wines": [
+        "Les Grands Teppes Vieilles Vignes (apex single-vineyard Chardonnay from very old vines)",
+        "Chalasses Vieilles Vignes Marnes Bleues (apex single-vineyard Chardonnay from blue marl soils)",
+        "J'En Veux Encore Savagnin (the apex Savagnin in the topped-up classical Jura register)",
+        "Vin Jaune (the apex oxidative Savagnin aged under voile flor for 6 years 3 months)",
+        "Multiple Trousseau and Poulsard bottlings",
+        "Multiple bottlings from indigenous Jura varieties Ganevat has reintroduced from old-vine parcels"
+      ],
+      "description": "The contemporary apex Jura producer and the figure most centrally identified with establishing serious single-vineyard Jura winemaking outside the historical Vin Jaune tradition alone. Jean-François Ganevat took over the family vineyard holdings in 1998 after working at multiple Burgundy estates and progressively built the contemporary editorial position around named single-vineyard Chardonnay and Savagnin bottlings — Les Grands Teppes Vieilles Vignes, Chalasses Vieilles Vignes Marnes Bleues, J'En Veux Encore Savagnin — that have substantively reshaped how the canon reads serious Jura beyond the Vin Jaune category alone. The estate's editorial breadth across the Jura's traditional categories — classical Vin Jaune (oxidative Savagnin under voile flor), classical topped-up Savagnin, single-vineyard Chardonnay, indigenous reds (Trousseau, Poulsard), plus the broader range across indigenous Jura grape varieties Ganevat has reintroduced from old-vine parcels — has placed Ganevat alongside the broader contemporary biodynamic European movement (Beaucastel, Leflaive, Mullineux, Felton Road, Bergström, Pieropan, Cullen, Chappaz) as one of the most editorially singular contemporary fine-wine producers globally. Ganevat's multi-decade direction since 1998 has been central to establishing the Jura as one of the most followed contemporary fine-wine regions globally, with the broader Jura editorial revival extending substantively beyond the traditional Vin Jaune category alone through Ganevat's single-vineyard discipline.",
+      "coordinates": {
+        "latitude": 46.5544,
+        "longitude": 5.4664
+      },
+      "coordinates_note": "Rotalier, Sud Revermont, Jura"
+    },
+    {
+      "id": "fr-southwest-montus",
+      "name": "Château Montus",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Madiran",
+      "sub_region": "Madiran (in the Pyrenees foothills, southwestern France)",
+      "commune": "Castelnau-Rivière-Basse",
+      "appellation": "Madiran AOC",
+      "founded": "1980",
+      "founded_note": "Estate established by Alain Brumont through the acquisition of the Château Montus property; Brumont had recognized the unique potential of the Madiran terroir for serious Tannat-based wine and progressively built the contemporary editorial position around old-vine Tannat parcels and deliberately classical winemaking; under Brumont's continued direction; the estate has been central to the editorial reframing of Madiran as a serious global fine-wine region rather than the historically rustic regional commodity it had been treated as for centuries.",
+      "principal_grapes": [
+        "Tannat",
+        "Cabernet Sauvignon",
+        "Cabernet Franc"
+      ],
+      "signature_wines": [
+        "Château Montus Cuvée Prestige (the apex Madiran — Tannat-led with smaller proportions of Cabernet Sauvignon; aged in new French oak before release; the canonical contemporary apex Madiran reference)",
+        "Château Montus XL (a higher selection from the apex Cuvée Prestige)",
+        "Château Montus (the principal Madiran)",
+        "Château Bouscassé (the parallel Brumont estate — the historical Madiran property; Vieilles Vignes bottling as apex)"
+      ],
+      "description": "The founding figure of contemporary serious Madiran and the producer most centrally identified with reframing Tannat as a serious global fine-wine grape from the 1980s onward. Alain Brumont founded the contemporary Château Montus operation in 1980 through the acquisition of the property and progressive replanting and modernization of the vineyards, recognizing the unique potential of the Madiran terroir — the Pyrenees foothills' continental climate with significant diurnal variation, plus the indigenous Tannat grape's structural tannic concentration — for serious global fine-wine production. The Tannat grape is genuinely a uniquely-French grape with the Uruguayan diaspora as its only other significant home (Pisano, Bouza, and other Uruguayan producers continuing the grape's South American tradition through the late nineteenth-century Basque immigration), making Madiran the canonical global Tannat reference. The Cuvée Prestige bottling — Tannat-led with smaller proportions of Cabernet Sauvignon, aged in new French oak before release — has become widely the canonical contemporary apex Madiran reference, with the parallel Château Bouscassé Vieilles Vignes (the historical Madiran property under the same Brumont operation) providing additional editorial breadth across the broader Madiran tradition.",
+      "coordinates": {
+        "latitude": 43.5544,
+        "longitude": -0.0728
+      },
+      "coordinates_note": "Castelnau-Rivière-Basse, Madiran"
+    },
+    {
+      "id": "fr-chablis-raveneau",
+      "name": "Domaine François Raveneau",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Chablis",
+      "sub_region": "Chablis (the northernmost Burgundy sub-region, geologically and stylistically distinct from the Côte d'Or; exclusively Chardonnay, Kimmeridgian limestone soils with marine fossils)",
+      "commune": "Chablis",
+      "appellation": "Chablis AOC, Chablis Premier Cru AOC, Chablis Grand Cru AOC",
+      "founded": "1948",
+      "founded_note": "Estate established by François Raveneau as a joining of family vineyard holdings; under continuous Raveneau family direction across multiple generations to the present, currently with Bernard Raveneau and Jean-Marie Raveneau — François Raveneau's sons — as winemakers; the estate has remained deliberately small in scale despite its global editorial reputation, with very limited production from approximately 7 hectares of vineyards across multiple grand cru and premier cru parcels.",
+      "principal_grapes": [
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Les Clos Grand Cru (the apex single-vineyard Chablis from the Les Clos grand cru parcel — widely held to be the canonical apex Chablis)",
+        "Valmur Grand Cru (single-vineyard from the Valmur grand cru)",
+        "Blanchot Grand Cru",
+        "Montée de Tonnerre Premier Cru (the apex premier cru — widely held to be the most editorially celebrated Chablis premier cru, frequently approaching grand cru editorial weight)",
+        "Butteaux Premier Cru",
+        "Vaillons Premier Cru",
+        "The broader Raveneau range across multiple Chablis grand cru and premier cru bottlings"
+      ],
+      "description": "The canonical contemporary classical Chablis producer and the multi-generational Raveneau family operation most centrally identified with the apex Chablis editorial canon — the wines have come to be widely held to be among the most editorially celebrated classical white Burgundies produced anywhere. François Raveneau founded the estate in 1948 through the joining of family vineyard holdings, with the contemporary editorial position built across multiple decades through the disciplined single-vineyard framework — Les Clos Grand Cru as the apex bottling, Valmur and Blanchot as additional grand cru references, Montée de Tonnerre as the canonical apex premier cru that frequently approaches grand cru editorial weight in serious blind tastings. The estate has been under continuous Raveneau family direction across multiple generations, currently with Bernard and Jean-Marie Raveneau (François's sons) as winemakers, with the deliberately small production scale (approximately 7 hectares of vineyards) and the disciplined classical winemaking framework preserved across multiple decades. Together with Vincent Dauvissat, Raveneau anchors Chablis's editorial position in the atlas as the canonical multi-generational classical reference, with the pair representing the Chablis editorial canon at apex level — both estates working the same Kimmeridgian limestone substrate with marine fossils, both producing single-vineyard grand cru and premier cru wines in the deliberately classical Chablis register.",
+      "coordinates": {
+        "latitude": 47.8156,
+        "longitude": 3.7997
+      },
+      "coordinates_note": "Chablis, northern Burgundy"
+    },
+    {
+      "id": "fr-loire-couleedeserrant",
+      "name": "Coulée de Serrant (Nicolas Joly)",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Loire",
+      "sub_region": "Savennières (the apex dry Chenin Blanc AOC in the central Loire, west of Angers)",
+      "commune": "Savennières",
+      "appellation": "Savennières Coulée de Serrant AOC (the 7-hectare monopole AOC within the broader Savennières AOC — one of only a handful of monopole AOCs in France, structurally similar editorial position to Romanée-Conti's monopole status in Burgundy)",
+      "founded": "1130",
+      "founded_note": "Vineyard cultivation continuously documented since 1130 — the property has been continuously cultivated as vineyards for over 800 years through the original Cistercian monastic order at Saint-Nicolas-d'Angers and subsequently through multiple ownership transitions; the contemporary fine-wine operation under the Joly family from 1962, with Nicolas Joly directing the estate since 1980; converted to biodynamic viticulture in 1980 — Nicolas Joly is widely the founding figure of contemporary biodynamic viticulture in serious global fine wine; under continued Joly family direction, currently with Nicolas Joly's daughter Virginie Joly as estate director.",
+      "principal_grapes": [
+        "Chenin Blanc"
+      ],
+      "signature_wines": [
+        "La Coulée de Serrant (the apex monopole AOC bottling — Chenin Blanc from the 7-hectare Coulée de Serrant monopole parcel; produced annually with extended ageing before release; widely the canonical Savennières reference and one of the most editorially singular small-AOC wines produced in France)",
+        "Le Vieux Clos Savennières (the second-tier Savennières bottling)",
+        "Les Clos Sacrés Savennières (a third Savennières bottling)"
+      ],
+      "description": "The canonical Savennières reference and one of the most editorially singular small-AOC properties in France — a 7-hectare monopole AOC within the broader Savennières region with continuous viticultural cultivation for over 800 years through the original Cistercian monastic order from 1130 onward. The contemporary fine-wine operation under the Joly family from 1962 has been directed by Nicolas Joly since 1980, with Joly converting the estate to biodynamic viticulture in 1980 — making him widely the founding figure of contemporary biodynamic viticulture in serious global fine wine through his broader influence on the global biodynamic movement. The La Coulée de Serrant monopole AOC bottling — Chenin Blanc from the 7-hectare monopole parcel, produced annually with extended ageing before release — has become widely the canonical Savennières reference and one of the most editorially singular small-AOC wines produced in France, with the monopole AOC status placing the estate structurally alongside Romanée-Conti as one of the few monopole AOCs in French wine. The estate's editorial significance extends well beyond Savennières itself through Joly's broader influence on the global biodynamic movement, with the founding 1980 conversion establishing the editorial framework that subsequent decades of biodynamic European-and-New-World producers have inherited (Leflaive, Zind-Humbrecht, Mullineux, Felton Road, Pieropan, Bergström, Cullen, Chappaz, Ganevat).",
+      "coordinates": {
+        "latitude": 47.3822,
+        "longitude": -0.6736
+      },
+      "coordinates_note": "Savennières, central Loire"
+    },
+    {
+      "id": "fr-champagne-larmandierbernier",
+      "name": "Larmandier-Bernier",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Champagne",
+      "sub_region": "Vertus (Premier Cru, southern Côte des Blancs); with Grand Cru holdings in Avize, Chouilly, Cramant, Oger",
+      "commune": "Vertus",
+      "appellation": "Champagne AOC (Vertus Premier Cru and multiple Côte des Blancs Grand Cru villages)",
+      "founded": "1971",
+      "founded_note": "Estate established by Philippe Larmandier through the joining of the Larmandier and Bernier family vineyard holdings; under continuous Larmandier family direction across two generations, currently with Pierre Larmandier as winemaker since the 1990s and his wife Sophie Larmandier in the operation; converted to organic viticulture from 1992 and biodynamic viticulture in 1999 — among the early-adopter biodynamic Champagne estates and the producer most centrally identified with establishing biodynamic Champagne as a serious contemporary fine-wine category.",
+      "principal_grapes": [
+        "Chardonnay",
+        "Pinot Noir"
+      ],
+      "signature_wines": [
+        "Vieille Vigne du Levant (the apex single-vineyard Chardonnay from very old vines in Vertus)",
+        "Terre de Vertus Premier Cru (single-village Vertus, lees-aged for extended period)",
+        "Les Chemins d'Avize Grand Cru (single-village Avize Grand Cru)",
+        "Latitude Extra Brut (the principal multi-village cuvée — Côte des Blancs Chardonnay-led)",
+        "Longitude Premier Cru (single-village Vertus selection)",
+        "Cramant Grand Cru (single-village Cramant)"
+      ],
+      "description": "The reference contemporary biodynamic Champagne producer and the Larmandier family operation most centrally identified with establishing biodynamic viticulture as a serious contemporary Champagne editorial framework from the late 1990s onward. Philippe Larmandier founded the estate in 1971 through the joining of the Larmandier and Bernier family vineyard holdings, with the contemporary editorial position built progressively under Pierre Larmandier (Philippe's son) since the 1990s through the deliberate biodynamic conversion (organic from 1992, biodynamic from 1999) and the disciplined single-village Côte des Blancs framework. The estate's multi-village range across Vertus Premier Cru and the Grand Cru villages of Avize, Chouilly, Cramant, and Oger — with each single-village bottling labeled separately in the Burgundian framework — has substantively reshaped how the canon reads contemporary Côte des Blancs Champagne, with the apex Vieille Vigne du Levant from very old vines in Vertus widely held to be one of the most editorially celebrated single-vineyard Chardonnay-only Champagnes produced. The biodynamic conversion places Larmandier-Bernier alongside the broader European biodynamic founding generation — Beaucastel, Leflaive, Coulée de Serrant, Zind-Humbrecht, Mullineux, Felton Road, Bergström, Pieropan, Cullen, Chappaz, Ganevat — completing the biodynamic editorial story across the Champagne region specifically through the disciplined contemporary apex grower-producer framework.",
+      "coordinates": {
+        "latitude": 48.9081,
+        "longitude": 4.0094
+      },
+      "coordinates_note": "Vertus, southern Côte des Blancs"
+    },
+    {
+      "id": "fr-chablis-dauvissat",
+      "name": "Vincent Dauvissat",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Chablis",
+      "sub_region": "Chablis (the northernmost Burgundy sub-region; same Kimmeridgian limestone substrate as Raveneau)",
+      "commune": "Chablis",
+      "appellation": "Chablis AOC, Chablis Premier Cru AOC, Chablis Grand Cru AOC",
+      "founded": "1931",
+      "founded_note": "Estate established by Robert Dauvissat through the joining of family vineyard holdings; transformed into the contemporary canonical Chablis reference under Vincent Dauvissat — René Dauvissat's son and Robert's grandson — who took over the estate progressively from the 1980s; under continuous Dauvissat family direction across three generations to the present, currently with Vincent Dauvissat as winemaker; the estate has remained deliberately small in scale, with approximately 12 hectares of vineyards across multiple grand cru and premier cru parcels.",
+      "principal_grapes": [
+        "Chardonnay"
+      ],
+      "signature_wines": [
+        "Les Clos Grand Cru (the apex single-vineyard Chablis from the Les Clos grand cru parcel — paralleling the Raveneau Les Clos as the canonical apex Chablis)",
+        "La Forest Premier Cru (the canonical Dauvissat premier cru reference — single-vineyard from the La Forêt parcel within Vaillons; widely held to be one of the most editorially celebrated Chablis premier crus)",
+        "Vaillons Premier Cru (the principal premier cru cuvée)",
+        "Séchet Premier Cru (a smaller single-vineyard premier cru)",
+        "Petit Chablis and Chablis (the village-level cuvées)"
+      ],
+      "description": "The second canonical contemporary classical Chablis producer and the multi-generational Dauvissat family operation across three generations most centrally identified — alongside Domaine François Raveneau — with the apex Chablis editorial canon. Robert Dauvissat founded the estate in 1931, with the contemporary editorial position built across multiple decades through Vincent Dauvissat (Robert's grandson, René Dauvissat's son) who took over the estate progressively from the 1980s and has directed the estate since as the contemporary editorial figurehead. The Les Clos Grand Cru — paralleling the Raveneau Les Clos as the canonical apex Chablis — and La Forest Premier Cru (single-vineyard from the La Forêt parcel within Vaillons; widely held to be one of the most editorially celebrated Chablis premier crus) anchor the estate's editorial position alongside the broader Dauvissat range across multiple grand cru and premier cru parcels. The estate's deliberately small production scale (approximately 12 hectares of vineyards) and the disciplined classical winemaking framework — minimal new oak, extended lees ageing, deliberate restraint of the contemporary apex-Burgundy convention — has placed Dauvissat editorially alongside Raveneau as the canonical contemporary Chablis pairing that the global Chablis canon centers on, with the two multi-generational family estates working the same Kimmeridgian limestone substrate to produce structurally distinct apex Chablis at the highest editorial level.",
+      "coordinates": {
+        "latitude": 47.8161,
+        "longitude": 3.8
+      },
+      "coordinates_note": "Chablis, northern Burgundy"
+    },
+    {
+      "id": "fr-bordeaux-climens",
+      "name": "Château Climens",
+      "country": "France",
+      "country_code": "FR",
+      "region": "Bordeaux",
+      "sub_region": "Sauternes-Barsac (Barsac specifically — the Sauternes sub-region with structurally distinct soils and slightly cooler character than Sauternes proper)",
+      "commune": "Barsac",
+      "appellation": "Sauternes-Barsac AOC (Premier Cru Classé in 1855 classification)",
+      "founded": "1855 (classification); vineyard cultivation from late seventeenth century",
+      "founded_note": "Vineyard cultivation documented from the late seventeenth century; the Climens estate established progressively through multiple ownership transitions across the eighteenth and nineteenth centuries; the property classified as a Premier Cru Classé in the 1855 Bordeaux classification — the only Premier Cru in Barsac AOC; under the Lurton family from 1971 through Bérénice Lurton's multi-decade direction (Bérénice Lurton took over the estate in 1992 from her father Lucien Lurton and directed it until 2022, when the estate was sold); under new ownership from 2022 with the editorial register preserved; converted to biodynamic viticulture from 2010 onward.",
+      "principal_grapes": [
+        "Sémillon"
+      ],
+      "signature_wines": [
+        "Château Climens Premier Cru Barsac (the apex sweet wine — produced from individually selected botrytis-affected Sémillon grapes through the labor-intensive multi-pass tri framework; aged in French oak before release; widely held to be the canonical Barsac apex and one of the most editorially celebrated dry-style Sauternes-Barsac wines outside Yquem)",
+        "Asphodèle (a separate dry Sémillon bottling from non-botrytis-affected fruit; produced occasionally to express the dry-Sémillon potential of the same Climens parcels)"
+      ],
+      "description": "The canonical Barsac apex and the only Premier Cru Classé estate in Barsac AOC, working a structurally distinctive position within the broader Sauternes-Barsac framework through the deliberate use of 100% Sémillon (rather than the broader Sauternes-Barsac convention of Sémillon-Sauvignon Blanc blending). The estate was classified as a Premier Cru Classé in the 1855 Bordeaux classification — the foundational French wine classification system that anchors Bordeaux's contemporary fine-wine framework — with the contemporary editorial position built across multiple decades through Bérénice Lurton's multi-decade direction (1992 until the 2022 estate sale) that established Climens as the canonical contemporary Barsac reference alongside the parallel canonical Sauternes references (Yquem in the atlas as the apex first growth Sauternes Premier Cru Supérieur). The estate's biodynamic conversion from 2010 onward placed Climens alongside the broader contemporary biodynamic European movement as one of the early-adopter biodynamic Bordeaux estates, distinguishing the estate from the broader Bordeaux conventional-viticulture framework. The Asphodèle bottling — a separate dry Sémillon produced from non-botrytis-affected fruit — preserves an editorially distinctive secondary tradition alongside the principal sweet wine production, demonstrating the dry-Sémillon potential of the same Climens parcels in a register structurally distinct from the principal Sauternes-Barsac sweet wine canon.",
+      "coordinates": {
+        "latitude": 44.6181,
+        "longitude": -0.2528
+      },
+      "coordinates_note": "Barsac, Sauternes-Barsac"
     }
   ]
 }
