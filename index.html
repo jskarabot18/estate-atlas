@@ -51,8 +51,16 @@
       padding: 18px 28px 16px;
       border-bottom: 1px solid var(--rule);
       background: var(--paper);
-      display: flex; align-items: baseline; justify-content: space-between;
+      display: flex; align-items: flex-end; justify-content: space-between;
       gap: 24px;
+    }
+
+    .masthead-titleblock { display: flex; flex-direction: column; gap: 4px; }
+
+    .masthead-eyebrow {
+      font-family: 'EB Garamond', serif;
+      font-size: 10.5px; letter-spacing: 0.18em; text-transform: uppercase;
+      color: var(--ink-soft); font-weight: 500; margin: 0;
     }
 
     .masthead-title {
@@ -403,7 +411,10 @@
 <div class="app">
 
   <header class="masthead">
-    <h1 class="masthead-title">The Estate <em>Atlas</em></h1>
+    <div class="masthead-titleblock">
+      <p class="masthead-eyebrow">An Atlas of Vinotheca</p>
+      <h1 class="masthead-title">The Estate <em>Atlas</em></h1>
+    </div>
     <div class="masthead-meta">
       <a href="https://jskarabot18.github.io/vinotheca/">Vinotheca</a>
       <span class="masthead-divider">·</span>
