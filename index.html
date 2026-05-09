@@ -19,14 +19,16 @@
        Sibling-volume register to the Grand Cru Atlas. */
 
     :root {
-      --paper:        #f5efe6;
+      --paper:        #FAF6F1;
       --paper-deep:   #ece4d6;
+      --paper-raised: #FFFDF8;
       --ink:          #2a2520;
       --ink-soft:     #5a5048;
       --rule:         #c8bca8;
-      --wine:         #6e1f2a;
-      --wine-soft:    #8a3a44;
-      --pin-shadow:   rgba(110, 31, 42, 0.35);
+      --wine:         #7B2D26;
+      --wine-dark:    #5A1F1A;
+      --wine-light:   #A04038;
+      --pin-shadow:   rgba(123, 45, 38, 0.35);
     }
 
     * { box-sizing: border-box; }
@@ -118,7 +120,7 @@
     }
 
     .atlas-footer-motto .fleuron {
-      color: var(--wine-soft);
+      color: var(--wine-light);
       font-style: normal;
       margin: 0 8px;
     }
@@ -257,7 +259,7 @@
       padding: 0; margin-top: 4px;
     }
 
-    .filter-reset:hover { color: var(--wine-soft); }
+    .filter-reset:hover { color: var(--wine-light); }
 
     .filter-rail-count {
       margin-top: 18px; padding-top: 16px;
@@ -296,7 +298,7 @@
     }
 
     .estate-pin:hover, .estate-pin.is-active {
-      background: var(--wine-soft);
+      background: var(--wine-light);
       transform: scale(1.35);
     }
 
