@@ -1,12 +1,12 @@
-# The Estate Atlas
+# The Maker Atlas
 
-A curated global reference of wine estates, presented as a clickable world map with a downloadable PDF companion volume. Sibling instrument to [The Grand Cru Atlas](https://github.com/jskarabot18/grand-cru-atlas) within [Vinotheca](https://jskarabot18.github.io/vinotheca/).
+A curated global reference of wine makers — estates, domaines, and houses across the world's principal wine regions — presented as a clickable world map with a downloadable PDF companion volume. Sibling instrument to [The Vineyard Atlas](https://github.com/jskarabot18/grand-cru-atlas) within [Vinotheca](https://jskarabot18.github.io/vinotheca/).
 
-The atlas answers a specific question: where, on the map of the world, are the wine estates of established reputation, and what do they make? It is a curated reference, not a ranking — estates appear because they illustrate their region or grape clearly, not because they are ranked above others.
+The atlas answers a specific question: where, on the map of the world, are the wine makers of established reputation, and what do they make? It is a curated reference, not a ranking — makers appear because they illustrate their region or grape clearly, not because they are ranked above others.
 
 ## Status
 
-**Pilot.** Three estates encoded (Mosel: Joh. Jos. Prüm, Egon Müller, Schloss Lieser). Target: approximately 160 estates across the world's principal wine-producing regions. First full edition planned for 2026.
+**Pilot.** Three estates encoded (Mosel: Joh. Jos. Prüm, Egon Müller, Schloss Lieser). Target: approximately 160 makers across the world's principal wine-producing regions. First full edition planned for 2026.
 
 ## Coverage
 
@@ -16,7 +16,7 @@ Inclusion is based on durable recognition in public sources. The atlas does not 
 
 ## Architecture
 
-A single self-contained `index.html` file serving a Leaflet map over OpenStreetMap-derived tiles, with estate data in a separate `estates.json` file. No build step. No tracking. No analytics. No external dependencies beyond the Leaflet library and the openly licensed map tiles.
+A single self-contained `index.html` file serving a Leaflet map over OpenStreetMap-derived tiles, with maker data in a separate `estates.json` file. No build step. No tracking. No analytics. No external dependencies beyond the Leaflet library and the openly licensed map tiles.
 
 ## Running locally
 
@@ -34,7 +34,7 @@ Published under the **Creative Commons Attribution-NonCommercial 4.0 Internation
 ## Part of Vinotheca
 
 - [Vinotheca](https://jskarabot18.github.io/vinotheca/) — the umbrella library
-- [The Grand Cru Atlas](https://github.com/jskarabot18/grand-cru-atlas) — sibling volume, organized by grape rather than by place
+- [The Vineyard Atlas](https://github.com/jskarabot18/grand-cru-atlas) — sibling volume, organized by grape rather than by place
 - [Codex Vini](https://github.com/jskarabot18/codex-vini) — the personal-track instrument
 
 Correspondence: [skarabot@yahoo.com](mailto:skarabot@yahoo.com)
