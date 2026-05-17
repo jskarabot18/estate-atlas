@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-build_atlas_pdf.py — Generate The Estate Atlas PDF compendium.
+build_atlas_pdf.py — Generate The Maker Atlas PDF compendium.
 
-Reads estates.json (sibling of this script) and produces The_Estate_Atlas.pdf.
-Designed as a sibling reference instrument to The Grand Cru Atlas, sharing
+Reads estates.json (sibling of this script) and produces The_Maker_Atlas.pdf.
+Designed as a sibling reference instrument to The Vineyard Atlas, sharing
 its typographic register (sans-serif body, wine-red accents, banded tables)
 but adapted for estate-level (rather than vineyard-level) content, organised
 by country and region.
@@ -11,7 +11,7 @@ by country and region.
 Each region is presented in a two-tier hybrid format:
   1. A summary table at the top of the region — one row per estate, with
      columns Estate / Location / Principal grapes / Signature character.
-     Mirrors the visual scan-table of the Grand Cru Atlas.
+     Mirrors the visual scan-table of the Vineyard Atlas.
   2. Below the summary, fuller prose entries for the same estates: founding
      date, signature wines (full list), descriptive paragraph, and any
      founding-date footnote.
@@ -20,7 +20,7 @@ Re-run on each refresh cycle. The PDF is a single artefact; all selection
 logic, allocation, and editorial discipline are upstream in estates.json.
 
 Usage:
-    python3 build_atlas_pdf.py                     # writes The_Estate_Atlas.pdf
+    python3 build_atlas_pdf.py                     # writes The_Maker_Atlas.pdf
     python3 build_atlas_pdf.py --out path.pdf      # custom output path
 
 Vinotheca · CC BY-NC 4.0
@@ -55,7 +55,7 @@ from reportlab.platypus import (
 )
 
 # ---------------------------------------------------------------------------
-# Fonts — DejaVu Sans matches the Grand Cru Atlas's sans-serif register and
+# Fonts — DejaVu Sans matches the Vineyard Atlas's sans-serif register and
 # carries full Unicode coverage for diacritics in estate names (Méo-Camuzet,
 # von Hövel, Trimbach, Quinta do Vesúvio, Simčič, Saša, etc.).
 # ---------------------------------------------------------------------------
@@ -75,7 +75,7 @@ pdfmetrics.registerFontFamily(
 )
 
 # ---------------------------------------------------------------------------
-# Palette — matches the Grand Cru Atlas: wine-red accent on pure white.
+# Palette — matches the Vineyard Atlas: wine-red accent on pure white.
 # Wine-red is used for chapter titles, region headings, and table header
 # bands. Body copy is near-black; secondary metadata is mid-grey.
 # ---------------------------------------------------------------------------
@@ -219,9 +219,9 @@ class AtlasDocTemplate(BaseDocTemplate):
     """Cover page (no header/footer) followed by content pages with running
     header and centred page number. Header text is consistent across all
     body pages — chapters announce themselves via their large title.
-    Mirrors the Grand Cru Atlas's static-running-header convention."""
+    Mirrors the Vineyard Atlas's static-running-header convention."""
 
-    HEADER_TEXT = "The Estate Atlas — World's Wine Estates by Country and Region"
+    HEADER_TEXT = "The Maker Atlas — World's Wine Estates by Country and Region"
 
     def __init__(self, filename, **kw):
         super().__init__(filename, pagesize=A4, **kw)
@@ -684,7 +684,7 @@ def build(estates_path, out_path):
     styles = build_styles()
     doc = AtlasDocTemplate(
         str(out_path),
-        title=atlas.get("title", "The Estate Atlas"),
+        title=atlas.get("title", "The Maker Atlas"),
         author="Vinotheca",
         subject="A curated reference of the world's wine estates",
         creator="Vinotheca · build_atlas_pdf.py",
@@ -696,7 +696,7 @@ def build(estates_path, out_path):
     # Mirrors Grand Cru: top-aligned, sparse. Keeps the informational tweaks
     # (estate count, edition, license) below the title block as agreed.
     story.append(Spacer(1, 2 * cm))
-    story.append(Paragraph("THE ESTATE ATLAS", styles["CoverTitle"]))
+    story.append(Paragraph("THE MAKER ATLAS", styles["CoverTitle"]))
     story.append(Paragraph(
         "A Compendium of the World's Wine Estates",
         styles["CoverSubtitle"],
@@ -800,7 +800,7 @@ def build(estates_path, out_path):
             "sources. For most estates these are nearly the same place; for "
             "négociants and producers sourcing broadly, the entry text "
             "clarifies the wider scope. Vineyard-level geography belongs to "
-            "the sibling reference, <i>The Grand Cru Atlas</i>."
+            "the sibling reference, <i>The Vineyard Atlas</i>."
         ),
         (
             "<i>Living document.</i> The atlas is refreshed on an annual cadence. "
@@ -902,14 +902,14 @@ def build(estates_path, out_path):
             "<i>creativecommons.org/licenses/by-nc/4.0</i>."
         ),
         (
-            "<b>Sibling reference.</b> The Estate Atlas sits alongside <i>The "
-            "Grand Cru Atlas</i> within the Vinotheca library. Where the Grand "
-            "Cru Atlas maps the world's most revered <i>vineyard sites</i> to "
-            "the grape varieties that have made them famous, the Estate Atlas "
+            "<b>Sibling reference.</b> The Maker Atlas sits alongside <i>The "
+            "Vineyard Atlas</i> within the Vinotheca library. Where the Vineyard "
+            "Atlas maps the world's most revered <i>vineyard sites</i> to "
+            "the grape varieties that have made them famous, the Maker Atlas "
             "maps the <i>producers</i> who farm and bottle wine across the "
             "world's principal regions. The two volumes are complementary, "
             "and several estates here are key producers of vineyards listed "
-            "in the Grand Cru Atlas."
+            "in the Vineyard Atlas."
         ),
         (
             f"<b>Version.</b> {esc(atlas.get('edition', '1st edition (2026)'))} · "
@@ -928,11 +928,11 @@ def build(estates_path, out_path):
 # ---------------------------------------------------------------------------
 
 def main(argv=None):
-    p = argparse.ArgumentParser(description="Build The Estate Atlas PDF.")
+    p = argparse.ArgumentParser(description="Build The Maker Atlas PDF.")
     here = Path(__file__).resolve().parent
     p.add_argument("--estates", default=str(here / "estates.json"),
                    help="Path to estates.json (default: alongside this script)")
-    p.add_argument("--out", default=str(here / "The_Estate_Atlas.pdf"),
+    p.add_argument("--out", default=str(here / "The_Maker_Atlas.pdf"),
                    help="Output PDF path")
     args = p.parse_args(argv)
 
